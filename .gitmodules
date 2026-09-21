@@ -1,0 +1,3 @@
+[submodule "lv/fs-components"]
+	path = lv/fs-components
+	url = ../fs-components.git
