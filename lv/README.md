@@ -31,7 +31,51 @@ dashboard](https://graf.telemetry.formulaslug.com/d/lyffkrd/library-dashboard?or
 Reminder: These are big bites, we know that most poeple can't produce a car-ready
 outcome for any of these... that's okay :). We just want to see how you'll go at
 it. Aim to spend less than 5 hours on these, and try to involve as much of your
-own thinking as possible. Your personal effort will be noticed.
+own thinking as possible. Your personal effort will be noticed. Chose one of these
+projects, create a branch of this repository, and create a subfolder of /lv containing
+your work/research. You can also propose literally anything else you'd like to do
+as an onboarding project.
+
+## Air pressure / temperature / humidity
+Our racecar has two main applications for aerometric sensors: monitoring the
+cooling of the battery, and validating simulations of the aerodynamic elements
+on the car. Do some research to determine what parameters (accuracy, resolution,
+range) are needed for these applications and source a sensor (on digikey or mouser).
+You can also describe how you'd make your own sensor (or sensor array) for this applciation
+(and I'd love to hear it).
+
+## FPC suspension strain gauge
+We order our PCBs from [JLC](https://jlcpcb.com). JLC can also make something called
+an FPC. Read about how strain gauges work, do some research about how other FSAE teams have
+implemented strain gauges on their suspension members, and attempt to design your own
+strain gauge to be manufactured as an FPC. I have not seen other teams do this before, but
+it has some benefits and drawbacks... try to find those. This project will be a PCB, so
+instead of creating a blank folder with markdown or text files documenting your research,
+create a copy of the kicad template folder (see below). You can still include any research
+as text files.
+
+## Design a BSPD circuit
+Every FSAE EV car is required to have a device called the "Brake system plausibility device".
+Read about it in EV8.7 of the [2027 rules](https://fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=9574fa97-c13e-4b90-9c75-044e30348cab).
+We use the following sensors for this device, but you can choose others for the purpose of this project if you prefer:
+- [Brake Pressure](https://www.summitracing.com/parts/aag-s0050?srsltid=AU7gw4WvwmFzL4ESdIDoUFAQyi38mjfxpO6NWv7JNG3hZhB_v7D9QLCm)
+- [Current Sensor](https://www.lem.com/sites/default/files/products_datasheets/hass-50_600-s-v22.pdf)
+This project will be a schematic, so instead of creating a blank folder with markdown or 
+text files documenting your research, create a copy of the kicad template folder 
+(see below). You can still include any research as text files.
+
+Hint: You'll need to use Op-Amps to compare and scale voltages.
+
+## In-Helmet Audio
+We want to add radio based driver communications to our telemetry system. This project
+specifically relates to the speakers and microphone in the drivers (motorcycle) helmet,
+and perhaps the driver circuitry to convert a convenient digital signal to and from the
+interface to the microphone/speakers. Find speakers and microphone(s) sourceable on
+digikey and propose how they can be packaged into the helmet without compromising ergonomics.
+Think about how this system can connect to wiring on the car with a connector
+that is both robust and breakaway--that is, the driver needs to be able to get out of the car
+quickly in an emergency and won't have time to unlatch any extra electrical connections.
+
 
 # General Notes
 
