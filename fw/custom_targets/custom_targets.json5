@@ -1,0 +1,40 @@
+{
+  // Config for vehicle control unit f4, based off STM32F446
+  "VEHICLE_CONTROL_UNIT": {
+    "inherits": [
+        "MCU_STM32F446xE"
+    ],  
+
+    "device_name": "STM32F446RETx",
+    
+    "overrides": {
+      "stdio-uart-tx": "PC_10",
+      "stdio-uart-rx": "PC_11",
+      "clock-source": "USE_PLL_HSE_XTAL",
+      "lse-available": 0,
+      "hse-value": 24000000,
+    },
+
+    // NOTE: For some reason mbed's MCU_STM32F4 target in targets.json does
+    // not include this config definition (I think they assume you use an 8MHz),
+    // so we need to add it here to be able to use our 24MHz.
+    "config": {
+      "hse-value": {
+        "help": "HSE default value is 8MHz in stm32f4xx_hal_conf.h",
+        "value": "8000000",
+        "macro_name": "HSE_VALUE"
+      }
+    },
+
+  },
+
+  // hse_value defined as a config bc STM32F446xE in targets.json has no HSE config
+  //"config": {
+  //  "hse_value": {
+  //      "help": "HSE default value is 8MHz in stm32f4xx_hal_conf.h",
+  //      "value": "24000000",
+  //      "macro_name": "HSE_VALUE"
+  //  }
+  //},
+}
+

@@ -1,3 +1,6 @@
 [submodule "lv/fs-components"]
 	path = lv/fs-components
 	url = ../fs-components.git
+[submodule "fw/mbed-os"]
+	path = fw/mbed-os
+	url = ../../mbed-ce/mbed-os
