@@ -22,9 +22,10 @@ is turned on
 - Source and implement sensors
 - Debug communication busses on the car like CAN, analog signals, Serial, an PWM
 
-You can find exmaples of the work LV has done all over the car, as well as in the
-[schematics repository](https://github.com/formulaslug/fs-4-schematics). 
-You can also see some awsome sensor data collected on LV PCBs in our [grafana](https://graf.telemetry.formulaslug.com/d/lyffkrd/library-dashboard?orgId=1&from=1970-01-01T00:00:00.011Z&to=1970-01-01T00:04:08.856Z&timezone=utc&var-srcfile=FS-4%2Fttt%2Fcandump-2026-06-11_155420.parquet).
+You can find exmaples of the work LV has done all over the car, as well as in
+the [schematics repository](https://github.com/formulaslug/fs-4-schematics). You
+can also see some awesome sensor data collected on LV PCBs in our [grafana
+dashboard](https://graf.telemetry.formulaslug.com/d/lyffkrd/library-dashboard?orgId=1&from=1970-01-01T00:00:00.011Z&to=1970-01-01T00:04:08.856Z&timezone=utc&var-srcfile=FS-4%2Fttt%2Fcandump-2026-06-11_155420.parquet).
 
 # Project Options
 Reminder: These are big bites, we know that most poeple can't produce a car-ready
