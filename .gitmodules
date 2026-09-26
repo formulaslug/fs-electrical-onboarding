@@ -4,3 +4,6 @@
 [submodule "fw/mbed-os"]
 	path = fw/mbed-os
 	url = ../../mbed-ce/mbed-os
+[submodule "pe/fs-components"]
+	path = pe/fs-components
+	url = ../fs-components
