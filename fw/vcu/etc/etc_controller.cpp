@@ -4,81 +4,19 @@
 
 #include "etc_controller.h"
 
+// Assign appropriate GPIO objects depending on pin parameters
 ETCController::ETCController(
     PinName APPS1_pin,
-    PinName APPS2_pin,
-    PinName BPPS_pin,
-    PinName front_BSE_pin,
-    PinName rear_BSE_pin,
-    PinName rtd_button_pin,
-    PinName rtd_light_pin,
-    PinName rtd_buzzer_pin,
-    PinName solenoid_pin,
-    PinName brakelight_pin
-)
-    : unfiltered_APPS1_input(APPS1_pin),
-      APPS1_input(unfiltered_APPS1_input),
-      unfiltered_APPS2_input(APPS2_pin),
-      APPS2_input(unfiltered_APPS2_input),
-      unfiltered_BPPS_input(BPPS_pin),
-      BPPS_input(unfiltered_BPPS_input),
-      unfiltered_front_BSE_input(front_BSE_pin),
-      front_BSE_input(unfiltered_front_BSE_input),
-      unfiltered_rear_BSE_input(rear_BSE_pin),
-      rear_BSE_input(unfiltered_rear_BSE_input),
-      rtd_button(rtd_button_pin),
-      rtd_light(rtd_light_pin),
-      rtd_buzzer(rtd_buzzer_pin),
-      solenoid(solenoid_pin),
-      brakelight(brakelight_pin) {
-    rtd_light.write(0);
-    rtd_buzzer.write(0);
-    solenoid.write(0);
-    brakelight.write(0);
+    PinName APPS2_pin
+) {}
 
-    rtd_button.rise(callback(this, &ETCController::rtd_button_irq));
-}
+// Nice function to write which returns a wrapped version of the
+// value given between 0 and 1 (-0.1 => 0, 10 => 1, 0.3 => 0.3)
+float ETCController::clamp(float value) {}
 
-float ETCController::clamp(float value) {
-    if (value < 0.0f) return 0.0f;
-    if (value > 1.0f) return 1.0f;
-    return value;
-}
-
-bool ETCController::in_range(float value, float low, float high) {
-    return (value >= low) && (value <= high);
-}
-
-float ETCController::accelerator_mapping(float pedal_travel) {
-    float region1 = 0.3f;
-    float region1_scale = 2.0f;
-    float region2 = 0.4f;
-    float region3_scale = 2.0f;
-
-    float region3 = 1 - region1 - region2;
-    float scaled_region1 = region1 / region1_scale;
-    float scaled_region3 = region3 / region3_scale;
-    float scaled_region2 = 1 - scaled_region1 - scaled_region3;
-    float region2_scale = region2 / scaled_region2;
-
-    if (pedal_travel < scaled_region1) {
-        return pedal_travel * region1_scale;
-    }
-    if (pedal_travel < scaled_region2 + scaled_region1) {
-        float p1 = scaled_region1;
-        float p1_power = p1 * region1_scale;
-        float p2 = pedal_travel - scaled_region1;
-        float p2_power = p2 * region2_scale;
-        return p1_power + p2_power;
-    }
-    float p1 = scaled_region1;
-    float p1_power = p1 * region1_scale;
-    float p2 = scaled_region2;
-    float p2_power = p2 * region2_scale;
-    float p3 = pedal_travel - scaled_region1 - scaled_region2;
-    float p3_power = p3 * region3_scale;
-    return p1_power + p2_power + p3_power;
-}
+// Simple function to write which returns a bool of true or false
+// depending on whether low <= value <= high is true
+bool ETCController::in_range(float value, float low, float high) {}
 
 void ETCController::update_state() {
     state.APPS1_voltage = APPS1_input.read_voltage();
@@ -125,40 +63,6 @@ void ETCController::update_state() {
     solenoid.write(!state.solenoid_open);
 
     state.rtd_button_pressed = rtd_button.read();
-}
-
-void ETCController::update_implaus_timer(
-    Timer& timer, bool& timer_running, bool implaus_state, bool& etc_implaus
-) {
-    if (implaus_state) {
-        if (etc_implaus) {
-            return;
-        }
-
-        if (!timer_running) {
-            timer.reset();
-            timer.start();
-            timer_running = true;
-        } else {
-            uint16_t time_ms_elapsed = timer.elapsed_time().count() / 1000;
-            // Needs to have faulted for at least 100ms before the motor is disabled
-            if (time_ms_elapsed > 100) {
-                etc_implaus = true;
-
-                timer.stop();
-                timer.reset();
-                timer_running = false;
-            }
-        }
-    } else {
-        etc_implaus = false;
-
-        if (timer_running) {
-            timer.stop();
-            timer.reset();
-            timer_running = false;
-        }
-    }
 }
 
 void ETCController::update_implaus() {
@@ -220,53 +124,4 @@ void ETCController::update_implaus() {
     } else {
         state.motor_enabled = true;
     }
-}
-
-// Called in the rise irq for rtd_button
-void ETCController::rtd_button_irq() {
-    // TS_READY is battery CAN messages saying that precharge is done and
-    // shutdown closed
-    bool ts_ready = battery_precharged && shutdown_closed;
-    bool rtd_condition = state.BPPS_position > BPPS_BRAKE_ENGAGE_PERCENT;
-    if (!state.ready_to_drive && ts_ready && rtd_condition) {
-        turn_on_rtd();
-    } else {
-        turn_off_rtd();
-    }
-}
-void ETCController::turn_on_rtd() {
-    state.ready_to_drive = true;
-    rtd_light.write(1);
-    rtd_buzzer.write(1);
-    rtd_buzzer_timeout.attach([this] { rtd_buzzer.write(0); }, RTD_BUZZER_DURATION);
-}
-void ETCController::turn_off_rtd() {
-    state.ready_to_drive = false;
-    rtd_light.write(0);
-}
-
-void ETCController::update_regen_state(float speed) {
-    state.regen_allowed =
-        (!in_range(speed, 0.0f, 5.0f) || state.BPPS_position > BPPS_MAX_NON_REGEN_BRAKING) && !REGEN_FORCE_DISABLE;
-}
-
-// todo: this function is not called?
-void ETCController::set_regen_torque(bool is_regening, bool solenoid_open, int16_t regen_torque) {
-    // state.is_regening = is_regening;
-    // state.solenoid_open = solenoid_open;
-    // state.regen_torque = is_regening ? regen_torque : 0.0f;
-}
-
-float ETCController::current_limit(float voltage, float current) {
-    float R0 = 0.00686f / 19.0f;
-    float limit = -1.0f / R0 * (2.5 - (voltage - 0.5f) - current * R0);
-    if (limit > state.MAX_DISCHARGE_CURRENT_LIMIT) {
-        return state.MAX_DISCHARGE_CURRENT_LIMIT;
-    }
-    return limit;
-}
-
-void ETCController::update_mbb_alive() {
-    state.mbb_alive++;
-    state.mbb_alive %= 16;
 }
