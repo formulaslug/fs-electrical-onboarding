@@ -5,19 +5,32 @@
 #include "etc_controller.h"
 
 // Assign appropriate GPIO objects depending on pin parameters
-ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) {}
+ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) {
+    AnalogIn APPS1_pin(PC_1);
+    AnalogIn APPS2_pin(PC_2);
+}
 
 /* 
     Nice function to write which returns a wrapped version of the
     value given between 0 and 1 (-0.1 => 0, 10 => 1, 0.3 => 0.3).
 */
-float ETCController::clamp(float value) {}
+float ETCController::clamp(float value) {
+    if (value < 0) {
+        return 0;
+    } else if (value > 1) {
+        return 1;
+    } else {
+        return value;
+    }
+}
 
 /*
     Simple function to write which returns a bool of true or false
     depending on whether low <= value <= high is true.
 */
-bool ETCController::in_range(float value, float low, float high) {}
+bool ETCController::in_range(float value, float low, float high) {
+    return (value >= low && value <= high);
+}
 
 /*
     Complicated method with the goal of refreshing voltages,
@@ -36,7 +49,7 @@ void ETCController::update_state() {
         include your own pedal mapping to make it non linear!
     */
 
-
+    APPS1_pos = 
 
     /*
         Finish the step listed above.

@@ -11,6 +11,9 @@ add_subdirectory(../custom_targets custom_targets)
 
 set(MBED_TARGET VEHICLE_CONTROL_UNIT)
 
+#This works around a CMake bug that causes the build to fail when trying to compile a test program for the target. Why?
+set(CMAKE_TRY_COMPILE_TARGET_TYPE "STATIC_LIBRARY")  
+
 include(../mbed-os/tools/cmake/mbed_toolchain_setup.cmake)
 project(vcu
         LANGUAGES C CXX ASM)
