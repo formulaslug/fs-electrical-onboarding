@@ -43,7 +43,7 @@ your work/research. You can also propose literally anything else you'd like to d
 as an onboarding project.
 
 > [!CAUTION]
-> **Don't get overwhelmed. Come talk to me. I want to help you. This is supposed to be hard. You're not supposed to do a good job.**
+> **Don't get overwhelmed. Come talk to me. I want to help you. This is supposed to be hard.**
 
 ## Air pressure / temperature / humidity
 Our racecar has two main applications for aerometric sensors: monitoring the
