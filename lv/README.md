@@ -66,6 +66,15 @@ so you can understand which are easiest to use with multiple of the same sensor.
 
 Identify some key parameters, and compile your questions/thoughts, and then **check in with me.**
 
+### Aero Element Validation Application
+Here is one output of a simulation run by the aerodynamics teams, for a version of the rear wing:
+
+![Aero Element Pressure Contour](assets/aero_element.png)
+
+This is a 2D pressure map, relative to something close to STP (Standard Temperature Pressure). 
+Use the information represented in this image to determine the precision, resolution, and range 
+needed for this sensor.
+
 ## FPC suspension strain gauge
 We order our PCBs from [JLC](https://jlcpcb.com). JLC can also make something called
 an [FPC](https://jlcpcb.com/pcb-fabrication/flexible-pcb). Read about how [strain gauges](https://en.wikipedia.org/wiki/Strain_gauge) 
