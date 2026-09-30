@@ -69,7 +69,7 @@ Identify some key parameters, and compile your questions/thoughts, and then **ch
 ### Aero Element Validation Application
 Here is one output of a simulation run by the aerodynamics teams, for a version of the rear wing:
 
-![Aero Element Pressure Contour](assets/aero_element.png)
+![Aero Element Pressure Contour | 350](assets/aero_element.png)
 
 This is a 2D pressure map, relative to something close to STP (Standard Temperature Pressure). 
 Use the information represented in this image to determine the precision, resolution, and range 
