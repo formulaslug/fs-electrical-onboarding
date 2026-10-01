@@ -80,8 +80,7 @@ void ETCController::update_implausibilities() {
     // Add voltage check using in_range() function to determine if either APPS sensor is out of range.
 
     if (APPS1_pin > 0.1 or APPS2_pin > 0.1){
-        if (in_range(APPS1_pin, APPS2_pin+0.1, APPS2_pin-0.1) or in_range(APPS2_pin, APPS1_pin+0.1, APPS1_pin-0.1)) {
-            // change this to use an abs val check
+        if (std::abs(APPS1_pin - APPS2_pin) > 0.1) {
             implaus = false; // Implausibility is false
             implaus_timer.stop();
             implaus_timer.reset();
