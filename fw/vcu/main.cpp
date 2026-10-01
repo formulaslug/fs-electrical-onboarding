@@ -18,7 +18,7 @@ int main() {
         at 20hz (20 messages / second)
     */
 
-    
+
 
     // No need to edit this while loop
     while (true) {
@@ -35,7 +35,9 @@ int main() {
     set to 1, and VCU_ETC_IMPLAUS_APPS_OUT_OF_RANGE
     & VCU_ETC_IMPLAUS_APPS_DEVIATION properly added.
 */
-void send_etc_CAN_messages() {}
+void send_etc_CAN_messages() {
+    can.send(CANMessage(0x193, , ));
+}
 
 /*
     Must send the SME_RPDO_Throttle_Demand CAN
