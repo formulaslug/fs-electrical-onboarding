@@ -1,7 +1,7 @@
 # Ideas
 
 - Slew rate limiter so that we can control the delta of NM per loop
-- Asymmetric rates using exponential function
+- Asymmetric rates of pedal torque map using an exponential function
 - Backlash handling
 - Oversampling using STM32 (L4, G4 and H7 chips)
 - Median of 3 instead of (or before) the mean in `read_average_voltage()`. Rn the average samples are microseconds apart a spike is almost certainly noise and could trip
@@ -27,4 +27,7 @@
   - Use the spare compute to sample constantly while no task is running (DMA oversampling
     into a buffer so a large batch of samples accumulates at a steady rate and is ready
     whenever `update_state()` runs). DMA also gets rid of the per-sample HAL overhead
+- Send SME_RPDO_Max_Currents (0x286) if the SME needs it. fs-4 VCU sends it every 40 ms
+  right after 0x186: charge 100 A, discharge 570 A, little-endian (`64 00 3A 02 00 00 00 00`).
+  Might default to 0 A without it.
 
