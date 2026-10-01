@@ -5,12 +5,14 @@
 	(uuid "e994741c-7c7d-4124-9d00-43b883baa61d")
 	(paper "A")
 	(title_block
-		(title "${BSPD_Circuit}")
+		(title "BSPD_Circuit")
 		(date "${CURRENT_DATE}")
 		(rev "${REVISION}")
 		(company "Formula Slug")
 		(comment 1 "Charles Ge")
-		(comment 3 "${COMMENT2}")
+		(comment 2 "Figured out how to push onto github after 4 hrs. I think in the future")
+		(comment 3 "it would be easier to hold github workshops with the desktop app")
+		(comment 4 "unless there is a benefit I am not aware of that is only in terminal.")
 	)
 	(lib_symbols)
 	(sheet_instances
