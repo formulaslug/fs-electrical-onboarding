@@ -19,8 +19,8 @@ The Sensor Voltage $\displaystyle SV$ is recorded through the output of the whea
 | Advantages | Disadvantages |
 | ---------- | ------------- |
 | Will be cheap and easy to remake | Likely is much more sensative to temperature/humidity changes |
-| | Low accuracy |
-| | Needs to be calibrated before each run due to temperature and humidity concerns |
+| Can put many in different configurations together | Low accuracy |
+| Add a reference strain gauge to the FPC | Needs to be calibrated before each run due to temperature and humidity concerns |
 
 
 ## Calculations
@@ -28,3 +28,8 @@ The Sensor Voltage $\displaystyle SV$ is recorded through the output of the whea
 Using [this](https://www.omnicalculator.com/other/pcb-trace-resistance) calculator, I found the length at which the resistance is 350 $\Omega$: 19.03 inches. 
 
 Then, in KiCAD, I created a PCB with that length of wire along with two copper zones for the terminals on each end. I ensured that I used the JLC minimum of 3 mil trace width and 3 mil trace spacing for the 12 micrometer copper thickness, the minimum. I also created a rectangle around this on the edge-cuts layer.
+
+
+Model strain gauge as a footprint and symbol is a variable resistor
+Research how changing the resistance of the guage will change its impedance and the heating
+Check if JLC can do 4 layer FPC

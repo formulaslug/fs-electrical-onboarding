@@ -41,6 +41,8 @@ void send_etc_CAN_messages() {
     // 2 = VCU_ETC_MOTOR_ENABLED
     // 4 = VCU_ETC_IMPLAUS_APPS_OUT_OF_RANGE
     // 6 = VCU_ETC_IMPLAUS_APPS_DEVIATION
+
+    // change logic for apps out of range to be voltage detection
     uint8_t message[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 
     message[0] = 1;
