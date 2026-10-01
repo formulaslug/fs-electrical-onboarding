@@ -1,0 +1,7 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/fw/vcu",
+    "cmake.buildDirectory": "${workspaceFolder}/fw/vcu/build",
+    "cmake.generator": "Ninja",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/fw/vcu/build/compile_commands.json"
+}
