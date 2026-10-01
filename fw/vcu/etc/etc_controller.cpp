@@ -11,7 +11,15 @@ ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) {}
     Nice function to write which returns a wrapped version of the
     value given between 0 and 1 (-0.1 => 0, 10 => 1, 0.3 => 0.3).
 */
-float ETCController::clamp(float value) {}
+float ETCController::clamp(float value) {
+    if (value >= 1) {
+        value = 1.0;
+    } else if (value <= 0) {
+        value = 0.0;
+    }
+
+    return value;
+}
 
 /*
     Simple function to write which returns a bool of true or false
