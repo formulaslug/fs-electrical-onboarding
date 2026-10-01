@@ -53,7 +53,7 @@ private:
 
     Timer fault_timer;
     Timer clear_timer;
-    bool implaus_active = false;
+    bool implaus_active = true;  // start disabled
     bool deviation_seen = false;
     bool out_of_range_seen = false;
 
