@@ -1,0 +1,53 @@
+Ideas:
+
+Make a budget sheet as well, organize things from cheap to expensive
+Write really good notes, keep things organized and readable
+Identify the WHY behind applications: how and why do we monitor the cooling of the battery?
+Make a tradeoffs page for op amps
+
+QUESTIONS:
+What is the purpose behind BSPD?
+What are the main components of BSPD?
+What is the logic behind BSPD?
+Are we working with AC or DC current?
+
+Building a Formula Car: BSPD Part 1 
+
+
+Definitions for words I do not know
+
+Op Amps (Operational Amplifier)
+
+A voltage amplifying device that performs various operations like addition, subtraction, integration, etc.. It’s an IC!!!
+You can have voltage- feedback op amp or current-feedback op amp.
+
+See Op Amp Research
+BSPD (Brake System Plausibility Device)
+
+
+Comparator
+
+
+LVMS (Low Voltage Master Switch)
+A single switch that controls the low voltage power supply to the car’s systems, ideally eliminates dependence on LV battery
+Actuator
+Something that turns energy into physical movement (in our case it can take electrical current and turn it into mechanical output to push, pull, lift, etc.)
+Off Set Voltage
+
+
+Input bias Current
+Although in theory, there's no current going into an op amp, in reality, there is a very teeny tiny current going in that can complicate things
+Slew rate
+Describes how voltage cannot change instantaneously and gradually works its way up or down. This can impact delays and time, especially if you’re working with AC currents because those need to change really really quickly.
+“Feedback” (for circuits)
+The ability of the output to be able to influence the input
+Throttle
+
+
+
+
+About BSPD:
+Non programmable circuit that opens shutdown circuit when u brake too hard and theres crazy stuff happening with the motor
+Shutdown circuit stays open until BSPD resets itself if everything is chill for 10 seconds
+If weird stuff happens for more than 500 ms (braking, voltage, current issues), shutdown circuit MUST open -> keeps everything and everyone safe
+BSPD must be supplied from LVMS
