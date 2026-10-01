@@ -2,7 +2,7 @@
 #include "mbed.h"
 #include <cstdio>
 
-ETCController etc{/* INSERT PIN NAMES FOR APPS 1 & 2 */};
+ETCController etc{PinName APPS1_pin, PinName APPS2_pin};
 
 CAN can{PB_8, PB_9, 500000};
 
@@ -18,7 +18,7 @@ int main() {
         at 20hz (20 messages / second)
     */
 
-
+    
 
     // No need to edit this while loop
     while (true) {

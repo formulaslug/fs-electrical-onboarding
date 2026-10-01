@@ -14,7 +14,8 @@ public:
         Start of public variables
     */
 
-
+    bool implaus = false;
+    int16_t motor_torque_demand = 0;
 
     /*
         End of public variables
@@ -32,7 +33,7 @@ private:
         Start of private variables
     */
 
-    
+    Timer implaus_timer;
 
     /*
         End of private variables

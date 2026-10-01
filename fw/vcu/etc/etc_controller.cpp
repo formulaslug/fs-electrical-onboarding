@@ -49,7 +49,16 @@ void ETCController::update_state() {
         include your own pedal mapping to make it non linear!
     */
 
-    APPS1_pos = 
+    // APPS1_pos = APPS1_pin * (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE) + APPS1_MIN_VOLTAGE;
+    // APPS2_pos = APPS2_pin * (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE) + APPS2_MIN_VOLTAGE;
+
+    effective_pos = (APPS1_pin + APPS2_pin) / 2;
+
+    if (effective_pos < PEDAL_DEADZONE_PERCENTAGE) {
+        effective_pos = 0;
+    }
+
+    motor_torque_demand = effective_pos * MAX_TORQUE;
 
     /*
         Finish the step listed above.
@@ -68,7 +77,16 @@ void ETCController::update_implausibilities() {
         Start of implaus logic checking.
     */
 
-
+    if (APPS1_pin > 0.1 or APPS2_pin > 0.1){
+        if (in_range(APPS1_pin, APPS2_pin+0.1, APPS2_pin-0.1) or in_range(APPS2_pin, APPS1_pin+0.1, APPS1_pin-0.1)) {
+            implaus = false; // Implausibility is false
+            implaus_timer.stop();
+            implaus_timer.reset();
+        } else {
+            implaus = true; // Implausibility is true
+            implaus_timer.start();
+        }
+    }
 
     /*
         End of implaus logic checking.
@@ -80,5 +98,8 @@ void ETCController::update_implausibilities() {
         for too long.
     */
 
-    
+    int64_t duration_ms implaus_duration = implaus_timer.elapsed_time().count() / 1000;
+    if (implaus == true && duration_ms > 100) {
+        motor_torque_demand = 0;
+    }   
 }

@@ -8,8 +8,8 @@
 #include "objects.h"
 
 extern UART_HandleTypeDef huart2;
-AnalogIn APPS1_adc{/* PIN FOR APPS1 */};
-AnalogIn APPS2_adc{/* PIN FOR APPS2 */};
+AnalogIn APPS1_adc{PC_1};
+AnalogIn APPS2_adc{PC_2};
 CAN can{PB_8, PB_9, 500000};
 
 ADC_HandleTypeDef *APPS1_hadc = &(((analogin_t*)&APPS1_adc)->handle);

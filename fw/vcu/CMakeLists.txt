@@ -13,6 +13,7 @@ set(MBED_TARGET VEHICLE_CONTROL_UNIT)
 
 #This works around a CMake bug that causes the build to fail when trying to compile a test program for the target. Why?
 set(CMAKE_TRY_COMPILE_TARGET_TYPE "STATIC_LIBRARY")  
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 include(../mbed-os/tools/cmake/mbed_toolchain_setup.cmake)
 project(vcu
