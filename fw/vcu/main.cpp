@@ -2,7 +2,9 @@
 #include "mbed.h"
 #include <cstdio>
 
-ETCController etc{/* INSERT PIN NAMES FOR APPS 1 & 2 */};
+PinName ADC1_IN11, ADC1_IN12;
+
+ETCController etc{ADC1_IN11, ADC1_IN12};
 
 CAN can{PB_8, PB_9, 500000};
 
