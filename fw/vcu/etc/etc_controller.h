@@ -14,7 +14,9 @@ public:
         Start of public variables
     */
 
-    bool implaus = false;
+    bool implaus_deviation = false;
+    bool implaus_out_of_range = false;
+
     int16_t motor_torque_demand = 0;
 
     /*

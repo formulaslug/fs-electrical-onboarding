@@ -2,7 +2,7 @@
 #include "mbed.h"
 #include <cstdio>
 
-ETCController etc{PinName APPS1_pin, PinName APPS2_pin};
+ETCController etc{PinName PC_1, PinName PC_2};
 
 CAN can{PB_8, PB_9, 500000};
 
@@ -43,9 +43,12 @@ void send_etc_CAN_messages() {
     // 6 = VCU_ETC_IMPLAUS_APPS_DEVIATION
 
     // change logic for apps out of range to be voltage detection
-    uint8_t message[8] = {0, 0, 0, 0, 0, 0, 0, 0};
+    uint8_t message[8] = {0};
 
-    message[0] = 1;
+    message[0] = 1
+                | 1 << 1
+                | etc.implaus << 4
+                | etc.implaus2 << 6;
     message[0] |= 1 << 1;
 
     if (etc.implaus) {
