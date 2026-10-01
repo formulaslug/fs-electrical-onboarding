@@ -10,10 +10,9 @@
 class ETCController {
 public:
 
-    /*
-        Start of public variables
-    */
-
+    int16_t torque_demand=0;
+    bool implause_apps_out_of_range=false;
+    bool implaus_apps_deviation=false;
 
 
     /*
@@ -31,7 +30,16 @@ private:
     /*
         Start of private variables
     */
+   AnalogIn apps1;
+   AnalogIn apps2;
 
+   Timer timer_range;
+   Timer timer_dev;
+
+   foat apps1_pos=0.0;
+   float apps2_pos=0.0;
+   float apps1_volts=0.0;
+   float apps2_volts=0.0;
     
 
     /*
