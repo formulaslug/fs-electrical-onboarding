@@ -36,13 +36,10 @@ int main() {
     & VCU_ETC_IMPLAUS_APPS_DEVIATION properly added.
 */
 void send_etc_CAN_messages() {
-    // 00000000
     // 1 = VCU_ETC_READY_TO_DRIVE
     // 2 = VCU_ETC_MOTOR_ENABLED
     // 4 = VCU_ETC_IMPLAUS_APPS_OUT_OF_RANGE
     // 6 = VCU_ETC_IMPLAUS_APPS_DEVIATION
-
-    // change logic for apps out of range to be voltage detection
     uint8_t message[8] = {0};
 
     message[0] = 1
@@ -50,6 +47,7 @@ void send_etc_CAN_messages() {
                 | etc.implaus_deviation << 4
                 | etc.implaus_out_of_range << 6;
 
+    // 0x193 ID is VCU_TPDO_STATUS
     can.send(CANMessage(0x193, message, 8));
 }
 
@@ -58,4 +56,13 @@ void send_etc_CAN_messages() {
     message with SME_THROTL_TorqueDemand set to the
     torque demand determined by the ETC.
 */
-void send_sme_CAN_messages() {}
+void send_sme_CAN_messages() {
+    // 0-15 = SME_THROTL_TorqueDemand
+
+    uint8_t message[8] = {0};
+    message[0] |= etc.motor_torque_demand;
+    message[1] |= (etc.motor_torque_demand >> 8);
+
+    // 0x186 ID is SME_RPDO_Throttle_Demand
+    can.send(CANMessage(0x186, message, 8));
+}

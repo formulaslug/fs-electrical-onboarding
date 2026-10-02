@@ -101,9 +101,7 @@ void ETCController::update_implausibilities() {
     if (implaus_deviation | implaus_out_of_range) {
         if (!implaus_timer.running()) {
             implaus_timer.start();
-        }
-
-        if (duration_ms > 100) {
+        } else if (duration_ms > 100) {
             motor_torque_demand = 0;
         }
     } else {

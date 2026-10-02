@@ -6,8 +6,8 @@ When the gauge is deformed, usually by increasing or decreasing tension parallel
 
 The wheatstone bridge uses the known values of the resistances to calculate the unknown resistance. The formula is: R<sub>x</sub> = R<sub>3</sub> * R<sub>2</sub> / R<sub>1</sub>. Derivation using Kirchhoff's Loop Rule (Voltage Law) and Current Law is given [here](https://en.wikipedia.org/wiki/Wheatstone_bridge#Full_derivation_using_Kirchhoff's_circuit_laws). However, this formula only works for a balanced bridge, which means that R<sub>2</sub> must be adjustable. When all the 3 known resistors are fixed, there is another formula which uses the Voltage between D and B (V<sub>G</sub>) and the input voltage to calculate the value of R<sub>x</sub> (also given in above link).
 
-To calculate the length the strain gauge is tensioned by, this  formula applies:
-$\displaystyle GF={\frac {\Delta R/R_{G}}{\epsilon }}$ where $\epsilon$ is the strain on the gauge, given by the equation $\epsilon = \frac{\Delta L}{L}$. After calculating the gauge factor ($\displaystyle GF$) using tested values, the sensor is ready to be used in the field.
+To calculate the length the strain gauge is tensioned by, this formula applies:
+$\displaystyle GF={\frac {\Delta R/R_{G}}{\epsilon }}$ where $\epsilon$ is the strain on the gauge, given by the equation $\displaystyle \epsilon = \frac{\Delta L}{L}$. After calculating the gauge factor ($GF$) using tested values, the sensor is ready to be used in the field.
 
 Afterward, the following equation is used to calculate $\epsilon$:
 $\newline {\displaystyle SV=EV{\frac {GF\cdot \epsilon }{4}}}$
