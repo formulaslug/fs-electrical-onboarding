@@ -36,7 +36,7 @@ int main() {
     & VCU_ETC_IMPLAUS_APPS_DEVIATION properly added.
 */
 void send_etc_CAN_messages() {
-    // 00000011
+    // 00000000
     // 1 = VCU_ETC_READY_TO_DRIVE
     // 2 = VCU_ETC_MOTOR_ENABLED
     // 4 = VCU_ETC_IMPLAUS_APPS_OUT_OF_RANGE
@@ -47,15 +47,8 @@ void send_etc_CAN_messages() {
 
     message[0] = 1
                 | 1 << 1
-                | etc.implaus << 4
-                | etc.implaus2 << 6;
-    message[0] |= 1 << 1;
-
-    if (etc.implaus) {
-        message[0] |= (1 << 4 | 1 << 6);
-    } else {
-        message[0] &= ~(1 << 4 | 1 << 6);
-    }
+                | etc.implaus_deviation << 4
+                | etc.implaus_out_of_range << 6;
 
     can.send(CANMessage(0x193, message, 8));
 }

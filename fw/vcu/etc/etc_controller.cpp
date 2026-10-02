@@ -6,8 +6,8 @@
 
 // Assign appropriate GPIO objects depending on pin parameters
 ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) {
-    AnalogIn APPS1_pos(APPS1_pin);
-    AnalogIn APPS2_pos(APPS2_pin);
+    AnalogIn APPS1_percent(APPS1_pin);
+    AnalogIn APPS2_percent(APPS2_pin);
 }
 
 /* 
@@ -49,8 +49,8 @@ void ETCController::update_state() {
         include your own pedal mapping to make it non linear!
     */
 
-    // APPS1_pos = APPS1_pin * (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE) + APPS1_MIN_VOLTAGE;
-    // APPS2_pos = APPS2_pin * (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE) + APPS2_MIN_VOLTAGE;
+    APPS1_pos = (APPS1_percent * 3.3 - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE);
+    APPS2_pos = (APPS2_percent * 3.3 - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE);
 
     effective_pos = (APPS1_pos + APPS2_pos) / 2;
 
@@ -77,8 +77,8 @@ void ETCController::update_implausibilities() {
         Start of implaus logic checking.
     */
 
-    implaus_out_of_range = !(in_range(APPS1_pos * 3.3, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) && 
-                             in_range(APPS2_pos * 3.3, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE));
+    implaus_out_of_range = !(in_range(APPS1_percent * 3.3, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) && 
+                             in_range(APPS2_percent * 3.3, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE));
 
     if (APPS1_pos > 0.1 or APPS2_pos > 0.1){
         if (std::abs(APPS1_pos - APPS2_pos) < 0.1) {
@@ -97,18 +97,17 @@ void ETCController::update_implausibilities() {
         update the actual implaus result if it's been active 
         for too long.
     */
-
+    int64_t duration_ms implaus_duration = implaus_timer.elapsed_time().count() / 1000;
     if (implaus_deviation | implaus_out_of_range) {
         if (!implaus_timer.running()) {
             implaus_timer.start();
+        }
+
+        if (duration_ms > 100) {
+            motor_torque_demand = 0;
         }
     } else {
         implaus_timer.stop();
         implaus_timer.reset();
     }
-
-    int64_t duration_ms implaus_duration = implaus_timer.elapsed_time().count() / 1000;
-    if (implaus_deviation == true && duration_ms > 100) {
-        motor_torque_demand = 0;
-    }   
 }
