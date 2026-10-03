@@ -34,6 +34,7 @@ private:
 
     AnalogIn pin1, pin2;
     float pin1_voltage, pin2_voltage;
+    float pos1, pos2;
     int16_t calculated_torque;
 
     /*
