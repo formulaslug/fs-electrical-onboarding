@@ -51,13 +51,12 @@ void ETCController::update_state() {
    pin2_voltage = pin2.read() * APPS2_MAX_VOLTAGE;
 
    if (in_range(pin1_voltage, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) && in_range(pin2_voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE)) {
+        pos1 = clamp((pin1_voltage - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE));
+        pos2 = clamp((pin2_voltage - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE));
 
-    pos1 = clamp((pin1_voltage - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE));
-    pos2 = clamp((pin2_voltage - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE));
+        float avg_volt = (pos1 + pos2) / 2.0;
 
-    float avg_volt = (pos1 + pos2) / 2.0;
-
-    calculated_torque = avg_volt * MAX_TORQUE;
+        calculated_torque = avg_volt * MAX_TORQUE;
    }
     /*
         Finish the step listed above.
