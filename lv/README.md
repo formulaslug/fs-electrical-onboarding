@@ -43,7 +43,7 @@ your work/research. You can also propose literally anything else you'd like to d
 as an onboarding project.
 
 > [!CAUTION]
-> **Don't get overwhelmed. Come talk to me. I want to help you. This is supposed to be hard. You're not supposed to do a good job.**
+> **Don't get overwhelmed. Come talk to me. I want to help you. This is supposed to be hard.**
 
 ## Air pressure / temperature / humidity
 Our racecar has two main applications for aerometric sensors: monitoring the
@@ -65,6 +65,15 @@ recommend reading briefly about common sensor output interfaces (analog, I2C, SP
 so you can understand which are easiest to use with multiple of the same sensor.
 
 Identify some key parameters, and compile your questions/thoughts, and then **check in with me.**
+
+### Aero Element Validation Application
+Here is one output of a simulation run by the aerodynamics teams, for a version of the rear wing:
+
+![Aero Element Pressure Contour | 350](assets/aero_element.png)
+
+This is a 2D pressure map, relative to something close to STP (Standard Temperature Pressure). 
+Use the information represented in this image to determine the precision, resolution, and range 
+needed for this sensor.
 
 ## FPC suspension strain gauge
 We order our PCBs from [JLC](https://jlcpcb.com). JLC can also make something called
@@ -136,6 +145,10 @@ at least 2/3 components (microphone, speaker, connector).**
 - Clone this repository recursively (`git clone --recursive`). If you didn't, be
   sure to initialize the submodule: `git submodule init` _and_ `git submodule
 update`
+
+**IMPORTANT:** To start your project, create a branch in this repo with your
+first and last name. For example: `jack-nystrom`. Then do your work in that
+branch!
 
 # Kicad Projects
 

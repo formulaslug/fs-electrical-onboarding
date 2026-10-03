@@ -49,3 +49,7 @@ completing onboarding and getting on the electrical team at Formula Slug.
 Note: Clone this repository recursively (`git clone --recursive`). If you
 didn't, be sure to initialize the submodule: `git submodule init` _and_ `git
 submodule update`
+
+**IMPORTANT:** To start your project, create a branch in this repo with your
+first and last name. For example: `jack-nystrom`. Then submit your work to that
+branch!
