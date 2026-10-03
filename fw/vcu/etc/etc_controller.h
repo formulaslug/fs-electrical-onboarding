@@ -13,6 +13,7 @@ public:
     /*
         Start of public variables
     */
+   // list all variables used in etc_controller.cpp
 
 
 
@@ -23,7 +24,7 @@ public:
     /*
         Public method definitions, don't edit
     */
-    ETCController(PinName APPS1_pin, PinName APPS2_pin);
+    ETCController(PinName APPS1_pin, PinName APPS2_pin); //constructor
 
     void update_state();
 

@@ -12,12 +12,14 @@ ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) {}
     value given between 0 and 1 (-0.1 => 0, 10 => 1, 0.3 => 0.3).
 */
 float ETCController::clamp(float value) {}
+//if not faulting, clamp values, feed into update state
 
 /*
     Simple function to write which returns a bool of true or false
     depending on whether low <= value <= high is true.
 */
 bool ETCController::in_range(float value, float low, float high) {}
+//used to feed into implausibility logic, if one value is low, while the other is high, trigger fault
 
 /*
     Complicated method with the goal of refreshing voltages,
@@ -35,6 +37,8 @@ void ETCController::update_state() {
         If you want to get really difficult, maybe even 
         include your own pedal mapping to make it non linear!
     */
+
+    //if not faulting, calculate torque and send command
 
 
 
@@ -56,6 +60,12 @@ void ETCController::update_implausibilities() {
     */
 
 
+    //cross check APPS1 with APPS2
+    //check pedal positions pre-offset calculations; pre-offset values should not match
+    //check voltage readings; if values match, fault
+    //maybe check to see if one pedal suddenly rises in position while other falls, fault
+
+
 
     /*
         End of implaus logic checking.
@@ -66,6 +76,8 @@ void ETCController::update_implausibilities() {
         update the actual implaus result if it's been active 
         for too long.
     */
+
+    //if values have been implausible for longer than 100ms, trigger fault
 
     
 }

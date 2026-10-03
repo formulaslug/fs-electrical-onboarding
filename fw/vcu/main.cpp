@@ -2,13 +2,13 @@
 #include "mbed.h"
 #include <cstdio>
 
-ETCController etc{/* INSERT PIN NAMES FOR APPS 1 & 2 */};
+ETCController etc{PA1, PA2};
 
 CAN can{PB_8, PB_9, 500000};
 
 // Predefined for use in main()
 void send_etc_CAN_messages();
-void send_sme_CAN_messages();
+void send_sme_CAN_messages(); //just makes them exist to compiler
 
 int main() {
     printf("Hello World!!\n");
@@ -35,7 +35,7 @@ int main() {
     set to 1, and VCU_ETC_IMPLAUS_APPS_OUT_OF_RANGE
     & VCU_ETC_IMPLAUS_APPS_DEVIATION properly added.
 */
-void send_etc_CAN_messages() {}
+void send_etc_CAN_messages() {} //add functionality
 
 /*
     Must send the SME_RPDO_Throttle_Demand CAN
