@@ -1,0 +1,96 @@
+(footprint "Strain Guage V1"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.35 0.1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "99d9a425-d7a9-4d60-a7e8-c2c8ba07d433")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Strain Gauge"
+		(at 0 -11.75 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "1e3e92a3-db19-4eca-9902-3b8dbd2b1436")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e242dd8c-7198-43c6-937e-c4276f0e7635")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cc83bf13-43fd-42d9-b47b-308434aa9015")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -4.85076 -10.65)
+		(end 4.85 1.21604)
+		(stroke
+			(width 0.0508)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "5b313294-aa2a-47b1-bd48-5ae31d39c095")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.15 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "84c1d88e-fdb0-4d3d-ae82-082952b47099")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -3.8862 0)
+		(size 1.27 1.27)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "49fc409e-181d-40fd-acc5-5f480d372e7e")
+	)
+	(pad "2" smd roundrect
+		(at 3.8862 0)
+		(size 1.27 1.27)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "d046e101-2f35-4883-9d16-955372f68187")
+	)
+	(embedded_fonts no)
+)
