@@ -76,7 +76,6 @@ void ETCController::update_implausibilities() {
         Start of implaus logic checking.
     */
 
-    /*
     Timer my_Timer;
     while ((abs(pos1 - pos2) > 0.1)) {
         my_Timer.start();
@@ -90,7 +89,6 @@ void ETCController::update_implausibilities() {
     printf("No implaus detected.\n");
     my_Timer.stop();
     my_Timer.reset();
-    */
 
 
     /*
