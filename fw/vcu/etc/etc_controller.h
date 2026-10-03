@@ -32,7 +32,9 @@ private:
         Start of private variables
     */
 
-    
+    AnalogIn pin1, pin2;
+    float pin1_voltage, pin2_voltage;
+    int16_t calculated_torque;
 
     /*
         End of private variables
