@@ -6,6 +6,9 @@ ETCController etc{PinName PC_1, PinName PC_2};
 
 CAN can{PB_8, PB_9, 500000};
 
+Ticker send_etc_CAN_messages_ticker;
+Ticker send_sme_CAN_messages_ticker;
+
 // Predefined for use in main()
 void send_etc_CAN_messages();
 void send_sme_CAN_messages();
@@ -18,7 +21,8 @@ int main() {
         at 20hz (20 messages / second)
     */
 
-
+    send_etc_CAN_messages_ticker.attach(&send_etc_CAN_messages, 50ms);
+    send_sme_CAN_messages_ticker.attach(&send_sme_CAN_messages, 50ms);
 
     // No need to edit this while loop
     while (true) {
