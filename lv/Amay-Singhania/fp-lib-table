@@ -1,5 +1,5 @@
 (fp_lib_table
 	(version 7)
 	(lib (name "formula_slug_footprint_library") (type "KiCad") (uri "${KIPRJMOD}/../fs-components/formula_slug_footprint_library.pretty/") (options "") (descr ""))
-	(lib (name "StrainGuage") (type "KiCad") (uri "${KIPRJMOD}/StrainGuage.pretty") (options "") (descr ""))
+	(lib (name "StrainGauge") (type "KiCad") (uri "${KIPRJMOD}/StrainGauge.pretty") (options "") (descr ""))
 )
