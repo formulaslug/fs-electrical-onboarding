@@ -50,13 +50,15 @@ void ETCController::update_state() {
    pin1_voltage = pin1.read() * APPS1_MAX_VOLTAGE;
    pin2_voltage = pin2.read() * APPS2_MAX_VOLTAGE;
 
-   float pos1 = (pin1_voltage - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE);
-   float pos2 = (pin2_voltage - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE);
+   if (in_range(pin1_voltage, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) && in_range(pin2_voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE)) {
 
-   float avg_volt = (pos1 + pos2) / 2.0;
+    pos1 = clamp((pin1_voltage - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE));
+    pos2 = clamp((pin2_voltage - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE));
 
-   calculated_torque = avg_volt * MAX_TORQUE;
+    float avg_volt = (pos1 + pos2) / 2.0;
 
+    calculated_torque = avg_volt * MAX_TORQUE;
+   }
     /*
         Finish the step listed above.
     */
@@ -74,6 +76,21 @@ void ETCController::update_implausibilities() {
         Start of implaus logic checking.
     */
 
+    /*
+    Timer my_Timer;
+    while ((abs(pos1 - pos2) > 0.1)) {
+        my_Timer.start();
+        int64_t duration_ms = my_Timer.elapsed_time().count() / 1000;
+
+        if (duration_ms > 100) {
+            printf("Implaus detected");
+        }
+    }
+
+    printf("No implaus detected.\n");
+    my_Timer.stop();
+    my_Timer.reset();
+    */
 
 
     /*
