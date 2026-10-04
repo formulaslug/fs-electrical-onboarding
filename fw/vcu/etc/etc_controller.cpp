@@ -2,6 +2,8 @@
 // Created by Jackson Pinsonneault on 3/24/26.
 //
 // Adding something to Test Git Committ :)
+// Adding something else to ensure everything is fine!
+
 
 #include "etc_controller.h"
 
