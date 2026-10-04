@@ -18,7 +18,7 @@ ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) {}
 float ETCController::clamp(float value) {
     if( value < 0.0){
         return 0.0;
-    }else if( value > 1.0{
+    }else if( value > 1.0){
         return 1.0;
     }else{
         return value;

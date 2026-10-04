@@ -11,7 +11,7 @@ class ETCController {
 public:
 
     /*
-        Start of public variables
+        Start of public variables\
     */
 
 
