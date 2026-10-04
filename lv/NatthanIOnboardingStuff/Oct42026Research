@@ -1,0 +1,14 @@
+This is kind of just research for me to understand how the BSPD circuit works cause I wanna know how it works
+
+The BSPD circuit(Brake system plausibility device) uses a brake pressure sensors and current sensor in the system.
+
+Both of these components use "transducers" which are apparently devices that converts energy from one form to another. For example, a physical input like pressure from pressing down on the Brakes will turn into an electrical signal.
+
+The brake pressure sensor are "pressure transducers" that operate between -20 and 135+ degrees C(in Fahrenheit that's about -4 to 275 degrees), and the one linked in GitHub has a pressure range of 0-2000 PSI.
+
+The current sensor is also a transducer that measures both AC and DC currents. It converts the current it is measuring into an output signal that most systems can read. 
+
+Amplifiers are electronic components that uses a DC supply to increase the voltage, current, or both through power of an input signal. It uses transistors or Op-amps that are powered by a different external power source. Every amplifier will have input resistance, output resistance, and Gain(The measure of amplification).
+
+Op-Amps(operational amplifiers) are chips that can boost small electrical voltage signals. It has two inputs(inverting input and non-inverting input) and an output, as well as legs for a positive and negative power supply. The non-inverting input makes the output go up, and the inverting input makes the output go down. The amplifier will amplify the difference between the 2 input signals, through an equation around the lines of (Gain x (Vpos - Vneg)). Grounding either input will have the output being the connected input times Gain(It also depends on which input is grounded, the inverted input will have a negative amplified output that is inverted).
+
