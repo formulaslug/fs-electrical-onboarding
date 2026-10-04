@@ -1,0 +1,37 @@
+int = integer same as py
+double = py equivalent to float aka has decimal
+char = single character, works for strings
+bool = boolean, either true or false
+const = constant and is put before the type of variable such as const int. It makes it so that the variable can't be changed later in the program and is indicated as being all capitalized.
+Namespace = allows identical entities as long as the newspaces are different
+strings can contain numbers but they are not treated as numbers, but text
+typedef = allows you to create a new name for an existing type
+
+
+
+std::string name = "John"; // string aka objects that represent sequence of text
+std::cout << name; // prints John
+std::cout << "You are " << age << " years old."; // prints age in this sequence of text
+
+
+namespace first{
+    int x = 1;
+}
+std::cout << first::x;
+
+typedef std::string text_t;
+// text_t is now a new name for std::string
+int main() {
+    text_t name = "John";
+    std::cout << name << '\n';
+}
+
+#include <iostream>
+
+Arithmetic Operators:
+
+int students = 20;
+students += 5; // students = students + 5
+
+works the same way for -=, *=, /=, and %=
+
