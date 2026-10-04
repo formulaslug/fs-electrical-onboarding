@@ -1,4 +1,4 @@
-//
+// 
 // Created by Jackson Pinsonneault on 3/24/26.
 //
 
@@ -78,4 +78,11 @@ void ETCController::update_implausibilities() {
     */
 
     
+}
+
+int main() {
+    printf("Hello world!");
+
+    return 0;
+
 }
