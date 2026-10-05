@@ -11,7 +11,7 @@
 The sensors are very small and cheap, it has a microscopic membrane that will bend slightly as air pressure changes, and the chip converts that bend into an electrical reading.
 
 **Microcontroller** - A tiny computer on a single chip that reads sensors, makes decisions, and sends data. 
-On the car, microcontrollers collect sensor readings and send them to the telemtery system.
+On the car, microcontrollers collect sensor readings and send them to the telemetry system.
 
 **Printed Circuit Board (PCB)** - The flat board, which is usually green, holds electronic parts and connects them with copper traces. 
 Putting several sensors on the same PCB means mounting them on one board that's wired to one microcontroller
