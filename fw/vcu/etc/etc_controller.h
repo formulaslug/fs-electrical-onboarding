@@ -13,8 +13,12 @@ public:
     /*
         Start of public variables
     */
+    AnalogIn APPS1_in;
+    AnalogIn APPS2_in;
 
-
+    static float TARGET_TORQUE;
+    static bool T_4_2_4_ERROR;
+    static bool T_4_2_10_ERROR;
 
     /*
         End of public variables
@@ -52,7 +56,7 @@ private:
 
     static constexpr float PEDAL_DEADZONE_PERCENTAGE = 0.03;
 
-    static constexpr int16_t MAX_TORQUE = 32767 * 0.1; // Multiplied by 0.1 for controlled 
+    static constexpr int16_t MAX_TORQUE = 32767 * 0.1; // Multiplied by 0.1 for controlled
                                                        // motor torque during onboarding.
 
     float clamp(float value);

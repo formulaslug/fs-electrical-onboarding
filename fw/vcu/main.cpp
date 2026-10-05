@@ -2,7 +2,7 @@
 #include "mbed.h"
 #include <cstdio>
 
-ETCController etc{/* INSERT PIN NAMES FOR APPS 1 & 2 */};
+ETCController etc{PC_1, PC_2};
 
 CAN can{PB_8, PB_9, 500000};
 
@@ -29,13 +29,19 @@ int main() {
     return 0;
 }
 
+void send_error_CAN_messages(CANMessage message) {
+
+}
+
 /* 
     Must send the VCU_TPDO_STATUS CAN message with
     VCU_ETC_READY_TO_DRIVE & VCU_ETC_MOTOR_ENABLED
     set to 1, and VCU_ETC_IMPLAUS_APPS_OUT_OF_RANGE
     & VCU_ETC_IMPLAUS_APPS_DEVIATION properly added.
 */
-void send_etc_CAN_messages() {}
+void send_etc_CAN_messages() {
+    
+}
 
 /*
     Must send the SME_RPDO_Throttle_Demand CAN
