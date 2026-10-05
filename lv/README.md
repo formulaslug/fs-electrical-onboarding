@@ -43,7 +43,7 @@ your work/research. You can also propose literally anything else you'd like to d
 as an onboarding project.
 
 > [!CAUTION]
-> **Don't get overwhelmed. Come talk to me. I want to help you. This is supposed to be hard.**
+> **Don't get overwhelmed. Come talk to me. I want to help you. This is supposed to be hard. You're not supposed to do a good job.**
 
 ## Air pressure / temperature / humidity
 Our racecar has two main applications for aerometric sensors: monitoring the
@@ -65,15 +65,6 @@ recommend reading briefly about common sensor output interfaces (analog, I2C, SP
 so you can understand which are easiest to use with multiple of the same sensor.
 
 Identify some key parameters, and compile your questions/thoughts, and then **check in with me.**
-
-### Aero Element Validation Application
-Here is one output of a simulation run by the aerodynamics teams, for a version of the rear wing:
-
-![Aero Element Pressure Contour | 350](assets/aero_element.png)
-
-This is a 2D pressure map, relative to something close to STP (Standard Temperature Pressure). 
-Use the information represented in this image to determine the precision, resolution, and range 
-needed for this sensor.
 
 ## FPC suspension strain gauge
 We order our PCBs from [JLC](https://jlcpcb.com). JLC can also make something called
