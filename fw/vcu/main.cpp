@@ -10,6 +10,9 @@ CAN can{PB_8, PB_9, 500000};
 void send_etc_CAN_messages();
 void send_sme_CAN_messages(); //just makes them exist to compiler
 
+Ticker send_etc_CAN_messages_ticker;
+Ticker send_sme_CAN_messages_ticker;
+
 int main() {
     printf("Hello World!!\n");
 
@@ -17,6 +20,10 @@ int main() {
         Make send_CAN messages loop consistently
         at 20hz (20 messages / second)
     */
+   send_etc_CAN_messages_ticker.attach(&send_etc_CAN_messages, 20ms);
+   send_sme_CAN_messages_ticker.attach(&send_sme_CAN_messages, 20ms);
+
+
 
 
 

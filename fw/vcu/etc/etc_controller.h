@@ -33,7 +33,6 @@ private:
         Start of private variables
     */
 
-    
 
     /*
         End of private variables
