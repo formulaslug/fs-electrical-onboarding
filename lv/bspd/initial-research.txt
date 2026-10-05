@@ -74,4 +74,32 @@ USE RESISTORS TO SET UP INPUT THRESHOLD VOLTAGE
 Ohms law to calculate this
 
 
+Capacitors
+Charge storage device. Stores it when voltage is applied and releases when needed
+Creates an electric potential difference when voltage is applied
+APPLICATIONS
+Energy storage -> helps out when there’s fluctuations with the main power supply. This can be helpful to make sure things run smoothly
+Signal processing -> can block DC components and allow AC to pass through. Might be relevant for the current sensor in BSPD….
+Power supply -> can store excess energy and release it when needed
+
+
+Transistors
+Semiconductor device used to amplify or switch electronic signals/power
+Three terminals: base, collector, emiter
+Small currents at the base control larger currents flowing from collector to emiter
+Two big types
+Bipolar Junction Transistor (BJT) -> NPN and PNP
+Field-Effect Transistor (FET) -> OPERATES VIA VOLTAGE CONTROL, NOT CURRENT. INCLUDES MOSFET. Probs more relevant to BSPD
+USING MOSFET AS A SWITCH
+nMOS:
+When a voltage higher than the transistor’s threshold voltage (VTH) is applied between the gate and the source, a current can flow from the drain to the source, making the transistor work as a closed switch
+Needs a pull down resistor to deactivate the transistor otherwise the voltage won’t be “released” and the transistor will stay on. Just use a 10K resistor it doesnt rlly matter
+pMOS
+To turn the transistor on, the voltage from source to gate must be higher than the threshold voltage (VTH) of the transistor.
+
+
+
+
+Impedance
+
 
