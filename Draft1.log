@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: C:\Users\charl\OneDrive\Documents\GitHub\fs-electrical-onboarding\Draft1.net
-Start Time: Sat Oct  3 19:52:13 2026
+Start Time: Mon Oct  5 18:53:04 2026
 solver = Normal
 Maximum thread count: 12
 tnom = 27
@@ -10,7 +10,7 @@ Direct Newton iteration failed to find operating point.
 Starting Gmin stepping
 Gmin stepping succeeded in finding the operating point.
 
-Total elapsed time: 0.130 seconds.
+Total elapsed time: 0.094 seconds.
 Total iterations: 6408
 
 Files loaded:
