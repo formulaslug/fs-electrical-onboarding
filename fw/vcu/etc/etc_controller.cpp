@@ -9,11 +9,12 @@
 
 
 // Assign appropriate GPIO objects depending on pin parameters
-ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) {} // Constructor implementation
-    
+ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin)
+    : APPS_sensor_1(APPS1_pin) //Initialize AnalogIn Pin so we can read their voltages later when we need them
+    : APPS_sensor_2(APPS2_pin)
+{
 
-// APPS_pin1 = APPS1_pin; //Initialize Pins
-    // APPS_pin2 = APPS2_pin;
+}  
 
 
 

@@ -14,7 +14,7 @@ public:
         Start of public variables\
     */
 
-        
+
 
     /*
         End of public variables
@@ -32,8 +32,8 @@ private:
         Start of private variables
     */
 
-    PinName APPS_pin1;;
-    PinName APPS_pin2;
+    AnalogIn APPS_sensor_1;
+    AnalogIn APPS_sensor_2;
 
 
     
