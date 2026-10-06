@@ -34,4 +34,127 @@ int students = 20;
 students += 5; // students = students + 5
 
 works the same way for -=, *=, /=, and %=
+Arithmetic operators are resolved the same as PEMDAS
+
+Type Conversion:
+implicit conversion: when a value of one type is automatically converted to another
+explicit conversion: when a value of one type is manually converted using casting
+
+int x = 3.14;
+
+std::cout << x; // prints 3, because the decimal is truncated
+
+double x = (int) 3.14; // explicit conversion, x is now 3.0
+
+char x = 100; // implicit conversion, x is now 'd' because 100 is the ASCII value for 'd'
+
+std::cout << (char) 100; //explicit conversion, prints 'd'
+
+
+User Input:
+
+int main()
+{
+    std::string name;
+
+    std::cout << "What's your name?: ";
+    std::cin >> name;
+
+    std::cout <<"Hello, " << name << "!" << std::endl;
+
+    return 0;
+}
+
+std::cin is used for getting the user input, then we use cout to print out the input.
+
+Useful Math Functions:
+need to include <cmath> by writing #include <cmath> 
+int main() {
+
+    double x = 3;
+    double y = 4;
+    double z;
+
+    z = std::max(x, y); // z is now 4 because 4 is the maximum between the two numbers
+    z = std::min(x, y); // z is now 3 because 3 is the minimum between the two numbers
+    z = pow(2, 3); // z is now 8 because 2^3 = 8
+    z = sqrt(16); // z is now 4
+    z = abs(-5); // z is now 5 because abs() returns the absolute value of a number aka |-5|
+    z = ceil(3.14); // z is now 4 because ceil() rounds up to the nearest integer
+    z = floor(3.14); // z is now 3 because floor() rounds down to the nearest integer
+}
+
+If Statements:
+
+int main() {
+
+    int age;
+
+    std::cout << "How old are you?";
+    std::cin >> age;
+
+    if (age >= 18) {
+        std::cout << "Welcome to the site!";
+    } else if (age < 0 || age > 120) {
+        std::cout << "Please enter a valid age.";
+    } else {
+        std::cout << "Sorry, you must be 18 or older to enter.";
+    }
+}
+
+Switches:
+
+switches are used tocompare a variable to multiple values and execute different code based on the value.
+It makes it so that you don't have to write multiple if statements.
+Write default: in place of case to execute code if none of the cases match the variable.
+int main() {
+
+    int month;
+    std::cout << "Enter the month (1-12): ";
+    std::cin >> month;
+
+    switch(month) {
+        case 1:
+            std::cout << "January";
+            break;
+        case 2:
+            std::cout << "February";
+            break;
+        case 3:
+            std::cout << "March";
+            break;
+        default:
+            std::cout << "Invalid month";
+            break;
+    }
+}
+
+
+Logical Operators:
+&& = and operator and checks if 2 things are true
+|| = or operator and checks if at elast 1 is true
+! = not operator
+
+if (temp > 30 && temp <40) {
+    std::cout << "It's hot outside!";
+}
+
+While loops:
+
+int main() {
+    int count = 0;
+    while (count < 5) {
+        std::cout << count << std::endl;
+        count++;}
+    }
+
+
+For Loops:
+
+int main() {
+    for(int i = 1; i <= 5; i++) {
+        std::cout << i << std::endl;
+    }
+    return 0;
+}
 

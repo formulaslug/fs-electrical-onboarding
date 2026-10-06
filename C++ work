@@ -1,45 +1,55 @@
 #include <iostream>
 
-int main() {
+// int main() {
 
-    int x; // Declaration
-    x = 5;
+//     int x; // Declaration
+//     x = 5;
 
-    std::cout << x;
+//     std::cout << x;
 
-    double pi = 3.1415;
-    double temperature = 23.5;
-
-
-
-    return 0;
-}
-
-int main() {
-    const double PI = 3.1415;
-    double radius = 10;
-    double circumference = 2 * PI * radius;
-
-}
+//     double pi = 3.1415;
+//     double temperature = 23.5;
 
 
-namespace first{
-    int x = 1;
-}
-namespace second{
-    int x = 2;
-}
-int main() {
-    int x = 0;
+
+//     return 0;
+// }
+
+// int main() {
+//     const double PI = 3.1415;
+//     double radius = 10;
+//     double circumference = 2 * PI * radius;
+
+// }
+
+
+// namespace first{
+//     int x = 1;
+// }
+// namespace second{
+//     int x = 2;
+// }
+// int main() {
+//     int x = 0;
     
-    std::cout << first::x;
+//     std::cout << first::x;
 
 
-}
+// }
 
-typedef std::string text_t;
+// typedef std::string text_t;
+
+// int main() {
+//     text_t name = "John";
+//     std::cout << name << '\n';
+// }
 
 int main() {
-    text_t name = "John";
-    std::cout << name << '\n';
+    std::string name;
+
+    std::cout << "What's your name? ";
+    std::cin >> name;
+
+    std::cout << "Hello, " << name << "!" << std::endl;
+
 }
