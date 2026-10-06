@@ -16,6 +16,15 @@
    2. Air push \= sound wave  
 4. Magnet moves / second is the hz
 
+## Key terms (vocabulary):
+1. driver: actual component that converts signal --> sound
+2. voice coil: the electromagnet
+3. impedance: measured in ohms, is the resistance for your speaker. less res --> more amplified (audio can become stinky poo quality)
+4. RMS (root mean square): how much power a speaker can take in a day
+5. Peak: Max burst of power a speaker can handle 
+6. sensitivity: efficiency rating of speaker, usually in db output (from 1m away) given 1 watt of energy
+7. clipping: when amplifier pushed past max capacity
+8. amplifier: amplifies bluetooth connection into actual electrical signals
 
 ### CSS-66668N (the example given)
 Power: 3-4 Watts
@@ -60,3 +69,8 @@ Frequency Range: 160 Hz \-\> 15 kHz
 2. very noisy (wind and stuff hitting car)
    - hard to hear whats being played in the speaker
    - i think all the low freq played by speaker will be hella unhearable
+      1. speaker probably needs to be loud enough because it can't seal
+
+### Solutions that i can think of
+1. vibration not doing anything lol
+2. 
