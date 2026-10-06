@@ -14,7 +14,7 @@ public:
         Start of public variables\
     */
 
-
+        
 
     /*
         End of public variables
@@ -23,7 +23,7 @@ public:
     /*
         Public method definitions, don't edit
     */
-    ETCController(PinName APPS1_pin, PinName APPS2_pin);
+    ETCController(PinName APPS1_pin, PinName APPS2_pin); // <------ Constructor
 
     void update_state();
 
@@ -31,6 +31,10 @@ private:
     /*
         Start of private variables
     */
+
+    PinName APPS_pin1;;
+    PinName APPS_pin2;
+
 
     
 

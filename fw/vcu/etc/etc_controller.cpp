@@ -9,7 +9,17 @@
 
 
 // Assign appropriate GPIO objects depending on pin parameters
-ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) {}
+ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) {} // Constructor implementation
+    
+
+// APPS_pin1 = APPS1_pin; //Initialize Pins
+    // APPS_pin2 = APPS2_pin;
+
+
+
+
+
+
 
 /* 
     Nice function to write which returns a wrapped version of the
@@ -24,6 +34,10 @@ float ETCController::clamp(float value) {
         return value;
     }
 }
+
+
+
+
 
 /*
     Simple function to write which returns a bool of true or false
