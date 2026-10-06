@@ -30,6 +30,7 @@
 * **Sensitivity:** Efficiency rating of speaker, usually in db output (from 1m away) given 1 watt of energy
 * **Clipping:** When amplifier pushed past max capacity
 * **Amplifier:** Amplifies bluetooth connection into actual electrical signals
+* **Self resonance:** 
 
 ---
 
@@ -64,7 +65,7 @@
    * **b. Temperature proofing:** CSS-66668N caps out at 55C (131F). Other speakers can cap out at liek 105C.
    * **c. Micro speaker:** Fit into small things like phones / earbuds.
    * **d. Medical grade audio:** Super precise frequency needed. Used for like machinery (idk maybe zap a patient with it).
-2. Bigger surface area = more air to push, better bass. Better bass helps overcome the background noise
+2. Bigger surface area = more air to push, better bass. Better bass makes audio sound cleaner (Does NOT cover background noise i think)
 3. Less weight, much easier packaging. 
 4. Diameter ranges from 35 --> 45mm. Thickness ranges from 6 --> 12mm
 ---
@@ -82,9 +83,28 @@
 
 ### Objective
 1. Find a speaker that fits the following criteria
-   - Slim enough to not smush driver's ears
-   - Able to efficiently play audio
-   - Plays the audio loud enough to overpower the background noise
+   - Slim enough to not smush driver's ears (6-8mm)
+   - Able to hear comms well (300hz -> 4,000 hz cus human speak thru that range)
+   - Plays the audio loud enough to overpower the background noise (2-3W and ~100 db at 100mm range)
+   - Cheapest if possible (might have to sacrifice price)
+   - Sends sound in one direction (to ears not into helmet and others)
 
 ### Candidates:
-1. 
+1. HPD-50N25PR00-32, https://www.digikey.com/en/products/detail/peerless-by-tymphany/HPD-50N25PR00-32/6211129
+   - Pros: 
+      1. Sensitivity is decent (78.4DB)
+      2. lots of frequencies can be played (60 --> 20kHz)
+   - Cons:
+      1. Big as hell (50mm)
+      2. Thick too (10mm thickness)
+      3. Lower power ceiling (10 mW)
+
+2. SP-3605, https://www.digikey.com/en/products/detail/soberton-inc/SP-3605/6562949?s=N4IgTCBcDaICwGYEFoCMqCsAGZA5AIiALoC%2BQA
+   - Pros:
+      1. 300 --> 5kHz, perfectly ranged for voice
+      2. Very small: (36mm dia + 5mm height)
+   - Cons: 
+      1. 1W power, 1.5 peak (kinda low)
+
+### Final Verdict:
+idk
