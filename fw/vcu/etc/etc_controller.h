@@ -32,8 +32,8 @@ private:
         Start of private variables
     */
 
-    AnalogIn APPS_sensor_1;
-    AnalogIn APPS_sensor_2;
+    AnalogIn APPS_sensor_1; // Initialize AnalogIn Pin so we can read their voltages later when we need them
+    AnalogIn APPS_sensor_2; // Initialize AnalogIn Pin so we can read their voltages later when we need them
 
 
     
@@ -48,8 +48,8 @@ private:
         !! should always be checked and updated if wrong.   !!
     */
 
-    static constexpr float APPS1_MIN_VOLTAGE = 0.396;
-    static constexpr float APPS1_MAX_VOLTAGE = 1.086f;
+    static constexpr float APPS1_MIN_VOLTAGE = 0.396; //Min percentage volatage kind of
+    static constexpr float APPS1_MAX_VOLTAGE = 1.086f; //Max percentage voltage kind of
 
     static constexpr float APPS2_MIN_VOLTAGE = 0.439f;
     static constexpr float APPS2_MAX_VOLTAGE = 1.133f;
