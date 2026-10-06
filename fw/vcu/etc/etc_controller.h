@@ -24,7 +24,7 @@ public:
     /*
         Public method definitions, don't edit
     */
-    ETCController(PinName APPS1_pin, PinName APPS2_pin); //constructor
+    ETCController(PinName APPS1_pin, PinName APPS2_pin) {}; //constructor
 
     void update_state();
 
@@ -32,7 +32,15 @@ private:
     /*
         Start of private variables
     */
+   //input variables
+    float APPS1_voltage;
+    float APPS2_voltage;
 
+    //implaus variables
+    bool faulting;
+    bool implaus_apps_out_of_range;
+    bool implaus_apps_deviation;    
+    bool implaus_timer_count;
 
     /*
         End of private variables

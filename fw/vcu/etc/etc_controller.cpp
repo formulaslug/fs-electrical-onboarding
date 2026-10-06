@@ -5,7 +5,7 @@
 #include "etc_controller.h"
 
 // Assign appropriate GPIO objects depending on pin parameters
-ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) {}
+ETCController::ETCController(PinName PC1, PinName PC2) {}
 
 /* 
     Nice function to write which returns a wrapped version of the
@@ -39,6 +39,8 @@ void ETCController::update_state() {
     */
 
     //if not faulting, calculate torque and send command
+    if (!gen_faulting) {
+    }
 
 
 
@@ -58,7 +60,22 @@ void ETCController::update_implausibilities() {
     /*
         Start of implaus logic checking.
     */
+   if (APPS1_voltage == APPS2_voltage) {
+    implaus = true;
+    is_timing = true;
+   }  // fault if values are equal
 
+   if (in_range(APPS1_voltage, APPS1_MIN_VOLTAGE,    APPS1_MAX_VOLTAGE) == false or in_range(APPS2_voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE) == false) {
+    implaus = true;
+    is_timing = true;
+   } //fault if values are outside range
+
+   if (abs(APPS1_voltage - APPS2_voltage) > 0.1) {
+    gen_implaus = true;
+    is_timing = true;
+   } //fault if values are too far apart
+
+   if (implaus) {} //start timer if implaus is true, if timer reaches 100ms, fault then read fault type and print message to console
 
     //cross check APPS1 with APPS2
     //check pedal positions pre-offset calculations; pre-offset values should not match
@@ -71,13 +88,17 @@ void ETCController::update_implausibilities() {
         End of implaus logic checking.
     */
 
+
     /*
         Check how long each implaus has been active for and
         update the actual implaus result if it's been active 
         for too long.
     */
+   if (is_timing) {
+    
+   }
+      
 
     //if values have been implausible for longer than 100ms, trigger fault
 
-    
 }

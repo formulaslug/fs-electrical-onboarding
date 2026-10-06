@@ -1,8 +1,10 @@
+#include "iostream"
 #include "etc_controller.h"
 #include "mbed.h"
 #include <cstdio>
 
-ETCController etc{PA1, PA2};
+ETCController etc{PC_1 , PC_2};
+
 
 CAN can{PB_8, PB_9, 500000};
 
@@ -42,11 +44,16 @@ int main() {
     set to 1, and VCU_ETC_IMPLAUS_APPS_OUT_OF_RANGE
     & VCU_ETC_IMPLAUS_APPS_DEVIATION properly added.
 */
-void send_etc_CAN_messages() {} //add functionality
+void send_etc_CAN_messages() {
+    std::cout << "Sending ETC CAN messages..." << std::endl;
+
+} //add functionality
 
 /*
     Must send the SME_RPDO_Throttle_Demand CAN
     message with SME_THROTL_TorqueDemand set to the
     torque demand determined by the ETC.
 */
-void send_sme_CAN_messages() {}
+void send_sme_CAN_messages() {
+    std::cout << "Sending SME CAN messages..." << std::endl;
+}
