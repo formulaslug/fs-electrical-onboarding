@@ -1,0 +1,132 @@
+Ideas:
+
+Make a budget sheet as well, organize things from cheap to expensive
+Write really good notes, keep things organized and readable
+Identify the WHY behind applications: how and why do we monitor the cooling of the battery?
+Make a tradeoffs page for op amps
+
+QUESTIONS:
+What is the purpose behind BSPD?
+What are the main components of BSPD?
+What is the logic behind BSPD?
+Are we working with AC or DC current?
+
+Building a Formula Car: BSPD Part 1 
+
+
+Definitions for words I do not know
+
+
+
+A voltage amplifying device that performs various operations like addition, subtraction, integration, etc.. It’s an IC!!!
+You can have voltage- feedback op amp or current-feedback op amp.
+
+See Op Amp Research
+BSPD (Brake System Plausibility Device)
+
+
+Comparator
+
+
+LVMS (Low Voltage Master Switch)
+A single switch that controls the low voltage power supply to the car’s systems, ideally eliminates dependence on LV battery
+Actuator
+Something that turns energy into physical movement (in our case it can take electrical current and turn it into mechanical output to push, pull, lift, etc.)
+Off Set Voltage
+
+
+Input bias Current
+Although in theory, there's no current going into an op amp, in reality, there is a very teeny tiny current going in that can complicate things
+Slew rate
+Describes how voltage cannot change instantaneously and gradually works its way up or down. This can impact delays and time, especially if you’re working with AC currents because those need to change really really quickly.
+“Feedback” (for circuits)
+The ability of the output to be able to influence the input
+Throttle
+
+
+About BSPD:
+Non programmable circuit that opens shutdown circuit when u brake too hard and theres crazy stuff happening with the motor
+Shutdown circuit stays open until BSPD resets itself if everything is chill for 10 seconds
+If weird stuff happens for more than 500 ms (braking, voltage, current issues), shutdown circuit MUST open -> keeps everything and everyone safe
+BSPD must be supplied from LVMS
+
+
+Op Amps (Operational Amplifier)
+
+ Types of op-amps:
+A differential amplifier, which is a circuit that amplifies the difference between two signals
+The instrumentation amplifier, which is usually built from three op-amps and helps amplify the output of a transducer (consisting of measured physical quantities).
+The isolation amplifier, which is like an instrumentation amplifier, but having tolerance to common-mode voltages (that destroy an ordinary op-amp).
+Side note: heard about creepage distance and isolating HV from LV in the PE meeting…maybe this can be used for that???
+A negative-feedback amplifier, which is usually built from one or more op-amps and a resistive feedback network.
+Power amplifiers to amplify small signals received from an input source such as microphone or antenna.
+
+COMPARATOR OP AMP: compares 2 input voltages and outputs a high or low voltage depending on which one is higher
+Comparator - Operational Amplifier | Basic Circuits #16 | Electronics Tutorials 
+IDEA: use this maybe to compare actual voltage to threshold voltage, which determines what state we are currently in. If the actual voltage is ABOVE threshold, shutdown circuit is activated. If not, BSPD does nothing or it resets. Maybe I can use two separate op amps for this - one to analyze voltage from the brakes and the other to analyze current from the motor. Logic gates could maybe be used???? 
+This will turn our analog input into digital output
+
+DRAWBACKS TO COMPARATOR
+Because there’s no feedback loop, the circuit becomes vulnerable to external influences. If your voltage is close to the threshold voltage, your output can fluctuate a lot and go kinda crazy
+FIND A COMPARATOR WITH A FAST RESPONSE TIME THAT CAN SHOOT FROM 0 TO 1 QUICKLY
+Better for circuit stability
+USE RESISTORS TO SET UP INPUT THRESHOLD VOLTAGE
+Ohms law to calculate this
+
+
+Capacitors
+Charge storage device. Stores it when voltage is applied and releases when needed
+Creates an electric potential difference when voltage is applied
+APPLICATIONS
+Energy storage -> helps out when there’s fluctuations with the main power supply. This can be helpful to make sure things run smoothly
+Signal processing -> can block DC components and allow AC to pass through. Might be relevant for the current sensor in BSPD….
+Power supply -> can store excess energy and release it when needed
+
+
+Transistors
+Semiconductor device used to amplify or switch electronic signals/power
+Three terminals: base, collector, emiter
+Small currents at the base control larger currents flowing from collector to emiter
+Two big types
+Bipolar Junction Transistor (BJT) -> NPN and PNP
+Field-Effect Transistor (FET) -> OPERATES VIA VOLTAGE CONTROL, NOT CURRENT. INCLUDES MOSFET. Probs more relevant to BSPD
+USING MOSFET AS A SWITCH
+nMOS:
+When a voltage higher than the transistor’s threshold voltage (VTH) is applied between the gate and the source, a current can flow from the drain to the source, making the transistor work as a closed switch
+Needs a pull down resistor to deactivate the transistor otherwise the voltage won’t be “released” and the transistor will stay on. Just use a 10K resistor it doesnt rlly matter
+pMOS
+To turn the transistor on, the voltage from source to gate must be higher than the threshold voltage (VTH) of the transistor.
+
+
+Types of Comparators I can use:
+SAR ADC -> to convert analog to digital. reduces the noise (possibly from the motor) and makes things easier to work with.
+
+
+
+MORE ABOUT THE SENSORS:
+HASS 600-S
+senses the current and outputs a voltage based on magnitude/direction
+BASELINE IS 2.5 VOLTS
+WHYYYYY might this need more than one op amp comparator?
+Possibly bc of current direction….bc we’re starting with 
+THRESHOLD FOR THIS
+“Tractive system current is at a level where 5 kW of electrical power in the DCcircuit is delivered at nominal voltage”
+P = vi -> P = 5kW, V = ???, 
+
+
+555 timer/chip
+Must be in monostable mode: 
+T = 1.1 x R x C -> i need t to equal 0.1. Assuming we keep C = 0.91uF, R = 1M
+Pin 4 resets time when it connects to ground. If implausibility lasts less than 0.1sec, then i want it to reset -> how do i do this??????
+Connect pin 5 to ground via 0.01f capacitor to prevent error with timing
+Pin 6 turns off output when voltage supplied is ⅔ of VCC
+NOTE: TRIGGER PIN ONLY ACCEPTS LOW. SO I HAVE TO INVERT THE AND PIN BEFORE I FEED IT TO TRIGGER
+HOW IT WORKS:
+Comparator compares threshold voltage (on non inverting) to ⅔ VCC (inverting). Output for this becomes R value
+Comparator compares trigger voltage (on inverting) to ⅓ VCC (non inverting). Output for this becomes S value
+The flip flop circuit does some wacky stuff :/. See truth table below. “Memory” just means that the previous state is maintained (aka nothing changes). DO NOT HAVE BOTH YOUR INPUTS BE ONE. 
+Even though we pull from Qnot, the ACTUAL OUTPUT IS THE SAME AS Q
+Basically, when the button is flipped, the capacitor powers up to a certain level and then discharges itself and puts everything back to its original state.
+TIP: use a capacitor on the control pin to prevent noise
+
+
