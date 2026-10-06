@@ -1,7 +1,0 @@
-TO DO!!!
-10/3:
-- change OR to AND to satisfy conditions
-- modify threshold values
-consider using a chain of op amps for current sensor rather than just one b/c voltage output is weird
-- research transistors and capacitors, especially for inciting 100ms delay. 555 timer is worth considering but may not work bc of analog weirdness idk idk
-- research types of comparators to use, trade offs and what could be most efficient. needs to go from 0/1 QUICKLY
