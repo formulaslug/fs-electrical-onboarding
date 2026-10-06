@@ -60,17 +60,17 @@ void ETCController::update_implausibilities() {
     /*
         Start of implaus logic checking.
     */
-   if (APPS1_voltage == APPS2_voltage) {
+   if (apps1_voltage == apps2_voltage) {
     implaus = true;
     is_timing = true;
    }  // fault if values are equal
 
-   if (in_range(APPS1_voltage, APPS1_MIN_VOLTAGE,    APPS1_MAX_VOLTAGE) == false or in_range(APPS2_voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE) == false) {
+   if (in_range(apps1_voltage, APPS1_MIN_VOLTAGE,    APPS1_MAX_VOLTAGE) == false or in_range(apps2_voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE) == false) {
     implaus = true;
     is_timing = true;
    } //fault if values are outside range
 
-   if (abs(APPS1_voltage - APPS2_voltage) > 0.1) {
+   if (abs(apps1_voltage - apps2_voltage) > 0.1) {
     gen_implaus = true;
     is_timing = true;
    } //fault if values are too far apart
@@ -95,7 +95,7 @@ void ETCController::update_implausibilities() {
         for too long.
     */
    if (is_timing) {
-    
+
    }
       
 

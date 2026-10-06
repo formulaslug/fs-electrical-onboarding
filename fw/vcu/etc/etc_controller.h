@@ -33,14 +33,23 @@ private:
         Start of private variables
     */
    //input variables
-    float APPS1_voltage;
-    float APPS2_voltage;
+    float apps1_voltage;
+    float apps2_voltage;
 
     //implaus variables
-    bool faulting;
-    bool implaus_apps_out_of_range;
-    bool implaus_apps_deviation;    
-    bool implaus_timer_count;
+        //fault types
+    bool apps1_out_of_range;
+    bool apps2_out_of_range;
+    bool pre_offset_apps_is_matching;
+    bool post_apps_offset_is_matching;
+
+    bool gen_faulting;
+    bool gen_implaus;
+    bool implaus;
+    bool is_timing; 
+    int implaus_timer_count;
+    
+
 
     /*
         End of private variables
