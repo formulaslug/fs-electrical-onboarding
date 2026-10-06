@@ -1006,15 +1006,15 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "ADC_CURRENT"
+	(text "Basic Op-Amp Circuit\n"
 		(exclude_from_sim no)
-		(at 35.306 29.464 0)
+		(at 34.544 21.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "138d82be-a160-4165-b024-5d2cb88e4374")
+		(uuid "8948676f-1eec-45d4-9cf4-75f9ac167467")
 	)
 	(junction
 		(at 38.1 40.64)
@@ -1052,6 +1052,16 @@
 		)
 		(uuid "7d4fd2fb-ee65-4e5e-ab46-0cfa522500ed")
 	)
+	(polyline
+		(pts
+			(xy 12.7 59.69) (xy 80.01 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87c81b9f-0dbc-4513-927f-dba40762516e")
+	)
 	(wire
 		(pts
 			(xy 52.07 35.56) (xy 52.07 29.21)
@@ -1061,6 +1071,16 @@
 			(type default)
 		)
 		(uuid "9ebbc1f8-da23-413b-b8bb-794d1472078f")
+	)
+	(polyline
+		(pts
+			(xy 80.01 12.7) (xy 80.01 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc7070ad-4b2b-4889-b182-b7ac5244fb39")
 	)
 	(wire
 		(pts

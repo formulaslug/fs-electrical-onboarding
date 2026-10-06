@@ -138,6 +138,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Use Copper Traces to act as an Resistor worth 350 ohms"
+		(exclude_from_sim no)
+		(at 48.26 35.052 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0623c197-dcba-42c3-ba49-e0346e6b9ab9")
+	)
 	(wire
 		(pts
 			(xy 35.56 30.48) (xy 52.07 30.48)
