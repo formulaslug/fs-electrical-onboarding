@@ -1,76 +1,77 @@
-### How a Speaker Works: 
-## Setup:
+# Electrical LV onboarding research project
+
+### 1. How a Speaker Works
+
+#### 1.1 Setup
 1. Permanent magnet in center  
 2. Electromagnet around it   
 3. Wire connecting to electromagnet  
 4. Cone attach to electromagnet  
 5. Dust cap to cover inner workings (center of cone)  
-   1. Cone is usually squishy now (membrane)
+   * Cone is usually squishy now (membrane)
 
-## Process:
+#### 1.2 Process
 1. Electric signal thru wire  
-   1. This signal is based on what audio u wanna play  
+   * This signal is based on what audio u wanna play  
 2. Since electromagnet you can control electromagnet poles & strength with electricity, use that to move the magnet  
 3. Magnet moves the cone, cone pushes air  
-   1. Im assuming that big cone means big air pushed  
-   2. Air push \= sound wave  
+   * Im assuming that big cone means big air pushed  
+   * Air push = sound wave  
 4. Magnet moves / second is the hz
 
-## Key terms (vocabulary):
-1. driver: actual component that converts signal --> sound
-2. voice coil: the electromagnet
-3. impedance: measured in ohms, is the resistance for your speaker. less res --> more amplified (audio can become stinky poo quality)
-4. RMS (root mean square): how much power a speaker can take in a day
-5. Peak: Max burst of power a speaker can handle 
-6. sensitivity: efficiency rating of speaker, usually in db output (from 1m away) given 1 watt of energy
-7. clipping: when amplifier pushed past max capacity
-8. amplifier: amplifies bluetooth connection into actual electrical signals
+---
 
-### CSS-66668N (the example given)
-Power: 3-4 Watts
-Dimensions: 66.00 mm x 66.00 mm
-Height: 29.00 mm
-Type: General Purpose
-Frequency Range: 160 Hz \-\> 15 kHz
+### 2. Key Terms (Vocabulary)
+* **Driver:** Actual component that converts signal --> sound
+* **Voice coil:** The electromagnet
+* **Impedance:** Measured in ohms, is the resistance for your speaker. less res --> more amplified (audio quality can degrade)
+* **RMS (root mean square):** How much power a speaker can take in a day
+* **Peak:** Max burst of power a speaker can handle 
+* **Sensitivity:** Efficiency rating of speaker, usually in db output (from 1m away) given 1 watt of energy
+* **Clipping:** When amplifier pushed past max capacity
+* **Amplifier:** Amplifies bluetooth connection into actual electrical signals
 
-## Pros: 
+---
+
+### 3. Component Example: CSS-66668N
+* **Power:** 3-4 Watts
+* **Dimensions:** 66.00 mm x 66.00 mm
+* **Height:** 29.00 mm
+* **Type:** General Purpose
+* **Frequency Range:** 160 Hz -> 15 kHz
+
+#### Pros
 1. Louder  
 2. Higher range of sounds
 
-## Cons: 
-1. Big as shit (will squish ears)  
-   1. Friction, heat, and pain
+#### Cons
+1. Very large (will squish ears)  
+   * Friction, heat, and pain
 
-## Questions:
-1. what does general purpose mean
-   - what other purposes are there besides from playing sound
-2. why is this speaker bigger than the other ones
-3. what happens when u get a smaller speaker like is it more efficient?
+---
 
-## Answers: 
-1. some other purposes could be: 
-   a. waterproofing / weather proofing
-      - gotta survive lots of dirt and dust
-      - use something like rubber seals
-         - might have to look for something with this, cus imagine if the driver sweats hella
-   b. temperature proofing
-      - CSS-66668N caps out at 55C (131F)
-      - other speakers can cap out at liek 105C
-   c. micro speaker
-      - fit into small things like phones / earbuds
-   d. medical grade audio
-      - super precise frequency needed
-      - used for like machinery (idk maybe zap a patient with it)
+### 4. Deep Dive: Questions & Answers
 
-### Challenges faced by a speaker in helmet
-1. vibration
-   - might distort audio?
-   - speaker might come loose or something
-2. very noisy (wind and stuff hitting car)
-   - hard to hear whats being played in the speaker
-   - i think all the low freq played by speaker will be hella unhearable
-      1. speaker probably needs to be loud enough because it can't seal
+#### Questions
+1. What does general purpose mean? What other purposes are there besides from playing sound?
+2. Why is this speaker bigger than the other ones?
+3. What happens when u get a smaller speaker like is it more efficient?
 
-### Solutions that i can think of
-1. vibration not doing anything lol
+#### Answers
+1. Some other purposes could be: 
+   * **a. Waterproofing / weather proofing:** Gotta survive lots of dirt and dust. Use something like rubber seals. (Might have to look for something with this, cus imagine if the driver sweats hella).
+   * **b. Temperature proofing:** CSS-66668N caps out at 55C (131F). Other speakers can cap out at liek 105C.
+   * **c. Micro speaker:** Fit into small things like phones / earbuds.
+   * **d. Medical grade audio:** Super precise frequency needed. Used for like machinery (idk maybe zap a patient with it).
+
+---
+
+### 5. Application: Challenges & Solutions
+
+#### Challenges Faced by a Speaker in Helmet
+1. **Vibration:** Might distort audio? Speaker might come loose or something.
+2. **Very Noisy (wind and stuff hitting car):** Hard to hear whats being played in the speaker. I think all the low freq played by speaker will be hella unhearable because the speaker probably needs to be loud enough because it can't seal.
+
+#### Solutions That I Can Think Of
+1. Vibration not doing anything lol
 2. 
