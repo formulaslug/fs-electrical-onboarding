@@ -4,7 +4,7 @@
 
     - alright... wrote clamp() and in_range() okay
     - now trying to figure out how to write the constructor for ETC_Controller class
-        - want to understand the class and the use of the object made from that class so i can write informedly (assuming that's a word)
+        - want to understand the class and the use of the objects made from that class so i can write informedly (assuming that's a word)
     - i already found the PIN names from the kicad schematic
         - APPS_1 -- ADC1_IN11
         - APPS_2 -- ADC1_IN12
