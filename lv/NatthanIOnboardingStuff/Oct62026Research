@@ -1,0 +1,8 @@
+Ok this is research on an Op-Amp Comparator(i just realized this is like that thing in minecraft with redstone but real life lol). I'm probably gonna make the schematic tommorow or Wednesday cause im still sick af(yall can ignore these notes i just do them to do them)
+
+
+mabye come back to add to this
+
+
+An Operational Amplifier Comparator(or also called voltage comparator) is an open-looped circuit(meaning that the output does not invoke any action in the circuit) that compares an input voltage to a reference voltage and creates a binary output(0 or 1) that tells which of the 2 voltages are higher. Both of these voltages are analog signals, and the reference voltage signal at the other input leg is fixed.
+
