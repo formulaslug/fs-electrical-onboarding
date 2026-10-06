@@ -2,8 +2,8 @@
 #include "mbed.h"
 #include <cstdio>
 
-ETCController etc{PinName PC_1, PinName PC_2};
-
+ETCController etc{PC_1, PC_2};
+ 
 CAN can{PB_8, PB_9, 500000};
 
 Ticker send_etc_CAN_messages_ticker;
@@ -20,7 +20,6 @@ int main() {
         Make send_CAN messages loop consistently
         at 20hz (20 messages / second)
     */
-
     send_etc_CAN_messages_ticker.attach(&send_etc_CAN_messages, 50ms);
     send_sme_CAN_messages_ticker.attach(&send_sme_CAN_messages, 50ms);
 
@@ -62,8 +61,8 @@ void send_etc_CAN_messages() {
 */
 void send_sme_CAN_messages() {
     // 0-15 = SME_THROTL_TorqueDemand
-
     uint8_t message[8] = {0};
+
     message[0] |= etc.motor_torque_demand;
     message[1] |= (etc.motor_torque_demand >> 8);
 

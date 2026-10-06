@@ -19,6 +19,8 @@ public:
 
     int16_t motor_torque_demand = 0;
 
+    float apps_avg_position = 0;
+
     /*
         End of public variables
     */
@@ -36,7 +38,14 @@ private:
     */
 
     Timer implaus_timer;
+    int64_t implaus_duration_ms = 0;
 
+    float APPS1_pos = 0;
+    float APPS2_pos = 0;
+
+    AnalogIn APPS1_percent;
+    AnalogIn APPS2_percent;
+    
     /*
         End of private variables
     */

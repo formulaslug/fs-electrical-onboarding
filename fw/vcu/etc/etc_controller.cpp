@@ -6,8 +6,8 @@
 
 // Assign appropriate GPIO objects depending on pin parameters
 ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) {
-    AnalogIn APPS1_percent(APPS1_pin);
-    AnalogIn APPS2_percent(APPS2_pin);
+    APPS1_percent(APPS1_pin);
+    APPS2_percent(APPS2_pin);
 }
 
 /* 
@@ -52,13 +52,13 @@ void ETCController::update_state() {
     APPS1_pos = (APPS1_percent * 3.3 - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE);
     APPS2_pos = (APPS2_percent * 3.3 - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE);
 
-    effective_pos = (APPS1_pos + APPS2_pos) / 2;
+    apps_avg_position = (APPS1_pos + APPS2_pos) / 2;
 
-    if (effective_pos < PEDAL_DEADZONE_PERCENTAGE) {
-        effective_pos = 0;
+    if (apps_avg_position < PEDAL_DEADZONE_PERCENTAGE) {
+        apps_avg_position = 0;
     }
 
-    motor_torque_demand = effective_pos * MAX_TORQUE;
+    motor_torque_demand = apps_avg_position * MAX_TORQUE;
 
     /*
         Finish the step listed above.
@@ -97,11 +97,11 @@ void ETCController::update_implausibilities() {
         update the actual implaus result if it's been active 
         for too long.
     */
-    int64_t duration_ms implaus_duration = implaus_timer.elapsed_time().count() / 1000;
+    implaus_duration_ms = implaus_timer.elapsed_time().count() / 1000;
     if (implaus_deviation | implaus_out_of_range) {
-        if (!implaus_timer.running()) {
+        if (implaus_duration_ms == 0) {
             implaus_timer.start();
-        } else if (duration_ms > 100) {
+        } else if (implaus_duration_ms > 100) {
             motor_torque_demand = 0;
         }
     } else {
