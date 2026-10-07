@@ -65,8 +65,8 @@ void ETCController::update_state() {
         include your own pedal mapping to make it non linear!
     */
     
-    float APPS1_Volatge = APPS_sensor_1.read() * 3.3; //Read the percentage from 0.0 to 1.0 -> convert it to a voltage
-    float APPS2_Volatge = APPS_sensor_2.read() * 3.3;
+    APPS1_Volatge = APPS_sensor_1.read() * 3.3; //Read the percentage from 0.0 to 1.0 -> convert it to a voltage
+    APPS2_Volatge = APPS_sensor_2.read() * 3.3;
 
     //Now determine the pedal postions
 
@@ -78,12 +78,12 @@ void ETCController::update_state() {
     float APPS2_Pedal_Postion = APPS2_Voltage/ (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE  ); //Determine Pedal Position Percentage
 
     //Clamp Pedal position percentages to be from 0% to 100%, i.e. 0.0 to 1.0
-    float Clamped_APPS1_Pedal_Position = clamp( APPS1_Pedal_Postion - PEDAL_DEADZONE_PERCENTAGE/(1.0 - PEDAL_DEADZONE_PERCENTAGE));// Subtract by DeadZone percentage to adjust to our "new" 0% 
-    float Clamped_APPS2_Pedal_Position = clamp( APPS2_Pedal_Postion - PEDAL_DEADZONE_PERCENTAGE/(1.0 - PEDAL_DEADZONE_PERCENTAGE)); // Then divide by 1-PEDAL_DEADZONE_PERCENTAGE to get our "new" 100% pedal position
+    Clamped_APPS1_Pedal_Position = clamp( APPS1_Pedal_Postion - PEDAL_DEADZONE_PERCENTAGE/(1.0 - PEDAL_DEADZONE_PERCENTAGE));// Subtract by DeadZone percentage to adjust to our "new" 0% 
+    Clamped_APPS2_Pedal_Position = clamp( APPS2_Pedal_Postion - PEDAL_DEADZONE_PERCENTAGE/(1.0 - PEDAL_DEADZONE_PERCENTAGE)); // Then divide by 1-PEDAL_DEADZONE_PERCENTAGE to get our "new" 100% pedal position
 
 
     //Calculate a motor torque demanad
-    float Motor_Torque_Demand = (Clamped_APPS1_Pedal_Postion + Clamped_APPS2_Pedal_Postion) / 2.0f;
+    Motor_Torque_Demand = (Clamped_APPS1_Pedal_Postion + Clamped_APPS2_Pedal_Postion) / 2.0f;
 
 
         
@@ -105,7 +105,8 @@ void ETCController::update_implausibilities() {
         Start of implaus logic checking.
     */
     
-
+    //Check if two pedal postions are within 10%, if not turn off Motor
+    //Then time for 100msec and if problem persists, stop power
 
     /*
         End of implaus logic checking.

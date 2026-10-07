@@ -14,6 +14,9 @@ public:
         Start of public variables\
     */
 
+    
+    
+
 
 
     /*
@@ -34,9 +37,17 @@ private:
 
     AnalogIn APPS_sensor_1; // Initialize AnalogIn Pin so we can read their voltages later when we need them
     AnalogIn APPS_sensor_2; // Initialize AnalogIn Pin so we can read their voltages later when we need them
-
-
     
+    float APPS1_Volatge; // Voltage from APPS1
+    float APPS2_Volatge;// Volatage from APPS2
+
+
+
+    float Clamped_APPS1_Pedal_Position;
+    float Clamped_APPS2_Pedal_Position;
+
+    float Motor_Torque_Demand;
+
 
     /*
         End of private variables
