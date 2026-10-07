@@ -13,6 +13,9 @@ public:
     /*
         Start of public variables
     */
+    int16_t torque_demand = 0;
+    bool apps_implausibility = false;
+    bool out_of_range_implausibility = false;
 
 
 
@@ -31,7 +34,13 @@ private:
     /*
         Start of private variables
     */
-
+    AnalogIn apps1;
+    AnalogIn apps2;
+    Timer apps_mismatch_timer;
+    Timer apps_range_timer;
+    bool apps_mismatch_running = false;
+    bool apps_range_running = false;
+    float apps1_pos = 0, apps2_pos = 0;
     
 
     /*
