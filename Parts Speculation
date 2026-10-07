@@ -1,0 +1,18 @@
+Pretty simple, just recording the parts that I'm considering.
+Buck IC:
+1 - ADP2302ARDZ-5.0-R7
+  https://www.digikey.com/en/products/detail/analog-devices-inc/ADP2302ARDZ-5-0-R7/2606527
+  - 5V, 2A output
+  - 700 kHz switching frequency 
+  - good price, has a list of suggested inductors and other parts(sweet)
+  - maybe on the big side? need to double check
+2 - LM22676TJ-5.0/NOPB
+  https://www.digikey.com/en/products/detail/texas-instruments/LM22676TJ-5-0-NOPB/1951968
+  - 5V, 3A(more power baby)
+  - 500 kHz switching frequency
+  - a little more expensive
+  - primarily an alternative if I want to try experimenting with more current, lower switching freq, etc.
+    - #1 buck IC is the rogue, #2 is tank
+
+Inductors:
+in progress
