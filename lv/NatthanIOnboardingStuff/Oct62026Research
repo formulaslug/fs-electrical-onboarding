@@ -8,3 +8,5 @@ Ok so an Op-Amp amplifies the difference between the 2 outputs put simply. If no
 
 
 Ok lowkey this stuff is cool I can now understand how a 555 Timer works cause my digital eelctronics teacher was like you dont need to understand yet but I wanna know so ig now I know(yall can ignore this)
+
+K so from what I'm seeing(at least according to this diagram that I found the Op-Amp comparator uses resistors, the Op-amp, and requires both a DC and AC power source(since Op-Amp needs an analog input i think). I got math discussion and lotta assignments and onboarding stuff for other stuff so ill put explanation for op-amp comparator and a custom schematic for it tommorow(this is a reminder note thing)
