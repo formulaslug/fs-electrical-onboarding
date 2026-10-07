@@ -61,7 +61,7 @@
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
           "min_clearance": 0.508,
-          "min_island_area": 10.0,
+          "min_island_area": 9.99999999996,
           "min_thickness": 0.25,
           "pad_connection": 1,
           "remove_islands": 0,
@@ -160,7 +160,7 @@
         "min_text_thickness": 0.1524,
         "min_through_hole_diameter": 0.254,
         "min_track_width": 0.127,
-        "min_via_annular_width": 0.254,
+        "min_via_annular_width": 0.127,
         "min_via_diameter": 0.508,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
@@ -177,7 +177,7 @@
       "teardrop_parameters": [
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 1,
+          "td_curve_segcount": 0,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.032,
@@ -188,7 +188,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 1,
+          "td_curve_segcount": 0,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.032,
@@ -199,7 +199,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 1,
+          "td_curve_segcount": 0,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.032,
@@ -866,7 +866,7 @@
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
       }
     ],
-    "used_designators": "#FLG1-4,R1-4,J1-2,U1,C1-7,L1,Cboost1,Cdecoupling1,Cfeedfoward1,Cinput1,Cout1-2,#PWR1-6",
+    "used_designators": "#FLG1-6,R1-4,J1-2,U1,C1-7,L1,Cboost1,Cdecoupling1,Cfeedfoward1,Cinput1,Cout1-2,#PWR1-6",
     "variants": []
   },
   "sheets": [
