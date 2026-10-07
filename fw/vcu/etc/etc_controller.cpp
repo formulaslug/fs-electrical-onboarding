@@ -22,7 +22,7 @@ float ETCController::clamp(float value) {
     depending on whether low <= value <= high is true.
 */
 bool ETCController::in_range(float value, float low, float high) {}
-
+    return value >= low && value <= high;
 /*
     Complicated method with the goal of refreshing voltages,
     pedal positions, implausibilities, and motor torque demand.
