@@ -3,4 +3,9 @@ types of faults
     apps1 or apps2 is outside range - done
     pre-offset pedal positions != equal - 
     pedal positions should not be changing quickly in opposite directions  - if this happens 10% diff check catches it
-    10% difference between post-offset pedal positions
+    10% difference between post-offset pedal positions  - kinda done need to add pedal offset calc.
+
+
+Percentage Difference =	
+|V1 - V2|/((V1 + V2)/2)
+× 100

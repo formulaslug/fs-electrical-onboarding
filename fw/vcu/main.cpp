@@ -45,7 +45,7 @@ int main() {
     & VCU_ETC_IMPLAUS_APPS_DEVIATION properly added.
 */
 void send_etc_CAN_messages() {
-    std::cout << "Sending ETC CAN messages..." << std::endl;
+    printf("Sending ETC CAN messages\n");
 
 } //add functionality
 
@@ -55,5 +55,5 @@ void send_etc_CAN_messages() {
     torque demand determined by the ETC.
 */
 void send_sme_CAN_messages() {
-    std::cout << "Sending SME CAN messages..." << std::endl;
+    printf("Sending SME CAN messages\n");
 }

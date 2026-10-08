@@ -94,7 +94,7 @@ void ETCController::update_implausibilities() {
    } //fault if apps2 is outside range
 
    //implaus 4
-   if (abs(apps1_voltage - apps2_voltage) > 0.1) {
+   if (2 * abs(apps1_voltage - apps2_voltage) / (apps1_voltage + apps2_voltage) > 0.1) {
     if (!implaus_4) {
             implaus4_timer.start();
         }
@@ -104,7 +104,18 @@ void ETCController::update_implausibilities() {
    } //fault if values are too far apart
 
    if (gen_implaus) {
-    int64_t implaus1_length  = implaus1_timer.elapsed_time().count();
+    int64_t implaus1_length  = implaus1_timer.elapsed_time().count(); //what happens if timer hasnt been started? does it return 0 or does it break?
+    int64_t implaus2_length  = implaus2_timer.elapsed_time().count();
+    int64_t implaus3_length  = implaus3_timer.elapsed_time().count();
+    int64_t implaus4_length  = implaus4_timer.elapsed_time().count();
+
+    if (implaus1_length >= 100 || implaus2_length >= 100 || implaus3_length >= 100 || implaus4_length >= 100) {
+        gen_faulting = true;
+        printf("Implaus 1 Timer: %lld\n", (long long)implaus1_length);
+        printf("Implaus 2 Timer: %lld\n", (long long)implaus2_length);
+        printf("Implaus 3 Timer: %lld\n", (long long)implaus3_length);
+        printf("Implaus 4 Timer: %lld\n", (long long)implaus4_length);
+    }
    } //start timer if implaus is true, if timer reaches 100ms, fault then read fault type and print message to console
 
     //cross check APPS1 with APPS2
