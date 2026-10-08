@@ -834,13 +834,13 @@
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
       }
     ],
-    "used_designators": "R1",
+    "used_designators": "R1-2,U1",
     "variants": []
   },
   "sheets": [
     [
       "e994741c-7c7d-4124-9d00-43b883baa61d",
-      ""
+      "buckconverter-vishaakmurali"
     ]
   ],
   "text_variables": {

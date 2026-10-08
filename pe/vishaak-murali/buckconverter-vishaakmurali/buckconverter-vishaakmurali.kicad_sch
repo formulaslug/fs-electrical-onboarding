@@ -14,14 +14,18 @@
 		(comment 3 "${COMMENT2}")
 	)
 	(lib_symbols
-		(symbol "Regulator_Switching:AP63205WU"
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -7.62 6.35 0)
+			(property "Reference" "J"
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -30,8 +34,8 @@
 					)
 				)
 			)
-			(property "Value" "AP63205WU"
-				(at 2.54 6.35 0)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -40,18 +44,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6"
-				(at 0 -22.86 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -62,7 +55,7 @@
 					)
 				)
 			)
-			(property "Description" "2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -73,7 +66,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "2A Buck DC/DC"
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -84,7 +77,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "TSOT?23*"
+			(property "ki_keywords" "connector"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -95,10 +88,21 @@
 					)
 				)
 			)
-			(symbol "AP63205WU_0_1"
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
 				(rectangle
-					(start -7.62 5.08)
-					(end 7.62 -5.08)
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -107,12 +111,32 @@
 						(type background)
 					)
 				)
-			)
-			(symbol "AP63205WU_1_1"
-				(pin input line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "FB"
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -127,10 +151,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "EN"
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -145,53 +169,136 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
-				(pin output line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "SW"
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -200,16 +307,16 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "BST"
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -398,42 +505,40 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
+		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 0.254)
+				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
+			(property "Reference" "R"
+				(at 2.032 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
+			(property "Value" "R"
+				(at 0 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
+				(at -1.778 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -454,7 +559,7 @@
 					)
 				)
 			)
-			(property "Description" "Unpolarized capacitor"
+			(property "Description" "Resistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -465,7 +570,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "cap capacitor"
+			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -476,7 +581,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "C_*"
+			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -487,25 +592,12 @@
 					)
 				)
 			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
 					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -513,10 +605,10 @@
 					)
 				)
 			)
-			(symbol "C_1_1"
+			(symbol "R_1_1"
 				(pin passive line
 					(at 0 3.81 270)
-					(length 2.794)
+					(length 1.27)
 					(name ""
 						(effects
 							(font
@@ -534,7 +626,7 @@
 				)
 				(pin passive line
 					(at 0 -3.81 90)
-					(length 2.794)
+					(length 1.27)
 					(name ""
 						(effects
 							(font
@@ -553,37 +645,58 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x02"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
+		(symbol "Regulator_Switching:TPS54202DDC"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 2.54 0)
+			(property "Reference" "U"
+				(at -7.62 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "Conn_01x02"
-				(at 0 -5.08 0)
+			(property "Value" "TPS54202DDC"
+				(at 0 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+				(at 1.27 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54202.pdf"
+				(at -7.62 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "2A, 4.5 to 28V Input, EMI Friendly integrated switch synchronous step-down regulator, pulse-skipping, SOT-23-6"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -594,7 +707,7 @@
 					)
 				)
 			)
-			(property "Datasheet" ""
+			(property "ki_keywords" "switching buck converter power-supply voltage regulator emi spread spectrum"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -605,7 +718,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -616,32 +729,10 @@
 					)
 				)
 			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x02_1_1"
+			(symbol "TPS54202DDC_0_1"
 				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -650,32 +741,12 @@
 						(type background)
 					)
 				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
+			)
+			(symbol "TPS54202DDC_1_1"
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -690,10 +761,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
+				(pin power_out line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "SW"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -701,6 +772,78 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "BOOT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -942,296 +1085,129 @@
 			(embedded_fonts no)
 		)
 	)
-	(symbol
-		(lib_id "Regulator_Switching:AP63205WU")
-		(at 124.46 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "59427fbd-41a7-4e91-b852-3f4746fb2708")
-		(property "Reference" "U1"
-			(at 116.84 106.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AP63205WU"
-			(at 127 106.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6"
-			(at 124.46 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf"
-			(at 124.46 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6"
-			(at 124.46 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c97d654f-3d8c-45b6-bc42-d62e6067bc2e")
-		)
-		(pin "2"
-			(uuid "1f3a5084-b3a7-436f-92a4-f3413fbeb559")
-		)
-		(pin "3"
-			(uuid "3534e593-ac0b-46b7-940c-a9e36327b2ae")
-		)
-		(pin "4"
-			(uuid "185ba530-2542-4f42-887c-1ca7da1e1581")
-		)
-		(pin "5"
-			(uuid "85aa2e7f-ef04-4c0c-89eb-b40e25ca2018")
-		)
-		(pin "6"
-			(uuid "8f5d22e9-16fb-4c5b-827d-53f4a769e50e")
-		)
-		(instances
-			(project "buckconverter-vishaakmurali"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
+	(junction
+		(at 138.43 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09875f97-4542-4cdc-87bd-d3e0a8f55168")
 	)
-	(symbol
-		(lib_id "Device:L")
-		(at 154.94 97.79 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "76f66fb2-aa69-4818-90c6-4c0e2e36f63a")
-		(property "Reference" "L1"
-			(at 154.94 99.06 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3.3uH"
-			(at 154.94 95.885 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_Bourns_SRR1260"
-			(at 154.94 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 154.94 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e987b727-3448-4225-9b8b-7239f5fcf084")
-		)
-		(pin "2"
-			(uuid "d70f9638-0198-4bc9-9b5b-9a2eae2e676f")
-		)
-		(instances
-			(project "buckconverter-vishaakmurali"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "L1")
-					(unit 1)
-				)
-			)
-		)
+	(junction
+		(at 69.85 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1598a454-806f-4307-b5d2-ce3396f19891")
+	)
+	(junction
+		(at 190.5 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b28faf5-9b94-4767-9a53-5c517663e21d")
+	)
+	(junction
+		(at 175.26 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c5c08f6-1396-427b-9c6d-4451f49d6b9f")
+	)
+	(junction
+		(at 175.26 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98198491-1a91-4440-8225-50904f85d956")
+	)
+	(junction
+		(at 95.25 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0916f32-28bd-4f0e-b7dc-c1020131424c")
+	)
+	(junction
+		(at 146.05 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dce107c7-517f-4cff-abe3-fa96b76810d6")
+	)
+	(junction
+		(at 95.25 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3d6189b-8e7b-45ef-b102-4ef2ff25a495")
+	)
+	(junction
+		(at 124.46 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f58b4966-b879-41e7-974e-de22a93eae15")
 	)
 	(wire
 		(pts
-			(xy 134.62 97.78999999999999) (xy 146.05 97.79)
+			(xy 138.43 87.63) (xy 138.43 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8acf136f-b73e-45b0-a39f-bd4c6764d315")
+		(uuid "1aa7a37f-e1be-4b68-9fa6-e9cc6df4220e")
 	)
 	(wire
 		(pts
-			(xy 146.05 97.79) (xy 151.13 97.79)
+			(xy 190.5 100.33) (xy 195.58 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "816126a9-b074-45dd-8d94-a7c6dfe09931")
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 142.24 87.63 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8de97300-6a68-47d8-9f64-69b8b4e4c57e")
-		(property "Reference" "C2"
-			(at 144.78 86.995 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 139.7 86.995 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 138.43 86.665 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 142.24 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3061f8fb-49e2-461a-8f5e-59141a2312e9")
-		)
-		(pin "2"
-			(uuid "09f543e0-d24c-4afc-a5b7-302790caf2ed")
-		)
-		(instances
-			(project "buckconverter-vishaakmurali"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "1c5559b6-8bba-48d3-84d9-0907786f9323")
 	)
 	(wire
 		(pts
-			(xy 134.62 100.33) (xy 138.43 100.33)
+			(xy 69.85 114.3) (xy 95.25 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7ebe8d2f-4849-4a08-bfd2-09cb9e423dae")
+		(uuid "34074eb9-dc2b-455c-bd38-1d6325399c5a")
 	)
 	(wire
 		(pts
-			(xy 138.43 100.33) (xy 138.43 87.63)
+			(xy 190.5 97.79) (xy 190.5 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "831522c4-3557-4f81-b889-4849097bcbdf")
+		(uuid "47e5affb-8c74-4c9f-b8b1-85f128215321")
+	)
+	(wire
+		(pts
+			(xy 158.75 97.79) (xy 175.26 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "488e69e4-2c75-44c0-a7e7-19be4cb0ef9b")
+	)
+	(wire
+		(pts
+			(xy 130.81 97.79) (xy 138.43 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dfff7b9-a7de-40c7-842f-d23c04b5cd63")
+	)
+	(wire
+		(pts
+			(xy 124.46 105.41) (xy 124.46 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6089ee79-a782-4039-a5cf-7c3db7bbc339")
 	)
 	(wire
 		(pts
@@ -1243,11 +1219,375 @@
 		)
 		(uuid "697a9cc1-734c-43fd-bb3a-034f290b0529")
 	)
-	(junction
-		(at 146.05 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dce107c7-517f-4cff-abe3-fa96b76810d6")
+	(wire
+		(pts
+			(xy 69.85 102.87) (xy 69.85 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b8ca5c1-a238-4a77-bb97-1b67c21944db")
+	)
+	(wire
+		(pts
+			(xy 95.25 105.41) (xy 95.25 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bbce4b1-1ec7-4e1d-b595-85f97b32c1c0")
+	)
+	(wire
+		(pts
+			(xy 95.25 114.3) (xy 124.46 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6caa0856-734c-4d82-acfb-07a28cd38851")
+	)
+	(wire
+		(pts
+			(xy 190.5 102.87) (xy 190.5 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dba79d1-5a46-449a-8fec-d22e12c37818")
+	)
+	(wire
+		(pts
+			(xy 124.46 114.3) (xy 175.26 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e230ec8-49cb-486c-ad7f-dfcf326c5723")
+	)
+	(wire
+		(pts
+			(xy 146.05 97.79) (xy 151.13 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "816126a9-b074-45dd-8d94-a7c6dfe09931")
+	)
+	(wire
+		(pts
+			(xy 124.46 119.38) (xy 124.46 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86675b00-1a72-489b-b6f9-c2427051488e")
+	)
+	(wire
+		(pts
+			(xy 69.85 100.33) (xy 69.85 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87d68e37-74a7-484f-9ef4-a6aaccec5da8")
+	)
+	(wire
+		(pts
+			(xy 124.46 105.41) (xy 120.65 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "888da59b-0585-451f-8013-9f45fc95989e")
+	)
+	(wire
+		(pts
+			(xy 175.26 114.3) (xy 190.5 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d245c58-6d46-4a6b-97a8-51e62f86dcbb")
+	)
+	(wire
+		(pts
+			(xy 175.26 105.41) (xy 175.26 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2a57091-6fb7-436a-9191-bfda4d1031c5")
+	)
+	(wire
+		(pts
+			(xy 95.25 97.79) (xy 104.14 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a861b0d6-dce2-4abb-b801-58b579cfda2a")
+	)
+	(wire
+		(pts
+			(xy 69.85 100.33) (xy 110.49 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3fb4539-5078-4088-a070-e5f0fae0d84f")
+	)
+	(wire
+		(pts
+			(xy 64.77 100.33) (xy 69.85 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc0c59aa-b618-4e4b-a9dd-7f01de15e0b8")
+	)
+	(wire
+		(pts
+			(xy 110.49 95.25) (xy 104.14 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d532bf51-a346-4d97-9213-cbb0a3b4bd36")
+	)
+	(wire
+		(pts
+			(xy 69.85 97.79) (xy 95.25 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d92b0702-3eb5-477d-af40-80a230231540")
+	)
+	(wire
+		(pts
+			(xy 175.26 97.79) (xy 190.5 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbbf0042-bcf4-4955-b7fe-73e44980004d")
+	)
+	(wire
+		(pts
+			(xy 138.43 97.79) (xy 146.05 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e96bac34-31f7-43e9-9151-ff853db058e8")
+	)
+	(wire
+		(pts
+			(xy 104.14 95.25) (xy 104.14 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec7d9e86-7339-41d1-8cde-a9ba376eaf1e")
+	)
+	(label "+5V"
+		(at 190.5 100.33 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "23dab3d5-ae26-4942-b3c3-823a8729c768")
+	)
+	(label "VIN"
+		(at 69.85 100.33 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9e704aab-c323-4676-8f71-b50dae73b353")
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 74.93 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "05f5d11a-d101-4d68-8293-83b7c6867bf0")
+		(property "Reference" "J1"
+			(at 74.93 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VIN_IN"
+			(at 74.93 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 74.93 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 74.93 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6e5aa877-c712-40ef-a4b9-1198b7f74da3")
+		)
+		(pin "2"
+			(uuid "680976e9-f8b4-49aa-b97d-05be7ab9fade")
+		)
+		(instances
+			(project "buckconverter-vishaakmurali"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 95.25 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2bdb86b3-96c0-4dd7-8b74-b7a5a3e7495c")
+		(property "Reference" "C1"
+			(at 95.885 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 95.885 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 96.215 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 95.25 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "72d074b1-57ca-4f6c-ba5d-2867e4b71229")
+		)
+		(pin "2"
+			(uuid "d1f20c03-1eab-45d9-80ec-1556d3314730")
+		)
+		(instances
+			(project "buckconverter-vishaakmurali"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -1325,6 +1665,207 @@
 			(project "buckconverter-vishaakmurali"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 64.77 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3f3a8425-1230-4bc3-baef-76b97c622203")
+		(property "Reference" "#PWR_FLG1"
+			(at 64.77 102.235 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 64.77 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 64.77 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "af733afa-301f-42aa-b8e7-5852bac79e49")
+		)
+		(instances
+			(project "buckconverter-vishaakmurali"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR_FLG1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 105.41 93.98 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "54b20d06-7d26-4b06-b2a9-cf014de55cf3")
+		(property "Reference" "R1"
+			(at 105.41 87.63 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 105.41 90.17 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 105.41 95.758 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 105.41 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 105.41 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 105.41 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 105.41 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 105.41 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e8dfd5f2-a481-485b-9462-24cb0e281d3a")
+		)
+		(pin "1"
+			(uuid "3b7731fb-3858-4e19-a86f-28b599f1e357")
+		)
+		(instances
+			(project "buckconverter-vishaakmurali"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -1409,39 +1950,9 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 158.75 97.79) (xy 175.26 97.78999999999999)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "488e69e4-2c75-44c0-a7e7-19be4cb0ef9b")
-	)
-	(wire
-		(pts
-			(xy 175.26 97.78999999999999) (xy 190.5 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbbf0042-bcf4-4955-b7fe-73e44980004d")
-	)
-	(wire
-		(pts
-			(xy 190.5 97.79) (xy 190.5 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "47e5affb-8c74-4c9f-b8b1-85f128215321")
-	)
 	(symbol
-		(lib_id "Device:C")
-		(at 95.25 101.6 0)
+		(lib_id "Device:R")
+		(at 130.81 86.36 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1449,31 +1960,30 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "2bdb86b3-96c0-4dd7-8b74-b7a5a3e7495c")
-		(property "Reference" "C1"
-			(at 95.885 104.14 0)
+		(fields_autoplaced yes)
+		(uuid "68826f27-fa1a-463e-add2-79d192481daf")
+		(property "Reference" "R2"
+			(at 130.81 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 95.885 99.06 0)
+		(property "Value" "13.3k"
+			(at 130.81 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 96.215 97.79 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 130.81 88.138 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1484,7 +1994,211 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 101.6 0)
+			(at 130.81 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 130.81 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 130.81 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 130.81 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 130.81 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 130.81 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "15b1703d-9518-4b25-9366-edba5f35a407")
+		)
+		(pin "2"
+			(uuid "02e45a99-3401-44e6-bfe1-834697603ef4")
+		)
+		(instances
+			(project "buckconverter-vishaakmurali"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 154.94 97.79 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "76f66fb2-aa69-4818-90c6-4c0e2e36f63a")
+		(property "Reference" "L1"
+			(at 154.94 99.06 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3uH"
+			(at 154.94 95.885 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_Bourns_SRR1260"
+			(at 154.94 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 154.94 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e987b727-3448-4225-9b8b-7239f5fcf084")
+		)
+		(pin "2"
+			(uuid "d70f9638-0198-4bc9-9b5b-9a2eae2e676f")
+		)
+		(instances
+			(project "buckconverter-vishaakmurali"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 142.24 87.63 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8de97300-6a68-47d8-9f64-69b8b4e4c57e")
+		(property "Reference" "C2"
+			(at 144.78 86.995 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 139.7 86.995 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 138.43 86.665 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1495,7 +2209,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 95.25 101.6 0)
+			(at 142.24 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1506,23 +2220,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "72d074b1-57ca-4f6c-ba5d-2867e4b71229")
+			(uuid "3061f8fb-49e2-461a-8f5e-59141a2312e9")
 		)
 		(pin "2"
-			(uuid "d1f20c03-1eab-45d9-80ec-1556d3314730")
+			(uuid "09f543e0-d24c-4afc-a5b7-302790caf2ed")
 		)
 		(instances
 			(project "buckconverter-vishaakmurali"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "C1")
+					(reference "C2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 74.93 100.33 0)
+		(lib_id "Regulator_Switching:TPS54202DDC")
+		(at 120.65 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1530,9 +2244,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "05f5d11a-d101-4d68-8293-83b7c6867bf0")
-		(property "Reference" "J1"
-			(at 74.93 102.87 0)
+		(fields_autoplaced yes)
+		(uuid "97cde371-8634-4dd4-9315-fa12b32dbe96")
+		(property "Reference" "U1"
+			(at 120.65 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1541,8 +2256,8 @@
 				)
 			)
 		)
-		(property "Value" "VIN_IN"
-			(at 74.93 95.25 0)
+		(property "Value" "TPS54202DDC"
+			(at 120.65 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1551,8 +2266,20 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 74.93 100.33 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 121.92 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54202.pdf"
+			(at 113.03 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1562,19 +2289,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 74.93 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 74.93 100.33 0)
+		(property "Description" "2A, 4.5 to 28V Input, EMI Friendly integrated switch synchronous step-down regulator, pulse-skipping, SOT-23-6"
+			(at 120.65 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1585,199 +2301,31 @@
 			)
 		)
 		(pin "1"
-			(uuid "6e5aa877-c712-40ef-a4b9-1198b7f74da3")
+			(uuid "2b7e3d1e-3f6c-4e61-99cb-29dbbfbcbe38")
+		)
+		(pin "4"
+			(uuid "7d14b0f5-3a2b-412b-8951-3c688932c53f")
 		)
 		(pin "2"
-			(uuid "680976e9-f8b4-49aa-b97d-05be7ab9fade")
+			(uuid "4a8c38ec-38b9-4131-bcde-326a49cc0099")
+		)
+		(pin "6"
+			(uuid "1c2c0474-4e90-4664-b04d-9022550f61b3")
+		)
+		(pin "3"
+			(uuid "23088625-ba50-44fa-856e-77d5d61e43b1")
+		)
+		(pin "5"
+			(uuid "4f5f21c1-8e21-4fb4-b9c7-08a02f191fd2")
 		)
 		(instances
 			(project "buckconverter-vishaakmurali"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "J1")
+					(reference "U1")
 					(unit 1)
 				)
 			)
 		)
-	)
-	(wire
-		(pts
-			(xy 69.85000000000001 100.33) (xy 69.85 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87d68e37-74a7-484f-9ef4-a6aaccec5da8")
-	)
-	(wire
-		(pts
-			(xy 69.85 97.79) (xy 95.25 97.78999999999999)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d92b0702-3eb5-477d-af40-80a230231540")
-	)
-	(wire
-		(pts
-			(xy 95.25 97.78999999999999) (xy 104.14 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a861b0d6-dce2-4abb-b801-58b579cfda2a")
-	)
-	(wire
-		(pts
-			(xy 104.14 97.79) (xy 114.3 97.78999999999999)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64bca053-c3e9-44ec-a661-803b6a820170")
-	)
-	(junction
-		(at 95.25 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e3d6189b-8e7b-45ef-b102-4ef2ff25a495")
-	)
-	(wire
-		(pts
-			(xy 114.3 102.87) (xy 104.14 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4f1e380-2c42-470f-a705-085abd84eb70")
-	)
-	(wire
-		(pts
-			(xy 104.14 102.87) (xy 104.14 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0862fb49-16ea-4596-962d-8311e7225d89")
-	)
-	(junction
-		(at 104.14 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "04b2cc36-9aa5-4393-b89a-26719843d556")
-	)
-	(wire
-		(pts
-			(xy 69.85 114.3) (xy 95.25 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34074eb9-dc2b-455c-bd38-1d6325399c5a")
-	)
-	(wire
-		(pts
-			(xy 95.25 114.3) (xy 124.46 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6caa0856-734c-4d82-acfb-07a28cd38851")
-	)
-	(wire
-		(pts
-			(xy 124.46 114.3) (xy 175.26 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e230ec8-49cb-486c-ad7f-dfcf326c5723")
-	)
-	(wire
-		(pts
-			(xy 175.26 114.3) (xy 190.5 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d245c58-6d46-4a6b-97a8-51e62f86dcbb")
-	)
-	(wire
-		(pts
-			(xy 69.85000000000001 102.87) (xy 69.85 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b8ca5c1-a238-4a77-bb97-1b67c21944db")
-	)
-	(wire
-		(pts
-			(xy 95.25 105.41) (xy 95.25 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bbce4b1-1ec7-4e1d-b595-85f97b32c1c0")
-	)
-	(junction
-		(at 95.25 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d0916f32-28bd-4f0e-b7dc-c1020131424c")
-	)
-	(wire
-		(pts
-			(xy 124.46 107.95) (xy 124.46 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6089ee79-a782-4039-a5cf-7c3db7bbc339")
-	)
-	(junction
-		(at 124.46 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f58b4966-b879-41e7-974e-de22a93eae15")
-	)
-	(wire
-		(pts
-			(xy 175.26 105.41) (xy 175.26 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2a57091-6fb7-436a-9191-bfda4d1031c5")
-	)
-	(junction
-		(at 175.26 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8c5c08f6-1396-427b-9c6d-4451f49d6b9f")
-	)
-	(wire
-		(pts
-			(xy 190.5 102.87) (xy 190.5 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6dba79d1-5a46-449a-8fec-d22e12c37818")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1856,212 +2404,6 @@
 			)
 		)
 	)
-	(label "VIN"
-		(at 69.85000000000001 100.33 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9e704aab-c323-4676-8f71-b50dae73b353")
-	)
-	(label "+5V"
-		(at 190.5 100.33 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "23dab3d5-ae26-4942-b3c3-823a8729c768")
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 64.77 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3f3a8425-1230-4bc3-baef-76b97c622203")
-		(property "Reference" "#PWR_FLG1"
-			(at 64.77 102.235 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 64.77 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 64.77 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 64.77 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 64.77 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "af733afa-301f-42aa-b8e7-5852bac79e49")
-		)
-		(instances
-			(project "buckconverter-vishaakmurali"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "#PWR_FLG1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 64.77 100.33) (xy 69.85000000000001 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc0c59aa-b618-4e4b-a9dd-7f01de15e0b8")
-	)
-	(junction
-		(at 69.85 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1598a454-806f-4307-b5d2-ce3396f19891")
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 195.58 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d584f681-1f4e-4651-9f90-d6a0e19b0f4b")
-		(property "Reference" "#PWR_FLG2"
-			(at 195.58 102.235 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 195.58 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 195.58 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 195.58 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 195.58 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2cd0c193-1560-4b5e-8211-330772cf2684")
-		)
-		(instances
-			(project "buckconverter-vishaakmurali"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "#PWR_FLG2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 190.5 100.33) (xy 195.58 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c5559b6-8bba-48d3-84d9-0907786f9323")
-	)
-	(junction
-		(at 190.5 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1b28faf5-9b94-4767-9a53-5c517663e21d")
-	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 124.46 119.38 0)
@@ -2139,41 +2481,82 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 124.46 119.38) (xy 124.46 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86675b00-1a72-489b-b6f9-c2427051488e")
-	)
-	(junction
-		(at 175.26 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "98198491-1a91-4440-8225-50904f85d956")
-	)
-	(wire
-		(pts
-			(xy 134.62 102.87) (xy 137.16 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d6a213e-e9c8-4855-8b0e-4f9f86ef2378")
-	)
-	(label "+5V"
-		(at 137.16 102.87 0)
-		(effects
-			(font
-				(size 1.27 1.27)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 195.58 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d584f681-1f4e-4651-9f90-d6a0e19b0f4b")
+		(property "Reference" "#PWR_FLG2"
+			(at 195.58 102.235 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
-			(justify left bottom)
 		)
-		(uuid "ba58ee09-f352-47e3-be38-609fa3c6c75c")
+		(property "Value" "PWR_FLAG"
+			(at 195.58 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 195.58 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2cd0c193-1560-4b5e-8211-330772cf2684")
+		)
+		(instances
+			(project "buckconverter-vishaakmurali"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR_FLG2")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(sheet_instances
 		(path "/"
