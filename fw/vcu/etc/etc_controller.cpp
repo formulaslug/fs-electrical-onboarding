@@ -5,7 +5,8 @@
 #include "etc_controller.h"
 
 // Assign appropriate GPIO objects depending on pin parameters
-ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) {}
+ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin)
+    : apps1(APPS1_pin), apps2(APPS2_pin) {}
 
 /* 
     Nice function to write which returns a wrapped version of the
@@ -40,7 +41,15 @@ void ETCController::update_state() {
         include your own pedal mapping to make it non linear!
     */
 
+    float v1 = apps1.read() * 3.3f;
+    float v2 = apps2.read() * 3.3f;
 
+    apps1_pos = clamp((v1 - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE));
+    apps2_pos = clamp((v2 - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE));
+
+    float avg_pos = (apps1_pos + apps2_pos) / 2.0f;
+
+    torque_demand = static_cast<int16_t>(avg_pos*MAX_TORQUE);
 
     /*
         Finish the step listed above.
@@ -48,6 +57,10 @@ void ETCController::update_state() {
 
     // Here to simplify this function and readability.
     update_implausibilities();
+
+    if(apps_implausibility || out_of_range_implausibility){
+        torque_demand = 0;
+    }
 }
 
 /*
