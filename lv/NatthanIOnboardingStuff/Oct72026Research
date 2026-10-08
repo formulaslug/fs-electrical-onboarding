@@ -1,0 +1,10 @@
+This is my research on what and also how BSPD circuits work:
+
+In the FSAE rules the car must detect 1. Hard Braking and open throttle for 1 second, 2. Loss of brake pressure readings for 100 milliseconds, 3. Loss of Electronic throttle body readings for 100 milliseconds.
+
+The BSPD circuit must compute these two things with analog components, 1. Compare the brake pressure sensor and electric throttle body voltage readings to check for implausibilities or conditions that may be noted in rules to be bad, 2. A time delay between a detected implausibility of either 1 second or 100 milliseconds(All this above part is from the 2024 rules and im still kind of sick so sorry if this is somewhat outdated.) 
+
+Im probably going to continue to update this with more information so that I can better understand how the BSPD circuit works so that I can effectively design the circuit and i guess also know how the whole system works as a whole based on the circuit design.
+
+
+
