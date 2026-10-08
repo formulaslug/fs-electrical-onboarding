@@ -62,27 +62,54 @@ void ETCController::update_implausibilities() {
     /*
         Start of implaus logic checking.
     */
-   if (apps1_voltage == apps2_voltage) {
-    implaus = true;
+   //implaus 1
+    if (apps1_voltage == apps2_voltage) {
+        if (!implaus_1) {
+            implaus1_timer.start();
+        }
+    gen_implaus = true;
+    implaus_1 = true;
     is_timing = true;
+
    }  // fault if values are equal
 
-   if (in_range(apps1_voltage, APPS1_MIN_VOLTAGE,    APPS1_MAX_VOLTAGE) == false or in_range(apps2_voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE) == false) {
-    implaus = true;
+  //implaus 2
+   if (in_range(apps1_voltage, APPS1_MIN_VOLTAGE,    APPS1_MAX_VOLTAGE) == false) {
+    if (!implaus_2) {
+            implaus2_timer.start();
+        }
+    implaus_2 = true;
+    gen_implaus = true;
     is_timing = true;
-   } //fault if values are outside range
+   } //fault if apps1 is outside range
 
+   //implaus 3
+   if (in_range(apps2_voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE) == false) {
+    if (!implaus_3) {
+            implaus3_timer.start();
+        }
+    implaus_3 = true;
+    gen_implaus = true;
+    is_timing = true;
+   } //fault if apps2 is outside range
+
+   //implaus 4
    if (abs(apps1_voltage - apps2_voltage) > 0.1) {
+    if (!implaus_4) {
+            implaus4_timer.start();
+        }
+    implaus_4 = true;
     gen_implaus = true;
     is_timing = true;
    } //fault if values are too far apart
 
-   if (implaus) {} //start timer if implaus is true, if timer reaches 100ms, fault then read fault type and print message to console
+   if (gen_implaus) {
+    int64_t implaus1_length  = implaus1_timer.elapsed_time().count();
+   } //start timer if implaus is true, if timer reaches 100ms, fault then read fault type and print message to console
 
     //cross check APPS1 with APPS2
     //check pedal positions pre-offset calculations; pre-offset values should not match
     //check voltage readings; if values match, fault
-    //maybe check to see if one pedal suddenly rises in position while other falls, fault
 
     /*
         End of implaus logic checking.

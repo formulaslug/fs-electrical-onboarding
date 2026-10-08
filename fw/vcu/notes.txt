@@ -2,5 +2,5 @@ types of faults
     apps1 = apps2 - done
     apps1 or apps2 is outside range - done
     pre-offset pedal positions != equal - 
-    pedal positions should not be changing quickly in opposite directions 
+    pedal positions should not be changing quickly in opposite directions  - if this happens 10% diff check catches it
     10% difference between post-offset pedal positions
