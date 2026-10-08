@@ -77,7 +77,7 @@ void ETCController::update_implausibilities() {
    if (in_range(apps1_voltage, APPS1_MIN_VOLTAGE,    APPS1_MAX_VOLTAGE) == false) {
     if (!implaus_2) {
             implaus2_timer.start();
-        }
+    }
     implaus_2 = true;
     gen_implaus = true;
     is_timing = true;
@@ -94,7 +94,7 @@ void ETCController::update_implausibilities() {
    } //fault if apps2 is outside range
 
    //implaus 4
-   if (2 * abs(apps1_voltage - apps2_voltage) / (apps1_voltage + apps2_voltage) > 0.1) {
+   if (2 * abs(apps1_voltage - apps2_voltage) / (apps1_voltage + apps2_voltage) > 0.1) { //need to change to post offset values
     if (!implaus_4) {
             implaus4_timer.start();
         }
