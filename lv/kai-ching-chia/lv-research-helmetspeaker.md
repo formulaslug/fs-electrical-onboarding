@@ -13,7 +13,7 @@
 #### Process
 1. Electric signal thru wire  
    * This signal is based on what audio u wanna play  
-2. Since electromagnet you can control electromagnet poles & strength with electricity, use that to move the magnet  
+2. Since electromagnet you can control electromagnet poles & strength with electricity, use that to move the electromagnet  
 3. Magnet moves the cone, cone pushes air  
    * Im assuming that big cone means big air pushed  
    * Air push = sound wave  
@@ -51,8 +51,6 @@
 
 ---
 
-### Questions & Answers
-
 #### Questions
 1. What does general purpose mean? What other purposes are there besides from playing sound?
 2. Why is this speaker bigger than the other ones?
@@ -68,9 +66,8 @@
 2. Bigger surface area = more air to push, better bass. Better bass makes audio sound cleaner (Does NOT cover background noise i think)
 3. Less weight, much easier packaging. 
 4. Diameter ranges from 35 --> 45mm. Thickness ranges from 6 --> 12mm
----
 
-### Challenges & Solutions
+---
 
 #### Challenges
 1. **Vibration:** Might distort audio? Speaker might come loose or something.
@@ -81,6 +78,8 @@
 2. Louder speaker to overpower the noise. 
    - OR  use an ear molded earbud like the F1 drivers (no cus too expensive and not worth it)
 
+---
+
 ### Objective
 1. Find a speaker that fits the following criteria
    - Slim enough to not smush driver's ears (6-8mm)
@@ -89,7 +88,7 @@
    - Cheapest if possible (might have to sacrifice price)
    - Sends sound in one direction (to ears not into helmet and others)
 
-### Candidates:
+### Candidates
 1. HPD-50N25PR00-32, https://www.digikey.com/en/products/detail/peerless-by-tymphany/HPD-50N25PR00-32/6211129
    - Pros: 
       1. Sensitivity is decent (78.4DB)
@@ -132,9 +131,9 @@
    - Cons: 
       1. 550Hz resonance
 
+---
 
-
-### Final Verdict:
+## Final Verdict
 ### **CMS-3652-28SP**
 #### Why:
 1. Cheap
