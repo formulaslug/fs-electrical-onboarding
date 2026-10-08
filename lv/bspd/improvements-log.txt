@@ -11,3 +11,8 @@ consider using a chain of op amps for current sensor rather than just one b/c vo
 - figure out how the heck you wire everything
 - think abt what type of comparator to use...this is not priority #1 right now though
 - figure out thresehold values and RC values for time delay
+
+10/7
+- drew a second rendition of BSPD
+- need to confirm resistor/capacitor values for thresehold pin 555 and for thresehold values for op amp stuff
+- need to figure out where to connect discharge/reset pin
