@@ -158,3 +158,244 @@ int main() {
     return 0;
 }
 
+Break and Continue:
+
+for(int i = 1; i<=20; i++) {
+    if (i == 10) {
+        break; // breaks out of the loop when i is 10
+    }}
+
+for(int i = 1; i <= 20; i++)
+{
+    if (i == 10) {
+        continue; // skips the rest of the loop when i is 10
+    }
+    std::cout << i << std::endl;
+}
+
+When would this be important: When you need to exit a loop early or skip something based on the condtions.
+
+Nested Loops:
+
+int main() {
+    for (int i = 1; i <= 3; i++) {
+        for (int j = 1; j <= 3; j++) {
+            std::cout << "i: " << i << ", j: " << j << std::endl;
+        }
+    }
+    return 0;
+}
+
+What is a nested loop: a loop inside of another loop. The inner loop will run completely for each iteration of the outer loop.
+
+User Defined Functions:
+
+
+int
+void HappyBrithday(std::string name) {
+    std::cout << "Happy Birthday to " << name << "!\n";
+    std::cout << "Happy Birthday to " << name << "!\n";
+    std::cout << "Happy Birthday dear " << name << "!\n";
+    std::cout << "Happy Birthday to " << name << "!\n";
+    }
+
+
+Return Keyword:
+Return keyword is used to return a value from a function. It can also be used to exit a function early.
+
+#include <iostream>
+
+void square(double length);
+
+int main() {
+    double length;
+    double area = square(length);
+    double volume = cube(length);
+    std::cout << "Area: " << area << "cm^2\n";
+    std::cout << "Volume: " << volume << "cm^3\n";
+
+    return 0;
+}
+double square(double length) {
+    double result = length * length;
+    return result; // returns the value of the result to the caller
+}
+double cube(double length) {
+    double result = length * length * length;
+    return result;
+}
+
+What this code does: This code defines two functions, that calculate the area and volume of the square and cube of a given length
+The main function calls these functions and prints the results to the console.
+Wherever you invoke the function, it will return the value of the reult to the caller.
+
+
+
+
+
+Variable Scope:
+Local variables = declares inside a function or block {}
+Global Variables = declared outside of all functions
+
+int main() {
+
+    int myNum = 1;
+    
+    std::cout << myNum;
+    
+    return 0;
+}
+void printNum(){
+    std::cout << myNum; // this will give an error because the myNum variable is a local variable and is not accessible outside of the main function.
+}
+void printNum(){
+    int myNum = 2; // this is a local variable and is only accessible within the printNum function.
+    std::cout << myNum; // this will print 2
+}
+
+Global variables are accesible from any function in the program, and are usually at the top of your program.
+Local variables are used before any global variables.
+
+Arrays:
+Array = A data structure that can hold multiple values
+Values are accessed by an index number
+"kind of like a variable that holds multiple values"
+
+int main() {
+   
+    std:string car = {"Corvette", "Mustang", "Camry"};
+
+    std::cout << car[0]; // prints Corvette
+    std::cout << car[1];
+    std::cout << car[2];
+
+    return 0;
+    
+}
+Foreach Loop:
+Loop that eases the traversal over an iterable data set
+
+int main() {
+
+    std::string students[] = {"Sam", "John", "Mary"};
+    int grades[] = {65, 72, 81, 93};
+    for(int grade : grades){
+        std::cout << grade << '\n';
+    }
+    for(std::string student : students){
+        std::cout << student << '\n';
+        }
+
+    }
+    return 0;
+}
+Memory Addresses:
+A location in memory where data is stored.
+A memory address can be accessed with & (address-of operator)
+
+int main() {
+    
+    std::string name = "Bro";
+    int age = 21;
+    bool student = true;
+    
+    std::cout << &name << '\n'; // prints the memory address of the name variable
+    std::cout << &age << '\n'; // prints the memory address of the age variable
+    std::cout << &student << '\n'; // prints the memory address of the student variable
+    
+    return 0;
+    }
+
+This is useful for finding out how much memory is being used by a variable and for debugging purposes.
+
+Pass by Value vs Pass by Reference:
+Pass by value = 
+Pass by reference = 
+
+void swap(std::string &x, std::string &y);
+
+int main()
+{
+    std::string x = "Kool-Aid";
+    std::string y = "Water";
+    
+    swap(x, y);
+    
+    std::cout << "X: " << x << '\n';
+    std::cout << "Y: " << y << '\n';
+    
+    return 0;
+    
+}
+This is an example of Pass by value code.
+
+Pointers:
+Pointers are variables that store memory addresses of another variable
+Sometimes it's easier to work with an address
+
+& address-of operator
+* dereference operator
+
+int main() {
+    std::string name = "Bro";
+    std::string *pName = &name;
+
+    std::cout << *pName;
+}
+Structs:
+A structure that group related variables under one name
+structs can contain many different data types (string, int, double bools, etc.)
+variables in a struct are known as "members"
+members can be access with "Class Member Access Operator"
+
+struct student{
+    std::string name;
+    double gpa;
+    bool enrolled;
+};
+
+int main()
+{
+    student student1;
+    student1.name = "Spongebob";
+    student1.gpa = 3.2;
+    student1.enrolled = true;
+    
+    std::cout << student1.name << '\n';
+    std::cout << student1.gpa << '\n';
+    std::cout << student1.enrolled << '\n';
+
+    student student2;
+    student2.name = "Patrick";
+    student2.gpa = 2.1;
+    student2.enrolled = true;
+    
+    std::cout << student2.name << '\n';
+    std::cout << student2.gpa << '\n';
+    std::cout << student2.enrolled << '\n';
+
+    student student3;
+    student3.name = "Squidward";
+    student3.gpa = 1.5;
+    student3.enrolled = true;
+    
+    std::cout << student3.name << '\n';
+    std::cout << student3.gpa << '\n';
+    std::cout << student3.enrolled << '\n';
+    return 0;
+    
+}
+
+Object Oriented Programming:
+object = A collection of attributes and methods
+They can have characteristics and could perform actions
+Can be used to mimic real world items (ex. Phone, Book)
+Created from a clas which acts as a "blue-print"
+
+Constructors:
+Constructors are special methods that are automatically called when an object is instantiated
+Useful for assigning values to attributes as arguments.
+
+
+
+
