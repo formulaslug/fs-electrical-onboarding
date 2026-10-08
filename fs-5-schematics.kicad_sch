@@ -1699,10 +1699,10 @@
 		(uuid "232c7d14-29a9-4839-a61e-b4696da9ed7d")
 	)
 	(junction
-		(at 210.82 109.22)
+		(at 210.82 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "31d38634-ab1b-40dd-bca4-41ddfb444107")
+		(uuid "2a8344db-4e60-4304-b5a7-089797b42cd4")
 	)
 	(junction
 		(at 63.5 78.74)
@@ -1717,10 +1717,10 @@
 		(uuid "36af8760-d100-49a0-a5a6-333d7ba7d7f1")
 	)
 	(junction
-		(at 190.5 101.6)
+		(at 210.82 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5018741f-2e51-4f5e-af13-88529db60cd2")
+		(uuid "68652506-e7ea-43cf-8876-b7d5d72af8ae")
 	)
 	(junction
 		(at 81.28 121.92)
@@ -1765,12 +1765,6 @@
 		(uuid "ac01327f-bb25-4076-8ba3-6664f0aeb7ec")
 	)
 	(junction
-		(at 210.82 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d5513057-6272-4284-b6e0-6d37bfcf5287")
-	)
-	(junction
 		(at 163.83 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1783,10 +1777,36 @@
 		(uuid "e58ea0ab-b026-41c0-a0bf-2b165ba2cde3")
 	)
 	(junction
+		(at 186.69 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea6b602d-c1db-4dc6-8edd-4dafc58ea8a8")
+	)
+	(junction
 		(at 114.3 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fcef6669-49a8-4d09-88f2-152e118ad820")
+	)
+	(wire
+		(pts
+			(xy 210.82 100.33) (xy 210.82 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0633816f-08cc-4bc2-9661-acd349b14a05")
+	)
+	(wire
+		(pts
+			(xy 210.82 83.82) (xy 210.82 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "063cd2e6-1c33-41e5-97ff-e6f94222f198")
 	)
 	(wire
 		(pts
@@ -1840,36 +1860,6 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 81.28) (xy 210.82 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26f98002-6661-46db-a663-d7f9cffc37ce")
-	)
-	(wire
-		(pts
-			(xy 232.41 83.82) (xy 232.41 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2982907b-b28f-4c18-99bd-7ffe73364494")
-	)
-	(wire
-		(pts
-			(xy 210.82 109.22) (xy 210.82 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b2ec6f9-5c4a-4522-a9e8-4eed30140b1e")
-	)
-	(wire
-		(pts
 			(xy 63.5 100.33) (xy 63.5 121.92)
 		)
 		(stroke
@@ -1900,6 +1890,26 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 100.33) (xy 210.82 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "359d60e9-8014-42c6-8071-55af07b65dc9")
+	)
+	(wire
+		(pts
+			(xy 207.01 107.95) (xy 207.01 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49486e6a-69bb-4789-b54f-499f9d2d4e95")
+	)
+	(wire
+		(pts
 			(xy 163.83 78.74) (xy 166.37 78.74)
 		)
 		(stroke
@@ -1907,6 +1917,16 @@
 			(type default)
 		)
 		(uuid "52d698c5-6390-4d56-8abb-0e83a7a745b4")
+	)
+	(wire
+		(pts
+			(xy 210.82 83.82) (xy 210.82 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e5ddb5a-90b2-4f96-a930-eac16b1d7054")
 	)
 	(wire
 		(pts
@@ -1920,23 +1940,23 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 97.79) (xy 210.82 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f84dea6-838e-43e5-89d9-dafccde97ce2")
-	)
-	(wire
-		(pts
-			(xy 147.32 101.6) (xy 147.32 81.28)
+			(xy 147.32 107.95) (xy 147.32 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "70a9eaa4-22c2-489e-9895-379710c3712b")
+	)
+	(wire
+		(pts
+			(xy 186.69 100.33) (xy 204.47 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "777e8339-8d51-447f-bdbe-b501cec3a448")
 	)
 	(wire
 		(pts
@@ -2000,13 +2020,13 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 109.22) (xy 210.82 109.22)
+			(xy 204.47 100.33) (xy 204.47 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a6e84dac-6591-4889-a1cd-56c7916f8c40")
+		(uuid "a74f8847-27e8-4311-9936-fa189cb284fd")
 	)
 	(wire
 		(pts
@@ -2020,13 +2040,23 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 101.6) (xy 190.5 101.6)
+			(xy 147.32 107.95) (xy 207.01 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b1f2aa86-1e44-48c4-95be-af27341473c9")
+	)
+	(wire
+		(pts
+			(xy 232.41 83.82) (xy 232.41 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b94e2d87-6290-4c96-871e-c030a1077385")
 	)
 	(wire
 		(pts
@@ -2120,26 +2150,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 109.22) (xy 210.82 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e51ad740-8757-4ede-828b-c60ed78d2a25")
-	)
-	(wire
-		(pts
-			(xy 190.5 101.6) (xy 210.82 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea663d43-7635-4aa1-88e1-afaf9e949f25")
-	)
-	(wire
-		(pts
 			(xy 147.32 72.39) (xy 152.4 72.39)
 		)
 		(stroke
@@ -2170,6 +2180,26 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 83.82) (xy 210.82 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb958510-3b7a-48df-9fcf-389de09d9ed4")
+	)
+	(wire
+		(pts
+			(xy 210.82 109.22) (xy 210.82 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc6a2fd1-7e45-4522-a373-73aeb230a22a")
+	)
+	(wire
+		(pts
 			(xy 114.3 83.82) (xy 127 83.82)
 		)
 		(stroke
@@ -2177,6 +2207,128 @@
 			(type default)
 		)
 		(uuid "ffaa0ed2-abbb-44eb-9b22-fa92062681c7")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 232.41 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c0fe123-6cad-4c82-8a17-ea7f390178da")
+		(property "Reference" "#PWR07"
+			(at 232.41 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.41 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 232.41 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 232.41 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 232.41 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 232.41 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 232.41 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c10d4c22-71cd-4460-b469-5f661507b0d5")
+		)
+		(instances
+			(project "fs-5-schematics"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Regulator_Switching:TPS54202DDC")
@@ -2770,7 +2922,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 210.82 105.41 0)
+		(at 210.82 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2781,7 +2933,7 @@
 		(fields_autoplaced yes)
 		(uuid "5906756c-08ec-4193-ae40-6e431633fd89")
 		(property "Reference" "R2"
-			(at 213.36 104.1399 0)
+			(at 213.36 95.2499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2792,7 +2944,7 @@
 			)
 		)
 		(property "Value" "100K"
-			(at 213.36 106.6799 0)
+			(at 213.36 97.7899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2803,7 +2955,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 209.042 105.41 90)
+			(at 209.042 96.52 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2814,7 +2966,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 210.82 105.41 0)
+			(at 210.82 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2825,7 +2977,51 @@
 			)
 		)
 		(property "Description" "Top Feedback Resistor"
-			(at 210.82 105.41 0)
+			(at 210.82 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 210.82 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 210.82 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 210.82 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 210.82 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3291,7 +3487,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-02P_1x02_P5.00mm"
 			(at 237.49 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -3314,6 +3510,50 @@
 			)
 		)
 		(property "Description" "Voutput"
+			(at 237.49 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 237.49 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 237.49 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 237.49 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
 			(at 237.49 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -4061,7 +4301,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-02P_1x02_P5.00mm"
 			(at 58.42 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -4165,135 +4405,8 @@
 		)
 	)
 	(symbol
-		(lib_name "R_1")
-		(lib_id "Device:R")
-		(at 210.82 93.98 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd852ae7-9adb-4126-961e-270e27f84b67")
-		(property "Reference" "R3"
-			(at 213.36 92.7099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "13.5K"
-			(at 213.36 95.2499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 209.042 93.98 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Bottom Feedback Resistor"
-			(at 210.82 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey Part Number" ""
-			(at 210.82 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey URL" ""
-			(at 210.82 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 210.82 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 210.82 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e74ae8a7-8265-4223-8a48-8035cd49e79b")
-		)
-		(pin "2"
-			(uuid "c2afbbf6-bacf-4ebd-a33b-f1e083f1e21d")
-		)
-		(instances
-			(project "fs-5-schematics"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 190.5 105.41 0)
+		(at 186.69 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4304,7 +4417,7 @@
 		(fields_autoplaced yes)
 		(uuid "d9607afb-6e6f-4055-b406-326a42f182b8")
 		(property "Reference" "Cfeedfoward1"
-			(at 194.31 104.1399 0)
+			(at 190.5 102.8699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4315,7 +4428,7 @@
 			)
 		)
 		(property "Value" "75pF"
-			(at 194.31 106.6799 0)
+			(at 190.5 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4326,7 +4439,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 191.4652 109.22 0)
+			(at 187.6552 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4337,7 +4450,7 @@
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/Chip_Multilayer_CAT2021_MLCC.pdf"
-			(at 190.5 105.41 0)
+			(at 186.69 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4348,7 +4461,7 @@
 			)
 		)
 		(property "Description" "Feed-Foward Capacitor 75 pF ±5% 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)"
-			(at 190.5 105.41 0)
+			(at 186.69 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4359,7 +4472,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-1424-1-ND"
-			(at 190.5 105.41 0)
+			(at 186.69 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4370,7 +4483,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM1885C1H750JA01D/586917"
-			(at 190.5 105.41 0)
+			(at 186.69 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4381,7 +4494,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 190.5 105.41 0)
+			(at 186.69 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4392,7 +4505,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 190.5 105.41 0)
+			(at 186.69 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4412,6 +4525,133 @@
 			(project "fs-5-schematics"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "Cfeedfoward1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "R_1")
+		(lib_id "Device:R")
+		(at 210.82 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e050e6bc-83af-426f-91d4-f33fe16b01e9")
+		(property "Reference" "R3"
+			(at 213.36 104.1399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "13.5K"
+			(at 213.36 106.6799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 209.042 105.41 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bottom Feedback Resistor"
+			(at 210.82 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 210.82 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 210.82 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 210.82 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 210.82 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "54680d54-0ce3-48b6-9a72-1d33a36abaee")
+		)
+		(pin "2"
+			(uuid "b98fdfd0-97fb-4654-bfef-247a1fc5d397")
+		)
+		(instances
+			(project "fs-5-schematics"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "R3")
 					(unit 1)
 				)
 			)
