@@ -49,8 +49,6 @@ private:
     bool is_timing; 
     int implaus_timer_count;
     
-
-
     /*
         End of private variables
     */

@@ -18,7 +18,9 @@ float ETCController::clamp(float value) {}
     Simple function to write which returns a bool of true or false
     depending on whether low <= value <= high is true.
 */
-bool ETCController::in_range(float value, float low, float high) {}
+bool ETCController::in_range(float value, float low, float high) {
+    return (value >= low) && (value <= high);
+}
 //used to feed into implausibility logic, if one value is low, while the other is high, trigger fault
 
 /*
@@ -81,8 +83,6 @@ void ETCController::update_implausibilities() {
     //check pedal positions pre-offset calculations; pre-offset values should not match
     //check voltage readings; if values match, fault
     //maybe check to see if one pedal suddenly rises in position while other falls, fault
-
-
 
     /*
         End of implaus logic checking.
