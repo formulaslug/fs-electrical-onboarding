@@ -5,11 +5,11 @@
 	(uuid "e994741c-7c7d-4124-9d00-43b883baa61d")
 	(paper "A")
 	(title_block
-		(title "${BOARD_TITLE}")
+		(title "Buck Converter")
 		(date "${CURRENT_DATE}")
 		(rev "${REVISION}")
 		(company "Formula Slug")
-		(comment 1 "${NAMES}")
+		(comment 1 "Jackson Pesmark")
 		(comment 2 "${COMMENT1}")
 		(comment 3 "${COMMENT2}")
 	)
