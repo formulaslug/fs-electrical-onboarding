@@ -135,8 +135,8 @@
 
 
 ### Final Verdict:
-**CMS-3652-28SP**
-Why:
+### **CMS-3652-28SP**
+#### Why:
 1. Cheap
 2. Very small
 3. Good power & volume
