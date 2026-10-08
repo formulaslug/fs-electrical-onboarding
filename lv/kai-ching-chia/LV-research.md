@@ -102,9 +102,41 @@
 2. SP-3605, https://www.digikey.com/en/products/detail/soberton-inc/SP-3605/6562949?s=N4IgTCBcDaICwGYEFoCMqCsAGZA5AIiALoC%2BQA
    - Pros:
       1. 300 --> 5kHz, perfectly ranged for voice
-      2. Very small: (36mm dia + 5mm height)
+      2. Very small (36mm dia + 5mm height)
    - Cons: 
       1. 1W power, 1.5 peak (kinda low)
 
+3. SP-1511S-1, https://www.digikey.com/en/products/detail/soberton-inc/SP-1511S-1/6099099
+   - Pros:
+      1. 400 --> 5kHz, pretty good for voice
+      2. extremely small (15x11mm, 3.5mm height)
+   - Cons: 
+      1. low volume (83 db)
+      2. low power, 800mW max
+
+4. CMS-3652-28SP, https://www.mouser.com/en/ProductDetail/Same-Sky/CMS-3652-28SP?qs=eG9znyypUbuM3kNcIYHSjg%3D%3D
+   - Pros: 
+      1. small and flat (36mm diameter with 5.2mm height)
+      2. Good power  (2W)
+      3. Loud max too (100 dB)
+      4. $1.87 per (cheap cheap)
+   Cons:
+      1. 550 hZ resonance frequency, which is slightly high (does it even matter cus do voices get that low)
+
+5. SP-4005, https://www.digikey.com/en/products/detail/soberton-inc/SP-4005/6562950
+   - Pros: 
+      1. kinda small and pretty flat (40mm dia + 5.5mm height)
+      2. Good power peak (2W)
+      3. Loud max too (92 dB)
+      4. 300 --> 8kHz (decent range)
+   - Cons: 
+      1. 550Hz resonance
+
+
+
 ### Final Verdict:
-idk
+**CMS-3652-28SP**
+Why:
+1. Cheap
+2. Very small
+3. Good power & volume
