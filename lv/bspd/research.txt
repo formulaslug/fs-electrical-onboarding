@@ -1,23 +1,15 @@
-Ideas:
-
-Make a budget sheet as well, organize things from cheap to expensive
-Write really good notes, keep things organized and readable
-Identify the WHY behind applications: how and why do we monitor the cooling of the battery?
-Make a tradeoffs page for op amps
 
 QUESTIONS:
 What is the purpose behind BSPD?
 What are the main components of BSPD?
 What is the logic behind BSPD?
-Are we working with AC or DC current?
 
-Building a Formula Car: BSPD Part 1 
 
 
 Definitions for words I do not know
 
 
-
+Op Amp
 A voltage amplifying device that performs various operations like addition, subtraction, integration, etc.. It’s an IC!!!
 You can have voltage- feedback op amp or current-feedback op amp.
 
@@ -96,6 +88,14 @@ When a voltage higher than the transistor’s threshold voltage (VTH) is applied
 Needs a pull down resistor to deactivate the transistor otherwise the voltage won’t be “released” and the transistor will stay on. Just use a 10K resistor it doesnt rlly matter
 pMOS
 To turn the transistor on, the voltage from source to gate must be higher than the threshold voltage (VTH) of the transistor.
+
+Monostable
+Describes how the 555 timer has only one state, typically low. If it goes up to HIGH for whatever reason, after a certain duration of time, it will go back down to low
+
+Voltage Divider
+Creates a part of input voltage as  output, using two resistors in series. Split the input voltage.
+Voltage Divider Circuit Explained! 
+
 
 
 Types of Comparators I can use:
