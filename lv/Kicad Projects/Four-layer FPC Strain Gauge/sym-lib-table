@@ -1,4 +1,6 @@
 (sym_lib_table
-  (version 7)
-  (lib (name "formula_slug_symbol_library")(type "KiCad")(uri "${KIPRJMOD}/../fs-components/formula_slug_symbol_library.kicad_sym")(options "")(descr ""))
+	(version 7)
+	(lib (name "formula_slug_symbol_library") (type "KiCad") (uri "${KIPRJMOD}/../fs-components/formula_slug_symbol_library.kicad_sym") (options "") (descr ""))
+	(lib (name "ADS1287") (type "KiCad") (uri "C:/Users/Jeeih/Documents/KiCADv6/2026-10-09_03-11-25.kicad_sym") (options "") (descr ""))
+	(lib (name "ADS1220IRVAR") (type "KiCad") (uri "C:/Users/Jeeih/Documents/KiCad/10.0/symbols/ADS1220IRVAR/ADS1220IRVAR.kicad_sym") (options "") (descr ""))
 )
