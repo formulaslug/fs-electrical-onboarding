@@ -68,21 +68,44 @@ void ETCController::update_state() {
     include rules T.4.2.4, T.4.2.9 (out of range).
 */
 void ETCController::update_implausibilities() {
-    /*
-        Start of implaus logic checking.
-    */
 
+    float v1 = apps1.read() * 3.3f;
+    float v2 = apps2.read() * 3.3f;
 
+    bool mismatch = fabsf(apps1_pos - apps2_pos) > 0.10f;
 
-    /*
-        End of implaus logic checking.
-    */
+    constexpr float MARGIN = 0.1f;
+    bool out_of_range =
+        !in_range(v1, APPS1_MIN_VOLTAGE - MARGIN, APPS1_MAX_VOLTAGE + MARGIN) ||
+        !in_range(v2, APPS2_MIN_VOLTAGE - MARGIN, APPS2_MAX_VOLTAGE + MARGIN);
 
-    /*
-        Check how long each implaus has been active for and
-        update the actual implaus result if it's been active 
-        for too long.
-    */
+    if (mismatch) {
+        if (!apps_mismatch_running) {
+            apps_mismatch_timer.reset();
+            apps_mismatch_timer.start();
+            apps_mismatch_running = true;
+        }
+    } else {
+        apps_mismatch_timer.stop();
+        apps_mismatch_running = false;
+        apps_implausibility = false;
+    }
+    if (apps_mismatch_running && apps_mismatch_timer.elapsed_time() > 100ms) {
+        apps_implausibility = true;
+    }
 
-    
+    if (out_of_range) {
+        if (!apps_range_running) {
+            apps_range_timer.reset();
+            apps_range_timer.start();
+            apps_range_running = true;
+        }
+    } else {
+        apps_range_timer.stop();
+        apps_range_running = false;
+        out_of_range_implausibility = false;
+    }
+    if (apps_range_running && apps_range_timer.elapsed_time() > 100ms) {
+        out_of_range_implausibility = true;
+    }
 }
