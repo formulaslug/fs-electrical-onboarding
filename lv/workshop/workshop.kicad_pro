@@ -50,7 +50,23 @@
         "silk_text_thickness": 0.1524,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.508
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.508,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -495,7 +511,7 @@
     ]
   },
   "meta": {
-    "filename": "template.kicad_pro",
+    "filename": "workshop.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -799,6 +815,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": "workshop.wbk"
+    },
     "page_layout_descr_file": "kicad-embed://formulaslug_drawing_sheet.kicad_wks",
     "plot_directory": "",
     "reuse_designators": true,
@@ -813,18 +837,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "template.kicad_sch",
-        "name": "",
+        "filename": "workshop.kicad_sch",
+        "name": "workshop",
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
       }
     ],
-    "used_designators": "R1",
+    "used_designators": "C1,D1,#PWR1-5,J1-3,U1,R1-2",
     "variants": []
   },
   "sheets": [
     [
       "e994741c-7c7d-4124-9d00-43b883baa61d",
-      ""
+      "workshop"
     ]
   ],
   "text_variables": {

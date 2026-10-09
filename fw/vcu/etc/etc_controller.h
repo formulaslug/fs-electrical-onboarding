@@ -42,7 +42,7 @@ private:
     float APPS2_Volatge;// Volatage from APPS2
 
     float APPS1_Pedal_Postion;
-    float APPS2_Pedal_Postion
+    float APPS2_Pedal_Postion;
 
     float Clamped_APPS1_Pedal_Position;
     float Clamped_APPS2_Pedal_Position;
