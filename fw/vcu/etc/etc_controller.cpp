@@ -5,7 +5,8 @@
 #include "etc_controller.h"
 
 // Assign appropriate GPIO objects depending on pin parameters
-ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) {}
+ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) :
+apps1(APPS1_pin), apps2(APPS2_pin) {}
 
 /* 
     Nice function to write which returns a wrapped version of the
@@ -20,7 +21,7 @@ float ETCController::clamp(float value) {
     }
     return value;
 }
-
+ 
 /*
     Simple function to write which returns a bool of true or false
     depending on whether low <= value <= high is true.

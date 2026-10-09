@@ -32,7 +32,8 @@ private:
         Start of private variables
     */
 
-    
+    AnalogIn apps1;
+    AnalogIn apps2;
 
     /*
         End of private variables
