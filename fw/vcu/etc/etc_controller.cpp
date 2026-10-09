@@ -84,7 +84,7 @@ void ETCController::update_state() {
 
     //Calculate a motor torque demanad
     Motor_Torque_Demand = (Clamped_APPS1_Pedal_Postion + Clamped_APPS2_Pedal_Postion) / 2.0f;
-    
+
 
         
 
@@ -104,18 +104,23 @@ void ETCController::update_implausibilities() {
     /*
         Start of implaus logic checking.
     */
-    
+    //Check if Volatages corresponding to APPS1 and APPS2 are valid!!!!!
+
+
+
     //Check if two pedal postions are within 10%, if not turn off Motor
     //Then time for 100msec and if problem persists, stop power
 
     float Percentage_Difference = std::abs(APPS1_Pedal_Position - APPS2_Pedal_Position); 
-    bool Pedal_Position_Implaus;
+    bool APPS_Sensors_Valid;
     
     if( Percentage_Difference <= 0.10){
-        Pedal_Position_Implaus = true;
+        APPS_Sensors_Valid = true;
     }else{
-        Pedal_Position_Implaus = false;
+        APPS_Sensors_Valid = false;
     }
+
+    
 
     
 
