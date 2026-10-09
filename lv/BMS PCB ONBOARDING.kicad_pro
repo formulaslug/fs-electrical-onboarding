@@ -540,23 +540,7 @@
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "/B#_8": [
-        "Balance"
-      ],
-      "Net-(C6-Pad1)": [
-        "Power"
-      ],
-      "Net-(J3_B12_POWER1-Pin_1)": [
-        "Power"
-      ],
-      "V-": [
-        "Power"
-      ],
-      "VREG": [
-        "Power"
-      ]
-    },
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -834,61 +818,13 @@
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
       }
     ],
-    "used_designators": "J1_B6_POWER1,TP1,U1-3,C1-8,SW1,Q1,J3_B12_POWER1,D1-3,#PWR1-11,J1-9,#VREG1-8,R1-18,R43,L1,#FLG1-4",
+    "used_designators": "FL701-702,J1_B6_POWER1,TP1,TP501-509,U1-3,SW1,C1-8,C201-210,C601,C701-708,Q1,Q601,D1-3,D701-702,#PWR1-11,#PWR201-214,#PWR601,#PWR701-702,J3_B12_POWER1,J1-9,J701-702,R1-18,R43,R201,R601-602,R701-722,#VREG1-8,L1,#FLG1-4",
     "variants": []
   },
   "sheets": [
     [
       "e994741c-7c7d-4124-9d00-43b883baa61d",
       "BMS PCB ONBOARDING"
-    ],
-    [
-      "f7e0008c-a208-4406-a2ba-cfb0a2e0e20c",
-      "BB0"
-    ],
-    [
-      "69f761b9-8e82-4178-8a57-9431bb303f4a",
-      "BB1"
-    ],
-    [
-      "6d911f11-da00-4875-8044-66c5c5409118",
-      "BB2"
-    ],
-    [
-      "8f7059ef-a8ee-45de-a463-8843086cfc28",
-      "BB3"
-    ],
-    [
-      "90756017-1914-44e4-bae7-c3cd1e78a2c9",
-      "BB4"
-    ],
-    [
-      "63c4373d-2a93-49db-abf7-d1d036e6baa1",
-      "BB5"
-    ],
-    [
-      "00d9dd12-7aa8-48a2-88c8-6ae456195f1b",
-      "BB6"
-    ],
-    [
-      "f97881be-dbb5-4968-a0a0-6f840310255c",
-      "BB7"
-    ],
-    [
-      "050edebf-7905-4816-8560-db0a25855d3c",
-      "BB8"
-    ],
-    [
-      "8a7ea895-2533-43c5-855c-e6b853269dfb",
-      "BB9"
-    ],
-    [
-      "77e63bf5-429a-48d8-98ef-f27977a378fa",
-      "BB10"
-    ],
-    [
-      "9a006beb-ca36-4b61-9205-ef8dee727d62",
-      "BB11"
     ]
   ],
   "text_variables": {
