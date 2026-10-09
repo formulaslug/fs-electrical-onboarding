@@ -261,7 +261,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "${REVISION}"
+      "sch_revision": "1.1"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -512,7 +512,7 @@
     ]
   },
   "meta": {
-    "filename": "FPC Strain Gauge.kicad_pro",
+    "filename": "FPC Strain Gauge Circuit.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -846,12 +846,12 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "FPC Strain Gauge.kicad_sch",
-        "name": "FPC Strain Gauge",
+        "filename": "FPC Strain Gauge Circuit.kicad_sch",
+        "name": "FPC Strain Gauge Circuit",
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
       }
     ],
-    "used_designators": "J1,R1,TP1-2",
+    "used_designators": "#FLG1-3,J1,R1-19,TP1-5,U1-7,C1-13,#PWR1-24,JP1",
     "variants": []
   },
   "sheets": [

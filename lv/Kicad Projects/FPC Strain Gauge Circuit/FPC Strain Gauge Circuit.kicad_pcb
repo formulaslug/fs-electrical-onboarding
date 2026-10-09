@@ -225,7 +225,7 @@
 		(property ki_fp_filters "Pin* Test*")
 		(path "/97a37d34-437c-46fd-8a80-9bb316fd7e75")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -400,7 +400,7 @@
 		(property ki_fp_filters "SOT?23*")
 		(path "/4aaf5dd5-f29e-49d8-add1-61481da28c24")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -801,7 +801,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/f98a905a-c410-44a1-ac1e-0ea5bdde8c71")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1011,7 +1011,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/fddfd5fe-17d4-4ad3-a12e-9a5bf409c0b0")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1221,7 +1221,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/77fc4008-0804-4753-9399-59b75b8d8a9e")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1371,7 +1371,7 @@
 		(property ki_fp_filters "Pin* Test*")
 		(path "/ac230036-d5af-4639-99e1-43ed594a8245")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1598,7 +1598,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/0e339f78-8db6-4e76-ad93-052bd9d44faa")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1756,7 +1756,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/7da3c2d2-a9ea-433e-afb6-7d42c1d01885")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1914,7 +1914,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/0e476ccb-4c98-499d-844e-b2ac289a03a8")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2072,7 +2072,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/24d874cc-f064-461d-8317-8f3d41f36346")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2282,7 +2282,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/e1d55db8-bfe0-458c-acb8-4ff9838c717f")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2492,7 +2492,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/e870c54c-9119-4a59-908c-fec3d9614131")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2642,7 +2642,7 @@
 		(property ki_fp_filters "Pin* Test*")
 		(path "/08f534f8-6b5a-4811-9b66-17ab5b030f15")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2906,7 +2906,7 @@
 		)
 		(path "/beb682dd-2aab-42ba-a84e-fe8e90383309")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3361,7 +3361,7 @@
 		(property ki_fp_filters "VSSOP*3x3mm*P0.65mm*")
 		(path "/b686bea4-1ff4-41d9-a756-3facb3debe43")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3742,7 +3742,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/72c359a4-d77a-46d9-843b-dd9faac3015c")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3892,7 +3892,7 @@
 		(property ki_fp_filters "Pin* Test*")
 		(path "/8a64b37a-3594-411a-bfbc-06b221842610")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4067,7 +4067,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/f3b749fd-8e95-4589-a73b-0e80944e94d2")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4225,7 +4225,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/ccc92970-cddb-4c99-b1a3-e885711fd885")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4375,7 +4375,7 @@
 		(property ki_fp_filters "Pin* Test*")
 		(path "/a967692f-801f-47b9-98f2-c01bf2610ec4")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4550,7 +4550,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/648f70bb-0f54-45d5-87d9-f5d0596fed69")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4708,7 +4708,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c1e0f468-1d5c-4802-a338-08507204ab91")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4866,7 +4866,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/4f625ecd-763d-4971-89a0-ae0a9c8c598d")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5076,7 +5076,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/fd1270d4-15b9-49e5-8c7e-509b92469472")
 		(sheetname "/")
-		(sheetfile "FPC Strain Gauge.kicad_sch")
+		(sheetfile "FPC Strain Gauge Circuit.kicad_sch")
 		(units
 			(unit
 				(name "A")

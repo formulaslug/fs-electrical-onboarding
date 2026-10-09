@@ -3263,7 +3263,7 @@
 			(uuid "b646f06e-5255-4367-9e60-9fbe4ae45718")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "TP5")
 					(unit 1)
@@ -3345,7 +3345,7 @@
 			(uuid "45ef31bb-17e4-4f80-9683-54d275e8a072")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "R2")
 					(unit 1)
@@ -3423,7 +3423,7 @@
 			(uuid "683e758b-40b4-4580-b25a-3a4ef7e0e2d7")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR010")
 					(unit 1)
@@ -3548,7 +3548,7 @@
 			(uuid "b3c38927-5dcd-424b-9ac9-779015932368")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C4")
 					(unit 1)
@@ -3630,7 +3630,7 @@
 			(uuid "0006561e-1a6d-44df-a3ff-bb602123fde1")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "R3")
 					(unit 1)
@@ -3708,7 +3708,7 @@
 			(uuid "67b70dfd-4408-410b-b7eb-29d79972c2ff")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR02")
 					(unit 1)
@@ -3786,7 +3786,7 @@
 			(uuid "da89a63d-cbdf-4fd8-b130-4128a6d58b25")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR03")
 					(unit 1)
@@ -3868,7 +3868,7 @@
 			(uuid "a710f4fb-e0f8-4ab1-acc4-4b1bfe7eb16d")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "R4")
 					(unit 1)
@@ -3947,7 +3947,7 @@
 			(uuid "95ea3a42-5ad1-4265-be44-9e67e5365b15")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR06")
 					(unit 1)
@@ -4025,7 +4025,7 @@
 			(uuid "b9bfa5df-06fc-4c83-830c-56faec3e93b1")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR05")
 					(unit 1)
@@ -4115,7 +4115,7 @@
 			(uuid "a9c01218-83ef-418d-90a5-6ae9f4234577")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "U2")
 					(unit 1)
@@ -4197,7 +4197,7 @@
 			(uuid "d37b8a54-cd37-49bf-9171-266d8c6ac06d")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "R9")
 					(unit 1)
@@ -4279,7 +4279,7 @@
 			(uuid "813244d3-a4dd-48a9-b9a9-0796ebf2ad2d")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "R1")
 					(unit 1)
@@ -4357,7 +4357,7 @@
 			(uuid "97e5e685-28fc-4938-be5f-0764b1a99352")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR04")
 					(unit 1)
@@ -4439,7 +4439,7 @@
 			(uuid "250484ca-30d5-4e08-97a6-df05846c6b17")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "R6")
 					(unit 1)
@@ -4518,7 +4518,7 @@
 			(uuid "6068f41e-3568-4553-8ca2-cb5d70160fc2")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR023")
 					(unit 1)
@@ -4595,7 +4595,7 @@
 			(uuid "78c786c0-e511-4dc3-870a-eeb1a6ee1fce")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR011")
 					(unit 1)
@@ -4674,7 +4674,7 @@
 			(uuid "a28bcd09-db39-4623-b75e-da66f4692c65")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#FLG02")
 					(unit 1)
@@ -4756,7 +4756,7 @@
 			(uuid "db5661ea-c3e4-4fb4-bd74-4f880f845a1d")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "R5")
 					(unit 1)
@@ -4882,7 +4882,7 @@
 			(uuid "ecc26f77-7a25-45c4-82aa-87ec433df0ff")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C5")
 					(unit 1)
@@ -4963,7 +4963,7 @@
 			(uuid "4a2a12d4-acb5-4dba-b6d3-161c25c8fa9d")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "R7")
 					(unit 1)
@@ -5041,7 +5041,7 @@
 			(uuid "4a561a8e-6a1a-4c06-b85c-2a955ef0e3d1")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR021")
 					(unit 1)
@@ -5119,7 +5119,7 @@
 			(uuid "eb891b2c-0e2d-485d-a6b3-1be1f3ff8eda")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#FLG01")
 					(unit 1)
@@ -5197,7 +5197,7 @@
 			(uuid "ce296d39-a888-4a4f-b343-5b792e6dbfd6")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "TP1")
 					(unit 1)
@@ -5276,7 +5276,7 @@
 			(uuid "49415340-9e0a-4f53-85f7-182ba2f4cd71")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR022")
 					(unit 1)
@@ -5354,7 +5354,7 @@
 			(uuid "70e5892e-03cd-4cd8-a797-b1300f44eddf")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR08")
 					(unit 1)
@@ -5444,7 +5444,7 @@
 			(uuid "943101b0-88fb-4260-957b-e0e710fb9830")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "J1")
 					(unit 1)
@@ -5522,7 +5522,7 @@
 			(uuid "f66d1e81-030d-4f56-92d3-7ebe3eedae79")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "TP4")
 					(unit 1)
@@ -5600,7 +5600,7 @@
 			(uuid "a2b54808-a626-4b35-89af-e0b61bbebc01")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "TP2")
 					(unit 1)
@@ -5678,7 +5678,7 @@
 			(uuid "297cf4c6-8e41-44c3-acfc-40ee7c9a8fa4")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "TP3")
 					(unit 1)
@@ -5756,7 +5756,7 @@
 			(uuid "82503f56-f642-4e25-8ab9-3515401d4065")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR09")
 					(unit 1)
@@ -5833,7 +5833,7 @@
 			(uuid "1909fbd5-095a-4046-a71a-2eee80f08c2f")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR07")
 					(unit 1)
@@ -5931,7 +5931,7 @@
 			(uuid "6e5f99be-9209-4f66-a29e-613cb3de5586")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "U1")
 					(unit 1)
@@ -6009,7 +6009,7 @@
 			(uuid "230dcd50-5c3f-4d9c-bf27-3d4a362849ee")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR012")
 					(unit 1)
@@ -6229,7 +6229,7 @@
 			(uuid "9c95c7cf-6bf2-4ff1-b022-8bef414a93ee")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "U3")
 					(unit 1)
@@ -6309,7 +6309,7 @@
 			(uuid "2fcdeb6d-7c59-4a93-b1f7-6d4b2eebb15d")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "R10")
 					(unit 1)
@@ -6391,7 +6391,7 @@
 			(uuid "0964be49-9704-4704-ab69-428d3032cf4d")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C6")
 					(unit 1)
@@ -6470,7 +6470,7 @@
 			(uuid "c0bde2ba-52bf-4175-8993-3758ac7348d5")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR024")
 					(unit 1)
@@ -6547,7 +6547,7 @@
 			(uuid "93a6bb87-af40-4f6a-a671-df7b54bb02d6")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR013")
 					(unit 1)
@@ -6673,7 +6673,7 @@
 			(uuid "f7fa9b8f-b69b-4bfb-bd7d-2b1ff8c3a963")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C2")
 					(unit 1)
@@ -6750,7 +6750,7 @@
 			(uuid "e356fe59-3724-4f2e-83d6-dd4f6a2ba46c")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR019")
 					(unit 1)
@@ -6875,7 +6875,7 @@
 			(uuid "c6e4e046-3fa9-4b58-8a14-b0849416a02f")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C7")
 					(unit 1)
@@ -6957,7 +6957,7 @@
 			(uuid "c5a59922-6f3d-4db3-922b-337c4dc003d8")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "R8")
 					(unit 1)
@@ -7035,7 +7035,7 @@
 			(uuid "0229d4e0-8a30-46a0-899b-de9c9d23e665")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR01")
 					(unit 1)
@@ -7115,7 +7115,7 @@
 			(uuid "aef9e3a2-f86d-49f2-9344-16a55044fd3d")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C1")
 					(unit 1)
@@ -7240,7 +7240,7 @@
 			(uuid "b400ac36-8139-485a-a8f1-2c49310ca87d")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C8")
 					(unit 1)
@@ -7366,7 +7366,7 @@
 			(uuid "34555050-e958-4e90-b791-cbde7e2aeffe")
 		)
 		(instances
-			(project "FPC Strain Gauge"
+			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C3")
 					(unit 1)
