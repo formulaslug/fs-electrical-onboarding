@@ -816,15 +816,33 @@
         "filename": "LV-onboarding-kicad.kicad_sch",
         "name": "LV-onboarding-kicad",
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
+      },
+      {
+        "filename": "untitled.kicad_sch",
+        "name": "AfterTrigger",
+        "uuid": "9ed344af-984d-4749-b2fa-15659dd3799e"
+      },
+      {
+        "filename": "sensorfault.kicad_sch",
+        "name": "SensorFault",
+        "uuid": "e326b758-f23c-40c1-bbdd-48f44d2b9d3d"
       }
     ],
-    "used_designators": "J1-3,R1-2,R4-9,U2-6,TP1-2,C1-3,K1,#PWR1-24,D1",
+    "used_designators": "J1-3,R1-2,R4-13,U2-9,TP1-2,C1-3,K1,#PWR1-42,D1,U1a1",
     "variants": []
   },
   "sheets": [
     [
       "e994741c-7c7d-4124-9d00-43b883baa61d",
       "LV-onboarding-kicad"
+    ],
+    [
+      "9ed344af-984d-4749-b2fa-15659dd3799e",
+      "AfterTrigger"
+    ],
+    [
+      "e326b758-f23c-40c1-bbdd-48f44d2b9d3d",
+      "SensorFault"
     ]
   ],
   "text_variables": {
