@@ -16,3 +16,9 @@ consider using a chain of op amps for current sensor rather than just one b/c vo
 - drew a second rendition of BSPD
 - need to confirm resistor/capacitor values for thresehold pin 555 and for thresehold values for op amp stuff
 - need to figure out where to connect discharge/reset pin
+
+10/8
+- need to review fs-3 and fs-4 bspd system. use as reference for 555
+- think about how to deal with HASS as a differential sensor
+- start basic kicad stuff
+- make a full drawing of 555 connections
