@@ -74,8 +74,8 @@ void ETCController::update_state() {
 
 
     //Now determine the pedal postions
-    APPS1_Pedal_Postion = APPS1_Voltage/ (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE  ); //Determine Pedal Position Percentage
-    APPS2_Pedal_Postion = APPS2_Voltage/ (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE  ); //Determine Pedal Position Percentage
+    APPS1_Pedal_Postion = (APPS1_Voltage - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE  ); //Determine Pedal Position Percentage
+    APPS2_Pedal_Postion = (APPS2_Voltage - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE  ); //Determine Pedal Position Percentage
 
     //Clamp Pedal position percentages to be from 0% to 100%, i.e. 0.0 to 1.0
     Clamped_APPS1_Pedal_Position = clamp( APPS1_Pedal_Postion - PEDAL_DEADZONE_PERCENTAGE/(1.0 - PEDAL_DEADZONE_PERCENTAGE));// Subtract by DeadZone percentage to adjust to our "new" 0% 
@@ -84,7 +84,7 @@ void ETCController::update_state() {
 
     //Calculate a motor torque demanad
     Motor_Torque_Demand = (Clamped_APPS1_Pedal_Postion + Clamped_APPS2_Pedal_Postion) / 2.0f;
-
+    
 
         
 
@@ -111,7 +111,7 @@ void ETCController::update_implausibilities() {
     float Percentage_Difference = std::abs(APPS1_Pedal_Position - APPS2_Pedal_Position); 
     bool Pedal_Position_Implaus;
     
-    if( Percentage_Difference <= 10){
+    if( Percentage_Difference <= 0.10){
         Pedal_Position_Implaus = true;
     }else{
         Pedal_Position_Implaus = false;
