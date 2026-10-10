@@ -23,6 +23,14 @@ bool ETCController::in_range(float value, float low, float high) {
 }
 //used to feed into implausibility logic, if one value is low, while the other is high, trigger fault
 
+void ETCController::apps_1_pedal_position_calc(int apps1_voltage , int apps_1_volt_increment) {
+    apps_1_pedal_position = (apps1_voltage - APPS1_MIN_VOLTAGE) / (apps_1_volt_increment);
+}
+
+void ETCController::apps_2_pedal_position_calc(int apps2_voltage , int apps_2_volt_increment) {
+    apps_2_pedal_position = (apps2_voltage - APPS2_MIN_VOLTAGE) / (apps_2_volt_increment);
+}
+
 /*
     Complicated method with the goal of refreshing voltages,
     pedal positions, implausibilities, and motor torque demand.
@@ -103,7 +111,7 @@ void ETCController::update_implausibilities() {
    } //fault if apps2 is outside range
 
    //implaus 4
-   if (2 * abs(apps1_voltage - apps2_voltage) / (apps1_voltage + apps2_voltage) > 0.1) { //need to change to post offset values
+   if (2 * abs(apps_1_pedal_position - apps_2_pedal_position) / (apps_1_pedal_position + apps_2_pedal_position) > 0.1) { //need to change to post offset values
     if (!implaus_4) {
             implaus4_timer.start();
         }

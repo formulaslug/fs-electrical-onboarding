@@ -1,5 +1,7 @@
 to do: 
     calc torque
+        calc pedal position - add deadzone
+        assign position to toruqe value based on t-range
     CAN stuff
     clean up code
 

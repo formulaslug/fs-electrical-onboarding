@@ -54,6 +54,17 @@ private:
     bool gen_faulting;
     bool gen_implaus;
     int implaus_timer_count;
+
+    //pedal position variables
+    float apps_1_volt_increment = 0.0069;
+    float apps_1_pedal_position;
+    float apps_2_volt_increment = 0.00694;
+    float apps_2_pedal_position;
+
+
+    void apps_1_pedal_position_calc(int apps1_voltage , int apps_1_volt_increment);
+
+    void apps_2_pedal_position_calc(int apps2_voltage , int apps_2_volt_increment);
     
     /*
         End of private variables
