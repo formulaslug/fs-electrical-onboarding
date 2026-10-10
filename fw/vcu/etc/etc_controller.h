@@ -38,18 +38,32 @@ private:
     AnalogIn APPS_sensor_1; // Initialize AnalogIn Pin so we can read their voltages later when we need them
     AnalogIn APPS_sensor_2; // Initialize AnalogIn Pin so we can read their voltages later when we need them
     
-    float APPS1_Volatge; // Voltage from APPS1
-    float APPS2_Volatge;// Volatage from APPS2
+    float APPS1_Volatge = 0; // Voltage from APPS1
+    float APPS2_Volatge = 0;// Volatage from APPS2
 
-    float APPS1_Pedal_Postion;
-    float APPS2_Pedal_Postion;
+    float APPS1_Pedal_Postion = 0;
+    float APPS2_Pedal_Postion = 0;
 
-    float Clamped_APPS1_Pedal_Position;
-    float Clamped_APPS2_Pedal_Position;
+    float Clamped_APPS1_Pedal_Position = 0;
+    float Clamped_APPS2_Pedal_Position = 0;
 
-    float Motor_Torque_Demand;
+    float Motor_Torque_Demand = 0;
 
 
+
+    // bool APPS1_Sensor_Range_Valid;
+    // bool APPS2_Sensors_Range_Valid;
+    // bool APPS_Sensors_Range_Validl;
+
+    bool APPS_Range_Implausibility_Confirmed; //Real value for Implausibilties
+    bool APPS_Percent_Implausibility_Confirmed; //Real Value for Implausibilties
+
+    
+
+    Timer Timer_Range_Implaus;
+    Timer Timer_Percent_Implaus;
+    
+    
     /*
         End of private variables
     */
