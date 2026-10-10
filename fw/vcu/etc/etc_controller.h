@@ -15,7 +15,6 @@ public:
     */
 
     
-    
 
 
 
@@ -63,7 +62,7 @@ private:
     Timer Timer_Range_Implaus;
     Timer Timer_Percent_Implaus;
     
-    
+
     /*
         End of private variables
     */

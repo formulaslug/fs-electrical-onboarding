@@ -7,7 +7,6 @@
 
 #include "etc_controller.h"
 
-
 // Assign appropriate GPIO objects depending on pin parameters
 ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin)
     : APPS_sensor_1(APPS1_pin), //Initialize AnalogIn Pin so we can read their voltages later when we need them
@@ -144,12 +143,12 @@ void ETCController::update_implausibilities() {
     
 
     float Percentage_Difference = std::abs(APPS1_Pedal_Position - APPS2_Pedal_Position); 
-    if( Percentage_Difference <= 0.10){
+    if( Percentage_Difference <= 0.10){ //There is no Implaus
         Timer_Percent_Implaus.stop();
         Timer_Percent_Implaus.reset();
     }else{
-        // Valid_Voltages = false;
-        timer_Percent_Implaus.start();
+        
+        timer_Percent_Implaus.start(); //There is an implaus so start timer
 
         duration_ms_Percent_Implaus = my_timer_Percent_Implaus.elapsed_time().count() / 1000;
         
