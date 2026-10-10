@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: C:\Users\charl\OneDrive\Documents\GitHub\fs-electrical-onboarding\invertingnoninverting.net
-Start Time: Fri Oct  9 16:18:03 2026
+Start Time: Fri Oct  9 21:47:40 2026
 solver = Normal
 Maximum thread count: 12
 tnom = 27
@@ -10,7 +10,7 @@ Direct Newton iteration failed to find operating point.
 Starting Gmin stepping
 Gmin stepping succeeded in finding the operating point.
 
-Total elapsed time: 0.195 seconds.
+Total elapsed time: 0.237 seconds.
 Total iterations: 11847
 
 Files loaded:

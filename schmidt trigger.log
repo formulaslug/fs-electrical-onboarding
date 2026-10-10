@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: C:\Users\charl\OneDrive\Documents\GitHub\fs-electrical-onboarding\schmidt trigger.net
-Start Time: Tue Oct  6 14:59:38 2026
+Start Time: Fri Oct  9 22:03:26 2026
 solver = Normal
 Maximum thread count: 12
 tnom = 27
@@ -10,7 +10,7 @@ Direct Newton iteration failed to find operating point.
 Starting Gmin stepping
 Gmin stepping succeeded in finding the operating point.
 
-Total elapsed time: 0.116 seconds.
+Total elapsed time: 0.144 seconds.
 Total iterations: 7583
 
 Files loaded:
