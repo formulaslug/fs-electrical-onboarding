@@ -14,7 +14,9 @@ public:
         Start of public variables
     */
 
-
+int16_t torque_demand = 0;
+bool apps_deviation_implaus = false;
+bool apps_range_implaus = false;
 
     /*
         End of public variables
