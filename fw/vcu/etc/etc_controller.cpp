@@ -31,6 +31,12 @@ void ETCController::apps_2_pedal_position_calc(int apps2_voltage , int apps_2_vo
     apps_2_pedal_position = (apps2_voltage - APPS2_MIN_VOLTAGE) / (apps_2_volt_increment);
 }
 
+void ETCController::calculate_torque(int apps_1_pedal_position, int apps_2_pedal_position) {
+    torque_apps_1 = (apps_1_pedal_position / 100) * MAX_TORQUE;
+    torque_apps_2 = (apps_2_pedal_position / 100) * MAX_TORQUE;
+    calculated_torque = (torque_apps_1 + torque_apps_2) / 2;
+}
+
 /*
     Complicated method with the goal of refreshing voltages,
     pedal positions, implausibilities, and motor torque demand.
@@ -50,6 +56,11 @@ void ETCController::update_state() {
 
     //if not faulting, calculate torque and send command
     if (!gen_faulting) {
+        apps_1_pedal_position_calc(apps1_voltage, apps_1_volt_increment);
+        apps_2_pedal_position_calc(apps2_voltage, apps_2_volt_increment);
+        calculate_torque(apps_1_pedal_position, apps_2_pedal_position);
+    } else {
+        calculated_torque = 0;
     }
 
 

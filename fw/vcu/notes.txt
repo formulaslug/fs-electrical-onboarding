@@ -20,21 +20,23 @@ Percentage Difference =
 
 
 cpp notes
-if syntax
-if (condition) {
+{
+    if syntax
+    if (condition) {
     // Code runs if the condition is true
-} else {
+    } else {
     // Code runs if the condition is false
-}
+    }
+}    
 
 class syntax
-
-class Car {
-private:
+{
+    class Car {
+    private:
     std::string brand;
     int year;
 
-public:
+    public:
     // 1. Default Constructor (called when no arguments are provided)
     Car() {
         brand = "Unknown";
@@ -52,17 +54,31 @@ public:
     void displayInfo() {
         std::cout << "Brand: " << brand << ", Year: " << year << "\n" << std::endl;
     }
-};
+    };
 
-int main() {
-    // Triggers the Default Constructor
-    Car car1; 
-    car1.displayInfo();
+    int main() {
+         // Triggers the Default Constructor
+        Car car1; 
+        car1.displayInfo();
 
-    // Triggers the Parameterized Constructor
-    Car car2("Toyota", 2024); 
-    car2.displayInfo();
+        // Triggers the Parameterized Constructor
+        Car car2("Toyota", 2024); 
+        car2.displayInfo();
 
-    return 0;
+        return 0;
+        }
 }
 
+arguments for methods syntax
+{
+        void passByValue(int num) {
+            num = 100; // Only changes the local copy
+    }
+
+    int main() {
+        int myNum = 5;
+        passByValue(myNum);
+        std::cout << myNum; // Output: 5
+        return 0;
+    }
+}

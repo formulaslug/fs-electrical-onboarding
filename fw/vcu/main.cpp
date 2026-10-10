@@ -26,9 +26,6 @@ int main() {
    send_sme_CAN_messages_ticker.attach(&send_sme_CAN_messages, 20ms);
 
 
-
-
-
     // No need to edit this while loop
     while (true) {
         // Must implement in etc/ subfolder

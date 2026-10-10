@@ -57,10 +57,17 @@ private:
 
     //pedal position variables
     float apps_1_volt_increment = 0.0069;
-    float apps_1_pedal_position;
+    int apps_1_pedal_position;
     float apps_2_volt_increment = 0.00694;
-    float apps_2_pedal_position;
+    int apps_2_pedal_position;
 
+    //torque variables
+    int16_t torque_apps_1 = 0;
+    int16_t torque_apps_2 = 0;
+    int calculated_torque = 0;
+
+
+    void calculate_torque(int apps_1_pedal_position, int apps_2_pedal_position);
 
     void apps_1_pedal_position_calc(int apps1_voltage , int apps_1_volt_increment);
 
@@ -76,7 +83,7 @@ private:
         !! should always be checked and updated if wrong.   !!
     */
 
-    static constexpr float APPS1_MIN_VOLTAGE = 0.396; //constexpr makes evaluate at compile time not run time
+    static constexpr float APPS1_MIN_VOLTAGE = 0.396; //constexpr makes evaluate at compile time not run time      
     static constexpr float APPS1_MAX_VOLTAGE = 1.086f;
 
     static constexpr float APPS2_MIN_VOLTAGE = 0.439f;
@@ -88,7 +95,7 @@ private:
                                                        // motor torque during onboarding.
 
     float clamp(float value);
-
+//im confused on clamp and in_range. if the value is outside the range, should we clamp it?
     bool in_range(float value, float low, float high);
 
     void update_implausibilities();
