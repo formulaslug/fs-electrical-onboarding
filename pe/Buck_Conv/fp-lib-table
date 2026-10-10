@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "formula_slug_footprint_library") (type "KiCad") (uri "${KIPRJMOD}/../fs-components/formula_slug_footprint_library.pretty/") (options "") (descr ""))
+	(lib (name "BD95821MUV") (type "KiCad") (uri "C:/Users/brook/Downloads/ul_BD95821MUV-E2/KiCADv6/footprints.pretty") (options "") (descr ""))
+)

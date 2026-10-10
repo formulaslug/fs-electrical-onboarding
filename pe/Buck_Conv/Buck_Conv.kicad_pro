@@ -511,7 +511,7 @@
     ]
   },
   "meta": {
-    "filename": "template.kicad_pro",
+    "filename": "Buck_Conv.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -829,18 +829,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "template.kicad_sch",
-        "name": "",
+        "filename": "Buck_Conv.kicad_sch",
+        "name": "Buck_Conv",
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
       }
     ],
-    "used_designators": "R1",
+    "used_designators": "R1-3,U1,L1,#PWR1-4,C1-6",
     "variants": []
   },
   "sheets": [
     [
       "e994741c-7c7d-4124-9d00-43b883baa61d",
-      ""
+      "Buck_Conv"
     ]
   ],
   "text_variables": {
