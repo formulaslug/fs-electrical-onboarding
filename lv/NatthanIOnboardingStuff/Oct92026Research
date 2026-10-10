@@ -1,0 +1,5 @@
+personal notes: im really burnt out today from so many assignments and work and sickness so just do what you can and come back tommorow stronger well rested and stronger
+
+I research the BSPD more and I'm in the process of understand how the actual circuit works and the actions so that I can start designing it with its mechanisms in mind. The BSPD circuit is always open by default, but closes when specific conditions are hit, such as the brake pressure dropping below a bar or the position of the throttle pedal position is extremely low. When these conditions persist for some time(the article I'm using for researching says 0.5 seconds but I'll go fact check it tommorow) the BSPD circuit triggers in a way where the shutdown circuit opens(this opening condition is brake pressure being at hard braking level or throtle position above 25%). After triggering, the BSPD may become closed again if opening condition is absent for 10+ seconds.
+
+ok thats all its kind of short but its something. I'm going to teach myself Kicad this weekend. good night 
