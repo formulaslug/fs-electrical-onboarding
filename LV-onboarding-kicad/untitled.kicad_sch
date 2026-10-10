@@ -329,6 +329,30 @@
 			(embedded_fonts no)
 		)
 	)
+	(global_label "BSPD_TRIGGERED"
+		(shape input)
+		(at 83.82 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "43447210-0b8d-4c21-8f86-061391ed2b82")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 64.6273 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Relay:Relay_SPST-NO")
 		(at 142.24 87.63 0)
