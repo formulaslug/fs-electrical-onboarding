@@ -818,7 +818,7 @@
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
       }
     ],
-    "used_designators": "K1,J1-2,BT1,RV1,#PWR1-3,U1-4,R1-2",
+    "used_designators": "K1,BT1,RV1,J1-2,#PWR1-6,U1-4,R1-3",
     "variants": []
   },
   "sheets": [
@@ -828,8 +828,8 @@
     ]
   ],
   "text_variables": {
-    "BOARD_TITLE": "Op-Amp Based Comparator",
-    "COMMENT1": "Learning how to use KiCad",
+    "BOARD_TITLE": "Brake System Plausibility Device",
+    "COMMENT1": "LV Onboarding Project",
     "COMMENT2": "",
     "NAMES": "Jackson W.",
     "REVISION": "[REVISION]"
