@@ -128,7 +128,9 @@ void ETCController::update_implausibilities() {
         printf("Implaus 3 Timer: %lld\n", (long long)implaus3_length);
         printf("Implaus 4 Timer: %lld\n", (long long)implaus4_length);
     }
-   } //start timer if implaus is true, if timer reaches 100ms, fault then read fault type and print message to console
+   } else { //start timer if implaus is true, if timer reaches 100ms, fault then read fault type and print message to console
+    gen_faulting = false;
+}
 
     //cross check APPS1 with APPS2
     //check pedal positions pre-offset calculations; pre-offset values should not match
