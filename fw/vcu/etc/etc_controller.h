@@ -53,7 +53,6 @@ private:
 
     bool gen_faulting;
     bool gen_implaus;
-    bool is_timing; 
     int implaus_timer_count;
     
     /*

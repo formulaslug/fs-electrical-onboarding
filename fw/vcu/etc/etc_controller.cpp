@@ -69,8 +69,11 @@ void ETCController::update_implausibilities() {
         }
     gen_implaus = true;
     implaus_1 = true;
-    is_timing = true;
-
+   } else {
+    implaus_1 = false;
+    implaus1_timer.stop();
+    implaus1_timer.reset();
+    //need to add separate logic for gen_implaus so it isnt cleared by any of the other cases being false
    }  // fault if values are equal
 
   //implaus 2
@@ -80,8 +83,11 @@ void ETCController::update_implausibilities() {
     }
     implaus_2 = true;
     gen_implaus = true;
-    is_timing = true;
-   } //fault if apps1 is outside range
+   } else {
+    implaus_2 = false;  
+    implaus2_timer.stop();
+    implaus2_timer.reset();
+   } 
 
    //implaus 3
    if (in_range(apps2_voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE) == false) {
@@ -90,7 +96,10 @@ void ETCController::update_implausibilities() {
         }
     implaus_3 = true;
     gen_implaus = true;
-    is_timing = true;
+   } else {
+    implaus_3 = false;   
+    implaus3_timer.stop();
+    implaus3_timer.reset();
    } //fault if apps2 is outside range
 
    //implaus 4
@@ -100,7 +109,10 @@ void ETCController::update_implausibilities() {
         }
     implaus_4 = true;
     gen_implaus = true;
-    is_timing = true;
+   } else {
+    implaus_4 = false;  
+    implaus4_timer.stop();
+    implaus4_timer.reset();
    } //fault if values are too far apart
 
    if (gen_implaus) {
@@ -132,9 +144,7 @@ void ETCController::update_implausibilities() {
         update the actual implaus result if it's been active 
         for too long.
     */
-   if (is_timing) {
-
-   }
+   //create logic for clearing fault
       
 
     //if values have been implausible for longer than 100ms, trigger fault

@@ -9,3 +9,52 @@ types of faults
 Percentage Difference =	
 |V1 - V2|/((V1 + V2)/2)
 × 100
+
+
+cpp notes
+if syntax
+if (condition) {
+    // Code runs if the condition is true
+} else {
+    // Code runs if the condition is false
+}
+
+class syntax
+
+class Car {
+private:
+    std::string brand;
+    int year;
+
+public:
+    // 1. Default Constructor (called when no arguments are provided)
+    Car() {
+        brand = "Unknown";
+        year = 0;
+        std::cout << "Default constructor called!" << std::endl;
+    }
+
+    // 2. Parameterized Constructor (called when arguments are provided)
+    // Using a member initializer list ': brand(x), year(y)' is the preferred C++ way
+    Car(std::string carBrand, int carYear) : brand(carBrand), year(carYear) {
+        std::cout << "Parameterized constructor called!" << std::endl;
+    }
+
+    // Method to display car details
+    void displayInfo() {
+        std::cout << "Brand: " << brand << ", Year: " << year << "\n" << std::endl;
+    }
+};
+
+int main() {
+    // Triggers the Default Constructor
+    Car car1; 
+    car1.displayInfo();
+
+    // Triggers the Parameterized Constructor
+    Car car2("Toyota", 2024); 
+    car2.displayInfo();
+
+    return 0;
+}
+
