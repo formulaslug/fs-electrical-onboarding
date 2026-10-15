@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+.history/
+=======
 # For PCBs designed using KiCad: https://www.kicad.org/
 # Format documentation: https://kicad.org/help/file-formats/
 
@@ -41,3 +44,4 @@ fp-info-cache
 
 # Local project settings
 *.kicad_prl
+>>>>>>> e7596f93bad0a2373cb5a90717afb26149f86b92
