@@ -16,9 +16,9 @@ public:
     AnalogIn APPS1_in;
     AnalogIn APPS2_in;
 
-    static float TARGET_TORQUE;
-    static bool T_4_2_4_ERROR;
-    static bool T_4_2_10_ERROR;
+    int16_t target_torque;
+    bool t_4_2_4_error;
+    bool t_4_2_10_error;
 
     /*
         End of public variables

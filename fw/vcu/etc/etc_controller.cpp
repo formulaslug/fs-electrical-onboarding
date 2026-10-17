@@ -6,8 +6,10 @@
 
 
 // Assign appropriate GPIO objects depending on pin parameters
-ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) :
-APPS1_in(APPS1_pin), APPS2_in(APPS2_pin) {
+ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) : APPS1_in(APPS1_pin), APPS2_in(APPS2_pin),
+                                                                     target_torque(0),
+                                                                     t_4_2_4_error(false),
+                                                                     t_4_2_10_error(false) {
 }
 
 /* 
@@ -50,10 +52,10 @@ void ETCController::update_state() {
     const float curved = clamp(-(1.0f/((1.0f-PEDAL_DEADZONE_PERCENTAGE)*(1.0f-PEDAL_DEADZONE_PERCENTAGE)))
         *(read*read)+1.0f);
 
-    const float torque = curved*MAX_TORQUE;
+    const auto torque = static_cast<int16_t>(curved*MAX_TORQUE);
 
     // Sets the static TARGET_TORQUE that will be used in the CAN bus
-    TARGET_TORQUE = torque;
+    target_torque = torque;
 
     /*
         Finish the step listed above.
@@ -79,19 +81,19 @@ void ETCController::update_implausibilities() {
         if (timer.elapsed_time().count() >= 100000) {
             printf("APPS1 and APPS2 readings deviate by >10%% (for >100ms) (T.4.2.4)");
             //Write an error to the CAN?
-            T_4_2_4_ERROR = true;
+            t_4_2_4_error = true;
         }
     }
 
     //I don't see a T.4.2.9, so I'm assuming you meant T.4.2.10
     //APPS1 or APPS2 reading is outside of expected voltage range (for >100ms) (T.4.2.10)
     timer.reset();
-    while (!in_range(APPS1_in.read_voltage(), APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) ||
-        !in_range(APPS2_in.read_voltage(), APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE)) {
+    while (!in_range(APPS1_in.read() * 3.3f, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) ||
+        !in_range(APPS2_in.read() * 3.3f, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE)) {
         if (timer.elapsed_time().count() >= 100000) {
             printf("APPS1 or APPS2 reading is outside of expected voltage range (for >100ms) (T.4.2.10)");
             //Somehow write an error to the CAN?
-            T_4_2_10_ERROR = true;
+            t_4_2_10_error = true;
         }
     }
 
