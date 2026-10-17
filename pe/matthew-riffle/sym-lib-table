@@ -1,0 +1,8 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "formula_slug_symbol_library")(type "KiCad")(uri "${KIPRJMOD}/../fs-components/formula_slug_symbol_library.kicad_sym")(options "")(descr ""))
+  (lib (name "buck_local") (type "KiCad") (uri "${KIPRJMOD}/buck_local.kicad_sym") (options "") (descr "Project-local buck converter symbol"))
+  (lib (name "Device") (type "KiCad") (uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym") (options "") (descr "KiCad standard passives"))
+  (lib (name "power") (type "KiCad") (uri "${KICAD10_SYMBOL_DIR}/power.kicad_sym") (options "") (descr "KiCad standard power symbols"))
+  (lib (name "Connector_Generic") (type "KiCad") (uri "${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym") (options "") (descr "KiCad generic connector symbols"))
+)
