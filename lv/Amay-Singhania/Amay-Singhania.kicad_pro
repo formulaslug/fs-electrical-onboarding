@@ -885,44 +885,26 @@
     "top_level_sheets": [
       {
         "filename": "Amay-Singhania.kicad_sch",
-        "name": "Amay-Singhania",
+        "name": "Strain Gauges + Buffer",
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
       },
       {
-        "filename": "strain_gauges.kicad_sch",
-        "name": "In-Amp with ADC",
-        "uuid": "7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-      },
-      {
-        "filename": "adc_with_pga.kicad_sch",
-        "name": "ADC with PGA",
-        "uuid": "94d2054e-a50f-482d-afff-dfa6248d499c"
-      },
-      {
         "filename": "op-amp_buffer.kicad_sch",
-        "name": "Op-Amp Buffer",
+        "name": "ADC + Output I2C",
         "uuid": "c320de66-ef76-480d-89b6-cc5374f65a42"
       }
     ],
-    "used_designators": "#FLG1,IC1-2,SW1-6,J1-2,U1-7,S1-7,#PWR1-79,C1-35,JP1-11,R1-24",
+    "used_designators": "#FLG1,IC1-2,SW1-6,J1-2,U1-7,S1-7,#PWR1-85,C1-35,JP1-11,R1-24",
     "variants": []
   },
   "sheets": [
     [
       "e994741c-7c7d-4124-9d00-43b883baa61d",
-      "Amay-Singhania"
-    ],
-    [
-      "7454f931-1bd2-4f2e-90f3-3bbf92ce07ed",
-      "In-Amp with ADC"
-    ],
-    [
-      "94d2054e-a50f-482d-afff-dfa6248d499c",
-      "ADC with PGA"
+      "Strain Gauges + Buffer"
     ],
     [
       "c320de66-ef76-480d-89b6-cc5374f65a42",
-      "Op-Amp Buffer"
+      "ADC + Output I2C"
     ]
   ],
   "text_variables": {
