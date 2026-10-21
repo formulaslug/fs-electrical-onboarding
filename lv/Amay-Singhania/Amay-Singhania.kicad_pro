@@ -61,10 +61,10 @@
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
           "min_clearance": 0.508,
-          "min_island_area": 9.99999999996,
+          "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
-          "remove_islands": 0,
+          "remove_islands": 1,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
@@ -780,6 +780,36 @@
           "label": "Manufacturer",
           "name": "Manufacturer",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -867,9 +897,14 @@
         "filename": "adc_with_pga.kicad_sch",
         "name": "ADC with PGA",
         "uuid": "94d2054e-a50f-482d-afff-dfa6248d499c"
+      },
+      {
+        "filename": "op-amp_buffer.kicad_sch",
+        "name": "Op-Amp Buffer",
+        "uuid": "c320de66-ef76-480d-89b6-cc5374f65a42"
       }
     ],
-    "used_designators": "IC1,SW1-6,J1-2,U1-7,S3-7,#PWR1-67,C1-24,JP1-6,R1-24",
+    "used_designators": "#FLG1,IC1-2,SW1-6,J1-2,U1-7,S1-7,#PWR1-79,C1-35,JP1-11,R1-24",
     "variants": []
   },
   "sheets": [
@@ -884,6 +919,10 @@
     [
       "94d2054e-a50f-482d-afff-dfa6248d499c",
       "ADC with PGA"
+    ],
+    [
+      "c320de66-ef76-480d-89b6-cc5374f65a42",
+      "Op-Amp Buffer"
     ]
   ],
   "text_variables": {

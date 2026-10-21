@@ -1813,7 +1813,7 @@
 		)
 		(uuid "f90fb290-5cdb-4f4b-a82e-6d3d32564671")
 	)
-	(global_label "+IN Left Axial Gauge"
+	(global_label "+IN Left_Gauge"
 		(shape input)
 		(at 55.88 74.93 180)
 		(fields_autoplaced yes)
@@ -1837,7 +1837,7 @@
 			)
 		)
 	)
-	(global_label "ADC SDA"
+	(global_label "ADC_SDA"
 		(shape bidirectional)
 		(at 81.28 106.68 270)
 		(fields_autoplaced yes)
@@ -1885,7 +1885,7 @@
 			)
 		)
 	)
-	(global_label "+IN Center Axial Gauge"
+	(global_label "+IN Center_Gauge"
 		(shape input)
 		(at 55.88 69.85 180)
 		(fields_autoplaced yes)
@@ -1933,7 +1933,7 @@
 			)
 		)
 	)
-	(global_label "-IN Right Axial Gauge"
+	(global_label "-IN Right_Gauge"
 		(shape input)
 		(at 55.88 67.31 180)
 		(fields_autoplaced yes)
@@ -1957,7 +1957,7 @@
 			)
 		)
 	)
-	(global_label "-IN Center Axial Gauge"
+	(global_label "-IN Center_Gauge"
 		(shape input)
 		(at 55.88 72.39 180)
 		(fields_autoplaced yes)
@@ -1981,7 +1981,7 @@
 			)
 		)
 	)
-	(global_label "+IN Right Axial Gauge"
+	(global_label "+IN Right_Gauge"
 		(shape input)
 		(at 55.88 64.77 180)
 		(fields_autoplaced yes)
@@ -2005,7 +2005,7 @@
 			)
 		)
 	)
-	(global_label "ADC SDA"
+	(global_label "ADC_SDA"
 		(shape bidirectional)
 		(at 124.46 57.15 0)
 		(fields_autoplaced yes)
@@ -2029,7 +2029,7 @@
 			)
 		)
 	)
-	(global_label "ADC SCL"
+	(global_label "ADC_SCL"
 		(shape output)
 		(at 78.74 106.68 270)
 		(fields_autoplaced yes)
@@ -2053,7 +2053,7 @@
 			)
 		)
 	)
-	(global_label "ADC SCL"
+	(global_label "ADC_SCL"
 		(shape input)
 		(at 124.46 54.61 0)
 		(fields_autoplaced yes)
@@ -2077,7 +2077,7 @@
 			)
 		)
 	)
-	(global_label "-IN Left Axial Gauge"
+	(global_label "-IN Left_Gauge"
 		(shape input)
 		(at 55.88 77.47 180)
 		(fields_autoplaced yes)
@@ -2112,7 +2112,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "11717ae2-8bcf-412d-a059-b5b3a8b1ce8b")
-		(property "Reference" "C12"
+		(property "Reference" "C16"
 			(at 44.196 47.752 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2134,7 +2134,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 51.1048 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -2176,7 +2176,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/94d2054e-a50f-482d-afff-dfa6248d499c"
-					(reference "C12")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -2194,7 +2194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15551150-b86d-49d1-9c8b-4ad357f287d5")
-		(property "Reference" "U4"
+		(property "Reference" "U5"
 			(at 90.17 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2303,7 +2303,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/94d2054e-a50f-482d-afff-dfa6248d499c"
-					(reference "U4")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -2320,7 +2320,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1b450a88-8723-4cd5-aaee-161a16e70cd2")
-		(property "Reference" "C11"
+		(property "Reference" "C15"
 			(at 40.386 35.052 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2342,7 +2342,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 47.2948 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -2384,7 +2384,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/94d2054e-a50f-482d-afff-dfa6248d499c"
-					(reference "C11")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -2402,7 +2402,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44284956-14f7-4c4c-85d8-ca97e2356230")
-		(property "Reference" "SW4"
+		(property "Reference" "SW6"
 			(at 110.49 97.7899 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2424,7 +2424,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_DIP_SPSTx02_Slide_6.7x6.64mm_W6.73mm_P2.54mm_LowProfile_JPin"
 			(at 104.14 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -2472,7 +2472,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/94d2054e-a50f-482d-afff-dfa6248d499c"
-					(reference "SW4")
+					(reference "SW6")
 					(unit 1)
 				)
 			)
@@ -2489,7 +2489,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "67775b89-8bca-4846-afe8-930fe0c2f48c")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR061"
 			(at 143.51 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -2549,7 +2549,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/94d2054e-a50f-482d-afff-dfa6248d499c"
-					(reference "#PWR040")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -2566,7 +2566,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "75b5e319-c4d9-42dc-a80f-7d48b16c276e")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR057"
 			(at 104.14 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -2626,7 +2626,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/94d2054e-a50f-482d-afff-dfa6248d499c"
-					(reference "#PWR036")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -2643,7 +2643,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7719c83a-5291-497e-aac9-add5c7643a39")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR060"
 			(at 135.89 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -2703,7 +2703,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/94d2054e-a50f-482d-afff-dfa6248d499c"
-					(reference "#PWR038")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -2721,7 +2721,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83844426-2ceb-484c-808a-953eaadb0940")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR052"
 			(at 48.26 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -2781,7 +2781,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/94d2054e-a50f-482d-afff-dfa6248d499c"
-					(reference "#PWR031")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -2799,7 +2799,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88536fed-4637-4907-b9af-f1e08b1576a1")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR051"
 			(at 40.64 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -2859,7 +2859,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/94d2054e-a50f-482d-afff-dfa6248d499c"
-					(reference "#PWR030")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -2876,7 +2876,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "939396c4-9177-4bf7-9666-766b1e3067d8")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR056"
 			(at 76.2 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -2936,7 +2936,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/94d2054e-a50f-482d-afff-dfa6248d499c"
-					(reference "#PWR035")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -2953,7 +2953,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a3b3f71c-7bc0-4cdc-95d5-fca7ce564889")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR055"
 			(at 73.66 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -3013,7 +3013,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/94d2054e-a50f-482d-afff-dfa6248d499c"
-					(reference "#PWR034")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -3030,7 +3030,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c40a9118-7cdf-493e-ada9-1bd4b42c68ec")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR059"
 			(at 130.81 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -3090,7 +3090,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/94d2054e-a50f-482d-afff-dfa6248d499c"
-					(reference "#PWR039")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -3107,7 +3107,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ca9d46f8-b925-43aa-9f86-c4db362031e1")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR058"
 			(at 106.68 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -3167,7 +3167,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/94d2054e-a50f-482d-afff-dfa6248d499c"
-					(reference "#PWR037")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -3184,7 +3184,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d3c90b0d-51bd-461b-b84e-e2a1f0341f46")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR053"
 			(at 52.07 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -3244,7 +3244,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/94d2054e-a50f-482d-afff-dfa6248d499c"
-					(reference "#PWR032")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -3261,7 +3261,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e31b33c9-c4f9-49b7-98be-48e19435822d")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR054"
 			(at 55.88 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -3322,7 +3322,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/94d2054e-a50f-482d-afff-dfa6248d499c"
-					(reference "#PWR033")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -3340,7 +3340,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "efe12c77-5561-404c-a3ff-b23d83187705")
-		(property "Reference" "SW3"
+		(property "Reference" "SW5"
 			(at 85.09 97.7899 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3362,7 +3362,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_DIP_SPSTx04_Slide_6.7x11.72mm_W6.73mm_P2.54mm_LowProfile_JPin"
 			(at 76.2 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -3422,7 +3422,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/94d2054e-a50f-482d-afff-dfa6248d499c"
-					(reference "SW3")
+					(reference "SW5")
 					(unit 1)
 				)
 			)
@@ -3440,7 +3440,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f28c2e17-e35f-4cb0-bded-5f79ad7509d9")
-		(property "Reference" "C13"
+		(property "Reference" "C17"
 			(at 130.81 41.91 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3460,7 +3460,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 127 50.4952 0)
 			(hide yes)
 			(show_name no)
@@ -3502,7 +3502,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/94d2054e-a50f-482d-afff-dfa6248d499c"
-					(reference "C13")
+					(reference "C17")
 					(unit 1)
 				)
 			)

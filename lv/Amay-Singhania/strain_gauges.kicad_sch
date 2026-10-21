@@ -2663,7 +2663,7 @@
 		)
 		(uuid "fe6d6a15-4f8b-4ed4-80b4-468257830716")
 	)
-	(global_label "+IN Center Axial Gauge"
+	(global_label "+IN Center_Gauge"
 		(shape input)
 		(at 193.04 36.83 180)
 		(fields_autoplaced yes)
@@ -2687,7 +2687,7 @@
 			)
 		)
 	)
-	(global_label "ADC SDA"
+	(global_label "ADC_SDA"
 		(shape bidirectional)
 		(at 219.71 140.97 270)
 		(fields_autoplaced yes)
@@ -2711,7 +2711,7 @@
 			)
 		)
 	)
-	(global_label "ADC SCL"
+	(global_label "ADC_SCL"
 		(shape output)
 		(at 214.63 107.95 90)
 		(fields_autoplaced yes)
@@ -2759,7 +2759,7 @@
 			)
 		)
 	)
-	(global_label "Reference Gauge Out"
+	(global_label "Reference_Gauge_Out"
 		(shape output)
 		(at 119.38 48.26 0)
 		(fields_autoplaced yes)
@@ -2783,7 +2783,7 @@
 			)
 		)
 	)
-	(global_label "+IN Right Axial Gauge"
+	(global_label "+IN Right_Gauge"
 		(shape input)
 		(at 187.96 69.85 180)
 		(fields_autoplaced yes)
@@ -2807,7 +2807,7 @@
 			)
 		)
 	)
-	(global_label "-IN Left Axial Gauge"
+	(global_label "-IN Left_Gauge"
 		(shape input)
 		(at 40.64 76.2 180)
 		(fields_autoplaced yes)
@@ -2831,7 +2831,7 @@
 			)
 		)
 	)
-	(global_label "-IN Right Axial Gauge"
+	(global_label "-IN Right_Gauge"
 		(shape input)
 		(at 180.34 74.93 180)
 		(fields_autoplaced yes)
@@ -2855,7 +2855,7 @@
 			)
 		)
 	)
-	(global_label "ADC SDA"
+	(global_label "ADC_SDA"
 		(shape bidirectional)
 		(at 212.09 107.95 90)
 		(fields_autoplaced yes)
@@ -2927,7 +2927,7 @@
 			)
 		)
 	)
-	(global_label "ADC SCL"
+	(global_label "ADC_SCL"
 		(shape input)
 		(at 177.8 130.81 0)
 		(fields_autoplaced yes)
@@ -2951,7 +2951,7 @@
 			)
 		)
 	)
-	(global_label "+IN Left Axial Gauge"
+	(global_label "+IN Left_Gauge"
 		(shape input)
 		(at 48.26 71.12 180)
 		(fields_autoplaced yes)
@@ -2975,7 +2975,7 @@
 			)
 		)
 	)
-	(global_label "Reference Gauge Out"
+	(global_label "Reference_Gauge_Out"
 		(shape input)
 		(at 127 143.51 180)
 		(fields_autoplaced yes)
@@ -3071,7 +3071,7 @@
 			)
 		)
 	)
-	(global_label "ADC SCL"
+	(global_label "ADC_SCL"
 		(shape output)
 		(at 217.17 140.97 270)
 		(fields_autoplaced yes)
@@ -3095,7 +3095,7 @@
 			)
 		)
 	)
-	(global_label "-IN Center Axial Gauge"
+	(global_label "-IN Center_Gauge"
 		(shape input)
 		(at 180.34 54.61 180)
 		(fields_autoplaced yes)
@@ -3167,7 +3167,7 @@
 			)
 		)
 	)
-	(global_label "ADC SDA"
+	(global_label "ADC_SDA"
 		(shape bidirectional)
 		(at 177.8 135.89 0)
 		(fields_autoplaced yes)
@@ -3251,7 +3251,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0196d2c1-156b-45e3-9181-59770e638374")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR028"
 			(at 49.53 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -3312,7 +3312,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR022")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -3329,7 +3329,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "067592ac-0452-485a-a5db-d51e741d3a84")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR047"
 			(at 212.09 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -3389,7 +3389,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR041")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -3407,7 +3407,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09ca4458-aa47-4ae3-a2cd-8e6903d2df75")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR042"
 			(at 182.88 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -3467,7 +3467,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR018")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -3484,7 +3484,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0a5fa872-142c-459b-9087-d43ab65dc515")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR035"
 			(at 120.65 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -3545,7 +3545,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR045")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -3563,7 +3563,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f4495be-0e34-4614-aee2-4657a3a1e4ac")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR046"
 			(at 203.2 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -3624,7 +3624,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR017")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -3642,7 +3642,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19110b2f-ffe9-4891-af94-0ceded1b1756")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR031"
 			(at 93.98 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -3703,7 +3703,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR028")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -3721,7 +3721,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21832111-e888-457e-9a59-50bb098435c0")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR041"
 			(at 172.72 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -3782,7 +3782,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR025")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -3800,7 +3800,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "246ba95e-9f7e-4c7e-88b6-8f62f9ba981a")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR025"
 			(at 38.1 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -3861,7 +3861,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR019")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -3879,7 +3879,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26955740-46e0-4dad-92f2-f5b574fc92c3")
-		(property "Reference" "C1"
+		(property "Reference" "C4"
 			(at 40.64 43.18 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3899,7 +3899,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 44.45 49.8348 0)
 			(hide yes)
 			(show_name no)
@@ -3941,7 +3941,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "C1")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -3959,7 +3959,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "276790fd-d1a3-4102-aea1-b0daf0aaee33")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR033"
 			(at 114.3 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -4019,7 +4019,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR029")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -4036,7 +4036,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "28690750-d918-4e2a-8b11-4bd81ea0833c")
-		(property "Reference" "C7"
+		(property "Reference" "C12"
 			(at 182.88 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4056,7 +4056,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 189.23 63.8048 0)
 			(hide yes)
 			(show_name no)
@@ -4098,7 +4098,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "C7")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -4115,7 +4115,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2c86b57a-f3f1-448a-a0a4-765461854f84")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR048"
 			(at 214.63 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -4175,7 +4175,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR042")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -4193,7 +4193,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4739b587-f9b9-4984-865a-7a13e6029922")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR045"
 			(at 190.5 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -4254,7 +4254,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR016")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -4271,7 +4271,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4d1674d7-2241-48ea-80e8-b37a60429491")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR050"
 			(at 219.71 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -4331,7 +4331,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR043")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -4348,7 +4348,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "56559289-8f4f-4ccf-96af-27e55c5d1c42")
-		(property "Reference" "C14"
+		(property "Reference" "C8"
 			(at 106.426 126.746 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4368,7 +4368,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 102.87 124.1552 0)
 			(hide yes)
 			(show_name no)
@@ -4410,7 +4410,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "C14")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -4428,7 +4428,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5806075f-6c5e-4292-809b-96883f2cb1d0")
-		(property "Reference" "C2"
+		(property "Reference" "C5"
 			(at 44.45 52.07 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4448,7 +4448,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 48.26 58.7248 0)
 			(hide yes)
 			(show_name no)
@@ -4490,7 +4490,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "C2")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -4508,7 +4508,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "604e14c3-8a24-4e29-b67c-bf951a9b7399")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR029"
 			(at 50.8 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -4569,7 +4569,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR01")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -4586,7 +4586,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6dc46d98-5e85-474f-af80-66413ffe1065")
-		(property "Reference" "C4"
+		(property "Reference" "C7"
 			(at 52.07 83.566 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4606,7 +4606,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 55.88 79.0448 0)
 			(hide yes)
 			(show_name no)
@@ -4648,7 +4648,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "C4")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -4666,7 +4666,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "717ba803-b1f2-4de1-8ba2-1685a01d34a0")
-		(property "Reference" "C5"
+		(property "Reference" "C10"
 			(at 180.34 41.91 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4686,7 +4686,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 184.15 48.5648 0)
 			(hide yes)
 			(show_name no)
@@ -4728,7 +4728,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "C5")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -4745,7 +4745,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77152739-4a49-413a-8197-8c4cf6de8272")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR049"
 			(at 217.17 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -4805,7 +4805,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR044")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -4990,7 +4990,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7bfa6973-c807-4f74-bb77-6b16a3bdf8b2")
-		(property "Reference" "C10"
+		(property "Reference" "C13"
 			(at 190.5 113.284 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5010,7 +5010,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 194.31 117.1448 0)
 			(hide yes)
 			(show_name no)
@@ -5052,7 +5052,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "C10")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -5070,7 +5070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f2b9dcc-921e-42cb-9fd6-171a1f912b2e")
-		(property "Reference" "C6"
+		(property "Reference" "C11"
 			(at 184.15 50.8 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5090,7 +5090,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 187.96 57.4548 0)
 			(hide yes)
 			(show_name no)
@@ -5132,7 +5132,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "C6")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -5150,7 +5150,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a18758e-dc6d-4e93-9917-1188451fd63e")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR037"
 			(at 120.65 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -5211,7 +5211,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR010")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -5229,7 +5229,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8fb51374-0b93-4906-990f-1bbb75f61911")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR043"
 			(at 189.23 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -5290,7 +5290,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR026")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -5308,7 +5308,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9594911a-0c91-4834-b8c9-5dbb0ff8a81c")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR036"
 			(at 120.65 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -5369,7 +5369,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR027")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -5387,7 +5387,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "96e93528-1f88-4b0c-ac41-7a80f1915650")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR038"
 			(at 177.8 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -5448,7 +5448,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR023")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -5466,7 +5466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9dd76630-d8af-4dc7-9c74-740c278f58fd")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR027"
 			(at 33.02 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -5527,7 +5527,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR021")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -5545,7 +5545,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a1c3546e-5f00-4f43-b6dd-835fe1b66aeb")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR040"
 			(at 184.15 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -5606,7 +5606,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR011")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -5624,7 +5624,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a775067b-c5f3-4830-92ff-1d0ba79b6f9d")
-		(property "Reference" "R21"
+		(property "Reference" "R9"
 			(at 270.51 57.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5646,7 +5646,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 266.192 58.42 90)
 			(hide yes)
 			(show_name no)
@@ -5688,7 +5688,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "R21")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -5706,7 +5706,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0b8bdce-c29e-4037-a879-12eedb1b3b83")
-		(property "Reference" "R20"
+		(property "Reference" "R8"
 			(at 130.81 78.7399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5728,7 +5728,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 126.492 80.01 90)
 			(hide yes)
 			(show_name no)
@@ -5770,7 +5770,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "R20")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -5788,7 +5788,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6be26dc-1271-4a10-abfc-07f6839adf54")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR034"
 			(at 121.92 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -5848,7 +5848,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR012")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -5866,7 +5866,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b72af7e8-57ea-4bf9-a92c-bf32a1b33848")
-		(property "Reference" "U3"
+		(property "Reference" "U4"
 			(at 228.6 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6016,7 +6016,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "U3")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -6034,7 +6034,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b8133870-49b4-4361-8d3e-92e680378870")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR026"
 			(at 41.91 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -6095,7 +6095,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR020")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -6112,7 +6112,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c946f30f-7595-4d35-8dba-acc45a206053")
-		(property "Reference" "C3"
+		(property "Reference" "C6"
 			(at 43.18 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6132,7 +6132,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 49.53 65.0748 0)
 			(hide yes)
 			(show_name no)
@@ -6174,7 +6174,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "C3")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -6192,7 +6192,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cc943d61-89aa-40a2-bfb8-4b3aa809f2c7")
-		(property "Reference" "U1"
+		(property "Reference" "U3"
 			(at 152.4 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6301,7 +6301,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "U1")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -6319,7 +6319,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5047ced-b3a0-45f0-8e94-acabd15f0dea")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR030"
 			(at 50.8 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -6380,7 +6380,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR014")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -6398,7 +6398,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d66d65a3-5ce2-43f1-a798-414cd6c4df2d")
-		(property "Reference" "SW2"
+		(property "Reference" "SW3"
 			(at 223.52 132.0799 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6420,7 +6420,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RTE0016D"
+		(property "Footprint" "Button_Switch_SMD:SW_DIP_SPSTx04_Slide_6.7x11.72mm_W6.73mm_P2.54mm_LowProfile_JPin"
 			(at 214.63 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -6480,7 +6480,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "SW2")
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -6498,7 +6498,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7e84063-3a31-448f-86b6-539bc47fe884")
-		(property "Reference" "R22"
+		(property "Reference" "R10"
 			(at 270.51 77.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6520,7 +6520,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 266.192 78.74 90)
 			(hide yes)
 			(show_name no)
@@ -6562,7 +6562,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "R22")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -6600,7 +6600,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 110.49 119.0752 0)
 			(hide yes)
 			(show_name no)
@@ -6659,7 +6659,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e56a1fcd-3be4-45e2-9705-4a13791008f4")
-		(property "Reference" "C8"
+		(property "Reference" "C14"
 			(at 191.77 82.296 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6679,7 +6679,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 195.58 77.7748 0)
 			(hide yes)
 			(show_name no)
@@ -6721,7 +6721,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "C8")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -6739,7 +6739,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ebb3e678-d649-4e3a-943f-68c71ffe30f3")
-		(property "Reference" "SW1"
+		(property "Reference" "SW4"
 			(at 223.52 114.2999 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6761,7 +6761,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "RTE0016D"
+		(property "Footprint" "Button_Switch_SMD:SW_DIP_SPSTx04_Slide_6.7x11.72mm_W6.73mm_P2.54mm_LowProfile_JPin"
 			(at 217.17 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -6821,7 +6821,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "SW1")
+					(reference "SW4")
 					(unit 1)
 				)
 			)
@@ -6839,7 +6839,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2e71f3b-6766-4ab6-820b-1907162cfe22")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR039"
 			(at 181.61 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -6900,7 +6900,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR024")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -6918,7 +6918,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f43d2be9-b5bd-4ffb-8fb5-9f2c06e85ff5")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR044"
 			(at 190.5 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -6979,7 +6979,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR015")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -7019,7 +7019,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 126.492 59.69 90)
 			(hide yes)
 			(show_name no)
@@ -7079,7 +7079,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe249ec6-2298-4bc0-a579-3a697dc5873c")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR032"
 			(at 101.6 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -7140,7 +7140,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
-					(reference "#PWR013")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
