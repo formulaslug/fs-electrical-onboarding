@@ -1648,6 +1648,16 @@
 		)
 		(uuid "910cf34a-55bd-4e73-8fcf-cfeace4a405e")
 	)
+	(text "1140 + 92 + 4714.28571429 * 5 = ~24,803 uA = ~24mA\nADC AVDD + ADC DVDD + Strain Gauges + Reference voltage divider = total current on 3V3"
+		(exclude_from_sim no)
+		(at 127.508 128.778 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fdc90e07-ab5e-45e7-a7f7-aeb5a53655d7")
+	)
 	(junction
 		(at 115.57 87.63)
 		(diameter 0)
@@ -1784,7 +1794,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 36.83) (xy 71.12 36.83)
+			(xy 66.04 36.83) (xy 68.58 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2044,7 +2054,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 36.83) (xy 71.12 39.37)
+			(xy 66.04 36.83) (xy 66.04 39.37)
 		)
 		(stroke
 			(width 0)
@@ -2528,7 +2538,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01029dda-3382-4a44-a735-ea397a05a051")
-		(property "Reference" "U2"
+		(property "Reference" "U1"
 			(at 124.46 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2548,7 +2558,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RTE0016C-IPC_A"
+		(property "Footprint" "ADS122C14:RTE0016C-IPC_A"
 			(at 90.17 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -2637,7 +2647,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "U2")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -2654,7 +2664,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "01825f59-d386-4785-8df0-7e57a4d93599")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR035"
 			(at 173.99 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -2714,7 +2724,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "#PWR028")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -2731,8 +2741,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0ff17943-3940-41c1-9f03-0bb7b38dbbff")
-		(property "Reference" "C4"
-			(at 61.976 49.022 0)
+		(property "Reference" "C9"
+			(at 61.214 49.022 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2743,7 +2753,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 60.452 51.308 0)
+			(at 59.69 51.308 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2795,7 +2805,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "C4")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -2812,7 +2822,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "11e3adaf-315b-40f4-a5de-30370a957221")
-		(property "Reference" "JP4"
+		(property "Reference" "JP5"
 			(at 65.278 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2875,7 +2885,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "JP4")
+					(reference "JP5")
 					(unit 1)
 				)
 			)
@@ -2893,7 +2903,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13353949-dee3-4584-be9b-6b1246afe7f0")
-		(property "Reference" "SW4"
+		(property "Reference" "SW2"
 			(at 144.78 99.0599 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3007,7 +3017,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "SW4")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -3025,7 +3035,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36f574a4-0994-4386-b859-05527230d12f")
-		(property "Reference" "C6"
+		(property "Reference" "C11"
 			(at 165.1 43.18 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3087,7 +3097,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "C6")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -3104,7 +3114,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4ebad53e-9def-4b76-8b0d-0379d9eee27a")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR034"
 			(at 167.64 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -3164,7 +3174,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "#PWR027")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -3182,7 +3192,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5dcb1055-f567-46de-882e-5dce115a9922")
-		(property "Reference" "SW3"
+		(property "Reference" "SW1"
 			(at 119.38 99.0599 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3308,7 +3318,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "SW3")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -3325,7 +3335,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "72b2de67-da52-4001-b9c6-3c5268d7a5cf")
-		(property "Reference" "C5"
+		(property "Reference" "C10"
 			(at 75.438 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3389,7 +3399,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "C5")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -3406,7 +3416,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "859e62f9-08f4-4080-9886-b40811dbddd5")
-		(property "Reference" "JP3"
+		(property "Reference" "JP4"
 			(at 61.722 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3469,7 +3479,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "JP3")
+					(reference "JP4")
 					(unit 1)
 				)
 			)
@@ -3486,7 +3496,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "953495ed-e106-4c26-b7d8-d22cab0f70e2")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR033"
 			(at 162.56 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -3546,7 +3556,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "#PWR026")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -3563,7 +3573,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "979e107c-1f3f-436c-9bc6-013e7edebac8")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR027"
 			(at 78.74 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -3623,7 +3633,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "#PWR022")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -3640,7 +3650,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a742fb55-3721-44c1-ab5d-74a71c313d67")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR028"
 			(at 90.17 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -3701,7 +3711,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "#PWR023")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -3718,7 +3728,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "acd058e1-e3b8-424c-836f-2e82efc82bd3")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR031"
 			(at 133.35 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -3778,7 +3788,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "#PWR085")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -3795,7 +3805,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b5440e76-612b-4816-ba41-972c4f2d9dbd")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR032"
 			(at 140.97 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -3855,7 +3865,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "#PWR025")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -3872,7 +3882,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba149661-934c-4b6e-b2ce-463a0b29580a")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR030"
 			(at 110.49 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -3932,7 +3942,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "#PWR024")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -3940,7 +3950,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 71.12 39.37 0)
+		(at 66.04 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3949,8 +3959,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dbf43163-9fa1-4673-b29c-25de7cbd54b4")
-		(property "Reference" "#PWR015"
-			(at 71.12 45.72 0)
+		(property "Reference" "#PWR026"
+			(at 66.04 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3961,7 +3971,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 71.12 43.434 0)
+			(at 66.04 43.434 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3971,7 +3981,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 39.37 0)
+			(at 66.04 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3982,7 +3992,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 39.37 0)
+			(at 66.04 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3993,7 +4003,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 71.12 39.37 0)
+			(at 66.04 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4009,7 +4019,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "#PWR015")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -4026,7 +4036,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e7f3a6fd-3f5d-445f-ad4d-b042e3611366")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR029"
 			(at 101.6 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -4086,7 +4096,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "#PWR075")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -4104,7 +4114,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe4aea03-a5ce-47fa-8a01-a4ee5e0b1e91")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR025"
 			(at 57.15 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -4164,7 +4174,7 @@
 		(instances
 			(project "Amay-Singhania"
 				(path "/c320de66-ef76-480d-89b6-cc5374f65a42"
-					(reference "#PWR012")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)

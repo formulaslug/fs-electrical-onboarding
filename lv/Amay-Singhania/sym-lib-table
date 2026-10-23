@@ -1,8 +1,6 @@
 (sym_lib_table
 	(version 7)
 	(lib (name "formula_slug_symbol_library") (type "KiCad") (uri "${KIPRJMOD}/../fs-components/formula_slug_symbol_library.kicad_sym") (options "") (descr ""))
-	(lib (name "AD8222") (type "KiCad") (uri "/Users/amaysinghania/Desktop/Coding/FS/fs-electrical-onboarding/lv/ul_AD8222HACPZ-R7/KiCADv6/2026-10-12_07-09-31.kicad_sym") (options "") (descr ""))
 	(lib (name "ADS122C14") (type "KiCad") (uri "/Users/amaysinghania/Desktop/Coding/FS/fs-electrical-onboarding/lv/ul_ADS122C14IRTER/KiCADv6/2026-10-15_22-15-02.kicad_sym") (options "") (descr ""))
-	(lib (name "ADS1119IRTER") (type "KiCad") (uri "/Users/amaysinghania/Desktop/Coding/FS/fs-electrical-onboarding/lv/ul_ADS1119IRTER/KiCADv6/2026-10-16_01-58-42.kicad_sym") (options "") (descr ""))
 	(lib (name "TLV4888DR") (type "KiCad") (uri "/Users/amaysinghania/Desktop/Coding/FS/fs-electrical-onboarding/lv/TLV4888DR/TLV4888DR.kicad_sym") (options "") (descr ""))
 )

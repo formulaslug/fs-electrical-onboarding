@@ -2,6 +2,6 @@
 	(version 7)
 	(lib (name "formula_slug_footprint_library") (type "KiCad") (uri "${KIPRJMOD}/../fs-components/formula_slug_footprint_library.pretty/") (options "") (descr ""))
 	(lib (name "StrainGauge") (type "KiCad") (uri "${KIPRJMOD}/StrainGauge.pretty") (options "") (descr ""))
-	(lib (name "AD8222") (type "KiCad") (uri "/Users/amaysinghania/Desktop/Coding/FS/fs-electrical-onboarding/lv/ul_AD8222HACPZ-R7/KiCADv6/footprints.pretty") (options "") (descr ""))
 	(lib (name "TLV4888DR") (type "KiCad") (uri "/Users/amaysinghania/Desktop/Coding/FS/fs-electrical-onboarding/lv/TLV4888DR/footprints.pretty") (options "") (descr ""))
+	(lib (name "ADS122C14") (type "KiCad") (uri "/Users/amaysinghania/Desktop/Coding/FS/fs-electrical-onboarding/lv/ul_ADS122C14IRTER/KiCADv6/footprints.pretty") (options "") (descr ""))
 )
