@@ -5,4 +5,6 @@
 	(lib (name "TLV4888DR") (type "KiCad") (uri "/Users/amaysinghania/Desktop/Coding/FS/fs-electrical-onboarding/lv/TLV4888DR/footprints.pretty") (options "") (descr ""))
 	(lib (name "ADS122C14") (type "KiCad") (uri "/Users/amaysinghania/Desktop/Coding/FS/fs-electrical-onboarding/lv/ul_ADS122C14IRTER/KiCADv6/footprints.pretty") (options "") (descr ""))
 	(lib (name "LDK320AM33R") (type "KiCad") (uri "/Users/amaysinghania/Desktop/Coding/FS/fs-electrical-onboarding/lv/LDK320AM33R/KiCADv6/footprints.pretty") (options "") (descr ""))
+	(lib (name "SL75xx-3") (type "KiCad") (uri "${KIPRJMOD}/SL75xx-3.pretty") (options "") (descr ""))
+	(lib (name "SL75xx-3") (type "KiCad") (uri "${KIPRJMOD}/SL75xx-3.pretty") (options "") (descr ""))
 )
