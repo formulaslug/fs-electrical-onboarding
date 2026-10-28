@@ -2262,6 +2262,26 @@
 		)
 		(uuid "fe70e27f-1ded-488b-9f1a-225aa02d20c5")
 	)
+	(label "Address Pin 1"
+		(at 149.86 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "92102cda-c062-43c8-954d-bec55a5b0f39")
+	)
+	(label "Address Pin 2"
+		(at 149.86 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "98a43942-e5af-423b-9dd3-181db1fd37de")
+	)
 	(global_label "ADC_SDA"
 		(shape bidirectional)
 		(at 115.57 107.95 270)

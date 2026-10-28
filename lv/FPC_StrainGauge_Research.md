@@ -48,3 +48,15 @@ The SVGs of the Strain Gauges are in the "StrainGaugeDesign" subfolder along wit
 On the first page of the KiCad schematic is the final schematic with all of the final parts that were mentioned above. The second page is a design with 2 In-Amps with a ADC without an PGA. However, this one was scrapped due to the high cost. The last page is an older design without buffers
 
 The PCB design has all 4 of the strain gauges, the 3 axial ones and the reference one as well, but none of the other components have been added yet.
+
+## ADC Comparison
+
+| Part Number | Gain | SPS | Bits | Communication | Voltage | Notes | Cost | Link |
+| ----------- | ---- | --- | ---- | ------------- | ------- | ----- | ---- | ---- |
+| ADS122C14IRTER | 256x | 64k | 24 | I2C with 8 addresses | 1.74-3.6 | Originally picked; new shipment arrived?, in stock now | $7.489 on TI (MOQ 3k on digikey) | [here](https://www.ti.com/product/ADS122C14?keyMatch=ADS122C14IRTER&tisearch=universal_search&usecase=OPN)
+| ADS131M04IPWT | 128x | 64k | 24 | SPI w/ individual CS | 2.7-3.6 | Simultaneous Sampling | $6.085 on TI or $7.94 on digikey (20-TSSOP package) | [here](https://www.digikey.com/en/products/detail/texas-instruments/ADS131M04IPWT/10434762) |
+| MCP3564R | 64x | 153.6k | 24 | SPI w/ single CS for 4 + 1 more for up to 8 | 2.7-3.6 | first one sent on thread by Luca; Internal oversampling | $5.44 on digikey (20-TSSOP package) | [here](https://www.digikey.com/en/products/detail/microchip-technology/MCP3564RT-E-ST/12807301) |
+| ADS124S08 | 128x | 4k | 24 | SPI w/ individual CS | 2.7-3.6 | None | $11.570 on TI or $13.23 on digikey (32-TQFP package) | [here](https://www.digikey.com/en/products/detail/texas-instruments/ADS124S08IPBSR/6569338) |
+| ADS112S14 | 256x | 64k | 16 | SPI, can be daisy chained at under 60kSPS | 1.7-3.6 | Second one sent in thread by Amay | $6.348 on TI or $8.74 on digikey (16-WQFN package) | [here](https://www.digikey.com/en/products/detail/texas-instruments/ADS112S14IRTER/29184749?s=N4IgTCBcDaIIIBEDKBGFZUBYQF0C%2BQA) |
+| ADS122S14 | 256x | 64k | 24 | SPI, can be daisy chained at under 60kSPS | 1.7-3.6 | Second one sent in thread by Amay | $7.489 on TI (MOQ 3k on digikey) (16-WQFN package) | [here](https://www.ti.com/product/ADS122S14) |
+

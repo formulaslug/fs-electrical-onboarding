@@ -2107,6 +2107,16 @@
 		)
 		(uuid "67936e0c-cead-4da6-8c0f-40648870d4be")
 	)
+	(text "TSV914IDT - $1.15\nMCP3564RT-E/ST - $5.44\nLDK320AM33R - $0.65\n---------------------\nTotal - 7.24"
+		(exclude_from_sim no)
+		(at 208.788 99.314 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "697cb24c-5477-4082-9473-4d2f4e7e81e4")
+	)
 	(text "Tau = 1/f_sample"
 		(exclude_from_sim no)
 		(at 122.174 84.836 0)
